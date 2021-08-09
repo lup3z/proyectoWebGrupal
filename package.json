@@ -1,0 +1,19 @@
+{
+  "name": "proyectowebgrupal",
+  "version": "1.0.0",
+  "description": "Temática del sitio y público objetivo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lup3z/proyectoWebGrupal.git"
+  },
+  "author": "grupo5",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lup3z/proyectoWebGrupal/issues"
+  },
+  "homepage": "https://github.com/lup3z/proyectoWebGrupal#readme"
+}
