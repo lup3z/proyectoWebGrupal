@@ -3,23 +3,24 @@ Temática del sitio y público objetivo
 Nuestro sitio será un e-commerce orientado a la venta de revistas de manga y comics. En el mismo se podrá consultar por las últimas novedades, clásicos y algunas joyas de otras épocas. Cada item dentrá una descripción detallada que entre otros items incluirá al guinista, tinta, editorial, país de procedencia y valor. El sitio estará dirigido a un público adolescente y juvenil que disfruta de la lectura liviana pero también a un grupo adulto que quiere continuar coleccionando las aventuras de sus héroes favoritos. 
 
 wireframes:
-login (Popup): https://wireframe.cc/nwxuFa
-crear cuenta (Popup): https://wireframe.cc/zvS98I
-detalle: https://wireframe.cc/Aj93Ah
-carrito: https://wireframe.cc/RiuCA4
-home: https://wireframe.cc/X0zBCN 
-listar productos https://wireframe.cc/8TzC7T
+
+* login (Popup): https://wireframe.cc/nwxuFa
+* crear cuenta (Popup): https://wireframe.cc/zvS98I
+* detalle: https://wireframe.cc/Aj93Ah
+* carrito: https://wireframe.cc/RiuCA4
+* home: https://wireframe.cc/X0zBCN 
+* listar productos https://wireframe.cc/8TzC7T
 
 Listado de al menos 5 referencias 
 
-a) atomicavenue.com
-b) tfaw.com
-c) acecomics.co.uk
-d) productosdeanime.com
-e) midtowncomics.com
-f) mycomicshop.com
-g) metropoliscomics.com
-h) milehighcomics.com
+1) atomicavenue.com
+2) tfaw.com
+3) acecomics.co.uk
+4) productosdeanime.com
+5) midtowncomics.com
+6) mycomicshop.com
+7) metropoliscomics.com
+8) milehighcomics.com
 
 Descripción de los integrantes del equipo.
 
