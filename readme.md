@@ -24,7 +24,7 @@ Listado de al menos 5 referencias
 
 Descripción de los integrantes del equipo.
 
-Guillermo: Vengo del campo audiovisual, tengo conocimiento de la historia y de las estructuras narrativas de la mayoría de medios, formatos y géneros.Manejo herramientas de edición y postproducción. Soy operador de cámara y video. Futuro Desarrollador.
+Guillermo (46): Vengo del campo audiovisual, tengo conocimiento de la historia y de las estructuras narrativas de la mayoría de medios, formatos y géneros.Manejo herramientas de edición y postproducción. Soy operador de cámara y video. Futuro Desarrollador.
 
 Lucia: 34 años, QA y buscadora de bugs compulsiva, curiosa de lenguajes de programacion, y un poco gamer, puedo resolver un cubo rubik 2x2, y en proceso de aprender a sacar el 3x3.
 
