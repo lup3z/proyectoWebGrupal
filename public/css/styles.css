@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
+.main-header-top-bar{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around
+}
+
+.logo{
+    display: flex;
+    flex-direction:row;
+}
+
+.icons-header{
+    font-size:30px;
+}
+
+.main-header{
+    background-color: aquamarine;
+    padding: 30px;
+    border: solid 3px yellow;
+}
+.titulo{
+    display: flex; 
+    justify-content: center;
+    padding: 30px;
+}
+.buscador{
+    padding: 0 200px;
+}
+.top-body{
+    background-color: orange;
+    border: solid 3px olive;
+    padding: 90px;
+}
+.pie{
+    background-color: palegoldenrod;
+    padding: 90px;
+}
+.botton-body{
+    padding: 20px;
+}

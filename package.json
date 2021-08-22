@@ -1,19 +1,26 @@
 {
-  "name": "proyectowebgrupal",
+  "name": "mle",
   "version": "1.0.0",
-  "description": "Temática del sitio y público objetivo",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "dev": "nodemon app"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lup3z/proyectoWebGrupal.git"
+    "url": "git+https://github.com/GuilleSBarra/ejercicio-ml.git"
   },
-  "author": "grupo5",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lup3z/proyectoWebGrupal/issues"
+    "url": "https://github.com/GuilleSBarra/ejercicio-ml/issues"
   },
-  "homepage": "https://github.com/lup3z/proyectoWebGrupal#readme"
+  "homepage": "https://github.com/GuilleSBarra/ejercicio-ml#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^16.6.1",
+    "nodemon": "^2.0.12"
+  }
 }
