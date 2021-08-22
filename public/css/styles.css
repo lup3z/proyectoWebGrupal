@@ -6,16 +6,27 @@
 .main-header-top-bar{
     display: flex;
     flex-direction:row;
-    justify-content: space-around
+    padding: 0 40px;
+    justify-content: space-between
+}
+.botton-bodyyy{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 50vw;
 }
 
 .logo{
     display: flex;
+    justify-content: space-around;
     flex-direction:row;
 }
 
 .icons-header{
     font-size:30px;
+}
+.icon-text{
+    padding: 40px 20px;
 }
 
 .main-header{
@@ -26,20 +37,53 @@
 .titulo{
     display: flex; 
     justify-content: center;
+    margin-top: auto;
     padding: 30px;
 }
 .buscador{
-    padding: 0 200px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
 }
 .top-body{
-    background-color: orange;
+    background-image: url("/img/pexels-dayvison-tadeu-4142511.jpg");
+    background-size: cover;
+    background-position: center;
     border: solid 3px olive;
-    padding: 90px;
+    padding: 30px
 }
 .pie{
     background-color: palegoldenrod;
     padding: 90px;
 }
-.botton-body{
-    padding: 20px;
+
+.control {
+    width: 100%;
+    padding: 8px;
+}
+
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.formulario-alta {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.titulo-alta{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.pais{
+    border: 30px;
 }

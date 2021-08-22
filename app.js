@@ -7,6 +7,10 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/home.html"));
 });
 
+app.get("/register", (req, res) => {
+  res.sendFile(path.join(__dirname, "./view/register.html"));
+});
+
 
 const puerto = process.env.PORT || 3031
 

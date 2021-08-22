@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/a0f8081e82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <div class="logo">
+                <img src="./img/dc7c05f0d9b6c3ff86303b1150490ea3.jpg" height="100" width="100" class="icon">
+                <h2 class="icon-text">Tan Geek que duele</h2>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="formulario">
+            <h3 class="titulo-alta">Crear cuenta</h3>
+        
+        <form action="/register" method="POST" class="formulario-alta">
+            <div class="control-formaulario">
+                <div>
+                    <label for="email">Ingrese eMail:</label>
+                    <input type="email" name="email" id="email" class="control">
+                    <span class="feedback"></span>
+                </div>
+                <div>
+                    <label for="nombre">Ingrese nombre:</label>
+                    <input type="text" name="nombre" id="nombre" class="control">
+                    <span class="feedback"></span>
+                </div>
+                <div>
+                    <label for="password">Ingrese contraseña:</label>
+                    <input type="password" name="password" id="password" class="control">
+                    <span class="feedback"></span>
+                </div>
+                <div>
+                    <label for="password">Confirme contraseña:</label>
+                    <input type="password" name="password" id="password" class="control">
+                    <span class="feedback"></span>
+                </div>
+                <div>
+                    <label>Pais:</label>
+                    <select class="pais">
+                        <option value="arg">Argentina</option>
+                        <option value="uy">Uruguay</option>
+                        <option value="chi">Chile</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit" class="boton-formulario">Crear Cuenta</button>
+                    <button type="reset" class="boton-formulario">Borrar</button>
+                </div>
+            </div>
+        </div>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
