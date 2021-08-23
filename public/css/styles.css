@@ -97,4 +97,34 @@ button, input, optgroup, select, textarea {
     
 }
 
+.descripcion{
+    display: flex;
+    position:relative;
+    left:335px;
+    top:150px;
+}
+.precio{
+    display: flex;
+    position:relative;
+    left:600px;
+    top:0px;
+    font-size:40px
 
+}
+.comprar{
+    display: flex;
+    position:relative;
+    left:600px;
+    top: -165px;
+    font-size:30px
+
+}
+
+.segui{
+    display: flex;
+    position:relative;
+    left:800px;
+    top: 10px;
+    font-size:30px
+
+}
