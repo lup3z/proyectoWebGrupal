@@ -87,3 +87,14 @@ button, input, optgroup, select, textarea {
 .pais{
     border: 30px;
 }
+
+.imgprod{
+    display: flex;
+    position:relative;
+    left:350px;
+    top:150px;
+    height: 250px;
+    
+}
+
+
