@@ -88,6 +88,16 @@ button, input, optgroup, select, textarea {
     border: 30px;
 }
 
+
+
+
+
+
+
+
+
+
+
 .imgprod{
     display: flex;
     position:relative;
@@ -98,12 +108,14 @@ button, input, optgroup, select, textarea {
 }
 
 .descripcion{
+    font-family : Arial;
     display: flex;
     position:relative;
-    left:335px;
+    left:320px;
     top:150px;
 }
 .precio{
+    font-family : Arial;
     display: flex;
     position:relative;
     left:600px;
@@ -112,6 +124,7 @@ button, input, optgroup, select, textarea {
 
 }
 .comprar{
+    font-family : Arial;
     display: flex;
     position:relative;
     left:600px;
@@ -121,6 +134,7 @@ button, input, optgroup, select, textarea {
 }
 
 .segui{
+    font-family : Arial;
     display: flex;
     position:relative;
     left:800px;
