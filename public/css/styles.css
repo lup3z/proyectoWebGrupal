@@ -101,8 +101,9 @@ button, input, optgroup, select, textarea {
 .imgprod{
     display: flex;
     position:relative;
-    left:350px;
-    top:150px;
+   top :30px;
+   right:30px;
+    justify-content: center;
     height: 250px;
     
 }
