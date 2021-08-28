@@ -30,7 +30,9 @@
 }
 
 .main-header{
-    background-color: aquamarine;
+    font-family: 'Indie Flower', cursive;
+    color: aliceblue;
+    background-color: navajowhite;
     padding: 30px;
     border: solid 3px yellow;
 }
@@ -46,6 +48,8 @@
     padding: 30px;
 }
 .top-body{
+    font-family: 'Indie Flower', cursive;
+    color: aliceblue;
     background-image: url("/img/pexels-dayvison-tadeu-4142511.jpg");
     background-size: cover;
     background-position: center;
@@ -84,6 +88,24 @@ button, input, optgroup, select, textarea {
     padding: 30px;
 }
 
-.pais{
-    border: 30px;
+.main-formulario{
+    background-image: url("/img/pexels-erik-mclean-7809123.jpg");
+    font-size: 20px;
+    font-weight: bolder;
+    color: aliceblue;
+    font-family: 'Josefin Sans', sans-serif;
+    background-size: cover;
+    background-position: center;
+    padding: 90px
 }
+
+.boton-formulario{
+    border-radius: 5px;
+    margin: 50px;
+    padding: 5px 10px;
+}
+
+.pais{
+    margin: 20px;
+}
+
