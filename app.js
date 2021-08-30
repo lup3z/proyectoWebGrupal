@@ -15,6 +15,9 @@ app.get("/productCart", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/productCart.html"));
 });
 
+app.get("/login", (req, res) => {
+  res.sendFile(path.join(__dirname, "./view/login.html"));
+});
 
 const puerto = process.env.PORT || 3031
 

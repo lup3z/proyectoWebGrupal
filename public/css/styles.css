@@ -7,7 +7,8 @@
     display: flex;
     flex-direction:row;
     padding: 0 40px;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
 }
 .botton-bodyyy{
     display: flex;
@@ -27,6 +28,7 @@
 }
 .icon-text{
     padding: 40px 20px;
+    font-family: "bangers";
 }
 
 .main-header{
@@ -38,7 +40,7 @@
     display: flex; 
     justify-content: center;
     margin-top: auto;
-    padding: 30px;
+    padding: 20px;
 }
 .buscador{
     display: flex;
@@ -101,8 +103,6 @@ button, input, optgroup, select, textarea {
 .imgprod{
     display: flex;
     position:relative;
-   top :30px;
-   right:30px;
     justify-content: center;
     height: 250px;
     
