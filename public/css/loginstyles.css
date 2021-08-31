@@ -1,0 +1,38 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
+body{
+    background-image: url('../img/backreg.jpg');
+    background-position: 
+    85% -2%;
+}
+
+.formulario-login .login-form {
+    text-align: center;
+     margin-top: 110px;
+    margin-left: 80px;
+    width: 30%;
+}
+.formulario-login .login-form div input {
+    margin: 19px 0;
+    padding:7px;
+    width: 40%;
+}
+
+.formulario-login .login-form .button-enviar  button{
+    width:  30%;
+    padding: 7px;
+    margin-bottom: 60px;
+    background-color: rgba(216, 36, 13, 0.815);
+    margin-top: 29px;
+    color:rgb(161, 82, 82);
+}
+
+.formulario-login .login-form .button-enviar  button a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
