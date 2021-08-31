@@ -107,6 +107,7 @@ body{
 .main-header{
     background-color: rgb(136, 127, 255);
     padding: 30px;
+    font-family: 'bangers';
     border: solid 8px rgb(255, 255, 255);
 }
 .titulo{
@@ -270,4 +271,15 @@ button, input, optgroup, select, textarea {
 
 .td-comics{
     background-color: white;
+}
+.enter {
+    width: 280px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color:rgb(255, 94, 0);
+    margin-top:5px;
+    font-size: 40px;
+    font-family:  'Bangers';
+    margin-left: 200px;
+    border-radius: 8px;
 }
