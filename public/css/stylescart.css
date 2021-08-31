@@ -83,7 +83,7 @@ opacity: 1;
 
     .estado{
         font-size: 19px;
-        font-family: 
+        
     }
     .carro {
         width: 280px;
@@ -162,7 +162,7 @@ opacity: 1;
     }
     .icon-text{
         padding: 40px 20px;
-        font-family: 'bangers';
+        ;
         font-size: 30px;
     }
     
@@ -206,14 +206,7 @@ opacity: 1;
         margin: 0;
     }
     
-    .formulario-alta {
-        display: flex;
-        width: 90vw;
-        margin: auto;
-        align-items: center;
-        justify-content: space-around;
-        padding-top: 20px;
-    }
+    
     
     .titulo-alta{
         display: flex;
@@ -224,3 +217,6 @@ opacity: 1;
     .pais{
         border: 30px;
     }
+
+
+    
