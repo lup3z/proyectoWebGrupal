@@ -8,10 +8,10 @@
     flex-direction:row;
     padding: 0 40px;
     justify-content: space-between;
-<<<<<<< HEAD
+
     align-items: center;
 
->>>>>>> 0a9906e9c6874e932e58db579828b28cbe2a86f7
+
 }
 .botton-bodyyy{
     display: flex;
@@ -91,7 +91,7 @@
     background-color: rgb(197, 220, 226);
     padding: 10px;
     height: 8rem;
->>>>>>> 0a9906e9c6874e932e58db579828b28cbe2a86f7
+
 }
 
 .buscador{

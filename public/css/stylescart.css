@@ -162,7 +162,7 @@ opacity: 1;
     }
     .icon-text{
         padding: 40px 20px;
-        font-family: 'bangers';
+        ;
         font-size: 30px;
     }
     
@@ -217,3 +217,6 @@ opacity: 1;
     .pais{
         border: 30px;
     }
+
+
+    
