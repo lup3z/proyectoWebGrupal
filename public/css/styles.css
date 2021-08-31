@@ -8,10 +8,6 @@
     flex-direction:row;
     padding: 0 40px;
     justify-content: space-between;
-<<<<<<< HEAD
-    align-items: center;
-
->>>>>>> 0a9906e9c6874e932e58db579828b28cbe2a86f7
 }
 .botton-bodyyy{
     display: flex;
@@ -66,12 +62,13 @@
     font-size: 30px;
 }
 .icon-text{
-
     padding: 40px 20px;
-    font-family: "bangers";
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
 }
-
+/**/
 .main-header{
+    background-image: url("/img/header.jpg");
     background-color: aquamarine;
     padding: 30px;
     border: solid 3px yellow;
