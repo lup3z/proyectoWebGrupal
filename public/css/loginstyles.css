@@ -118,15 +118,7 @@ body{
 
   
 
-.main-header{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 2rem;
-    color: rgb(66, 116, 172);
-    background-color: rgb(197, 220, 226);
-    padding: 10px;
-    height: 8rem;
 
-}
 
 .buscador{
     font-family:Arial, Helvetica, sans-serif;
