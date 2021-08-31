@@ -57,12 +57,19 @@
         text-align:center;
     }
 
+    tr{
+        display: flex;
+        text-align:center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
     td{
         display: flex;
         text-align:center;
         justify-content: center;
         flex-direction: column;
-    
+
     }
 
 
