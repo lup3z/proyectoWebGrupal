@@ -29,3 +29,9 @@ Guillermo (46): Vengo del campo audiovisual, tengo conocimiento de la historia y
 Lucia: 34 años, QA y buscadora de bugs compulsiva, curiosa de lenguajes de programacion, y un poco gamer, puedo resolver un cubo rubik 2x2, y en proceso de aprender a sacar el 3x3.
 
 Nicolás: 31, polítologo especializado en politícas de transparencia institucional. Empecé a programar del lado del cliente, ahora saltando del otro lado del mostrador. En tiempos libres: escucho vinilos, leo comics americanos, juego age of empires II y runner
+
+
+
+
+##Feed back sprint 1
+Excelente propuesta muchachos.    calificacion ( 10/10 )
