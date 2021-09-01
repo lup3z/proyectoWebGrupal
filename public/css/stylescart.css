@@ -83,7 +83,7 @@ opacity: 1;
 
     .estado{
         font-size: 19px;
-        font-family: 
+        
     }
     .carro {
         width: 280px;
@@ -138,12 +138,14 @@ opacity: 1;
 
 
 
+
     .main-header-top-bar{
         display: flex;
         flex-direction:row;
-        padding: 0 30px;
-        justify-content:space-around
+        padding: 0 40px;
+        justify-content: space-between;
     }
+    
     .botton-bodyyy{
         display: flex;
         justify-content: center;
@@ -153,24 +155,30 @@ opacity: 1;
     
     .logo{
         display: flex;
-        justify-content: space-around;
-        flex-direction:row;
+        position: absolute;
+        right: 50vw;
     }
     
     .icons-header{
         font-size:30px;
+        font-family: 'bangers';
     }
+    
     .icon-text{
         padding: 40px 20px;
-        font-family: 'bangers';
+        font-family: 'Bangers', cursive;
         font-size: 30px;
     }
     
     .main-header{
-        background-color: rgb(139, 169, 224);
-        padding: 30px;
-        border: solid 9px rgb(255, 255, 255);
+        font-family: 'Bangers', cursive;
+        font-size: 2rem;
+        color: rgb(66, 116, 172);
+        background-color: rgb(197, 220, 226);
+        padding: 10px;
+        height: 8rem;
     }
+
     .titulo{
         display: flex; 
         justify-content: center;
@@ -206,14 +214,7 @@ opacity: 1;
         margin: 0;
     }
     
-    .formulario-alta {
-        display: flex;
-        width: 90vw;
-        margin: auto;
-        align-items: center;
-        justify-content: space-around;
-        padding-top: 20px;
-    }
+    
     
     .titulo-alta{
         display: flex;
@@ -224,3 +225,6 @@ opacity: 1;
     .pais{
         border: 30px;
     }
+
+
+    
