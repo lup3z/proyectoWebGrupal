@@ -36,16 +36,14 @@ body{
     color: rgb(0, 0, 0);
     text-decoration: none;
 }
+
 .main-header-top-bar{
     display: flex;
     flex-direction:row;
     padding: 0 40px;
     justify-content: space-between;
-
-    align-items: center;
-
-
 }
+
 .botton-bodyyy{
     display: flex;
     justify-content: center;
@@ -98,25 +96,28 @@ body{
     padding: 30px;
     font-size: 30px;
 }
-.icon-text{
 
+.icon-text{
     padding: 40px 20px;
-    font-family: "bangers";
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
 }
 
 .main-header{
-    background-color: rgb(136, 127, 255);
-    padding: 30px;
-    font-family: 'bangers';
-    border: solid 8px rgb(255, 255, 255);
+    font-family: 'Bangers', cursive;
+    font-size: 2rem;
+    color: rgb(66, 116, 172);
+    background-color: rgb(197, 220, 226);
+    padding: 10px;
+    height: 8rem;
 }
+
 .titulo{
     display: flex; 
     justify-content: center;
     margin-top: auto;
     padding: 20px;
-
-  
+}
 
 
 
