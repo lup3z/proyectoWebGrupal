@@ -30,7 +30,7 @@ Lucia: 34 años, QA y buscadora de bugs compulsiva, curiosa de lenguajes de prog
 
 Nicolás: 31, polítologo especializado en politícas de transparencia institucional. Empecé a programar del lado del cliente, ahora saltando del otro lado del mostrador. En tiempos libres: escucho vinilos, leo comics americanos, juego age of empires II y runner
 
-
+link al board del proyecto: https://grupo05digitalhouse.atlassian.net/jira/software/projects/PI/boards/2
 
 
 ## Feed back sprint 1
