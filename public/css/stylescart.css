@@ -74,7 +74,7 @@
 
 
     .producto{
-        width:120px;
+        width:85px;
 opacity: 1;
     }
     .descripcion {
@@ -82,7 +82,7 @@ opacity: 1;
     }
 
     .estado{
-        font-size: 19px;
+        font-size: 12px;
         
     }
     .carro {
@@ -100,12 +100,12 @@ opacity: 1;
         width: 150px;
         display:flex;
         background-color:rgba(245, 22, 6, 0.637);
-       ;
+       
         font-size: 30px;
         text-decoration: none;
         font-family:  'Bangers';
         color:black;
-        margin-left:1100px;
+        margin-left:700px;
         border-radius: 8px;
     }
     .comprar{
