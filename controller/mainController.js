@@ -5,8 +5,22 @@ const controlador = {
     },
    login: (req,res) => {
        res.render('login')
-    }
+    },
 
+    productCart: (req,res) => {
+        res.render('productCart')
+    },
+
+
+    productDetails: (req,res) => {
+        res.render('productDetails')
+    },
+
+    register: (req,res) => {
+        res.render('register')
+    },
+
+    
 
 }
 
