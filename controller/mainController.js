@@ -1,7 +1,7 @@
 const controlador = {
 
     main: (req, res) => {
-        res.render('home')
+        res.send('home')
     },
     login: () => {
         res.redirect('/login/')
