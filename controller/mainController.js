@@ -1,10 +1,10 @@
 const controlador = {
 
     main: (req, res) => {
-        res.render('home')
+       res.render('home')
     },
-    login: () => {
-        res.redirect('/login/')
+   login: () => {
+       res.redirect('/login/')
     }
 
 
