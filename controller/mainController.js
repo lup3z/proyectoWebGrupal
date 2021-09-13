@@ -1,12 +1,12 @@
 const controlador = {
 
-    home: (req, res) => {
-        res.render('home')
+    main: (req, res) => {
+       res.render('home')
     },
-  
-    login: (req, res) => {
-        res.render('login')
-    },
+   login: (req,res) => {
+       res.render('login')
+    }
+
 
 }
 
