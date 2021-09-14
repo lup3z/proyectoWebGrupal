@@ -18,194 +18,23 @@
     <%- include('./partials/header')%>
 
     <main>
-
         <h2 class="en-stock">EN STOCK</h2>
-
         <table class="contenedor2cart">
-                <tr class=contenedor3cart>
-                    <td class="foto">Foto</td>
-                    <td class="fecha-publicacion">Fecha de<br>
-                         publicación</td>
-                    <td class="autor">Autor</td>
-                    <td class="escritor">Escritor</td>
-                    <td class="dibujante">Dibujante</td>
-                    <td class="valor">Precio</td>
-                    <td></td>
-                </tr>   
-   
+        <% products.forEach(product => { %>
+        
+            <tr class="contenedor3cart">
+                <img class ="producto" src= <%= product.image  %> > 
+                <li><%= product.description  %></li>
+                <li><%= product.actualPrice  %></li>
+                <li><i class="fas fa-shopping-cart"></i></li>
 
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84a.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84b.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84c.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-
-            
-            <tr class=contenedor3cart>
-                <td><img src="./img/zona84d.jpg" class ="producto"></td>
-                <td>07/01/2005</td>
-                <td>Alex Ross</td>
-                <td>Geoff Johns</td>
-                <td>Carlos Pachecho</td>
-                <td>$500</td>
-                <td><i class="fas fa-shopping-cart"></i></td>
-            </tr> 
-        </tabless=>
+            </tr>
+            <% }); %> 
+        </table>
+        
     </main>
+
+
   
 </body>
 </html>

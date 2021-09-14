@@ -9,6 +9,7 @@ var indexRouter = require("./routes/main.routes");
 
 app.use("/", indexRouter);
 
+
 /*
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/home.html"));
@@ -30,7 +31,7 @@ app.get("/productDetails", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/productDetails.html"));
 });*/
 
-const puerto = process.env.PORT || 3031
+const puerto = process.env.PORT || 3030
 
 app.listen(puerto, () => {
   console.log(`Server is running on PORT : ${puerto}`);

@@ -1,4 +1,3 @@
-
 const controlador = {
 
     main: (req, res) => {
@@ -30,12 +29,6 @@ const controlador = {
         }
         res.redirect("/")
     },
-
-    
-
-    productList: (req,res) => {
-        res.render('productList')
-    }
 }
 
 module.exports = controlador;
