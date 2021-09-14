@@ -1,3 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
+
 .contenedor2cart{
     background-color:rgb(169, 203, 233);
     opacity: 0.9;
@@ -53,7 +59,7 @@
 .dibujante{
     position: relative;
     left: 10px;
-    ffont-size: 18.5px;
+    font-size: 18.5px;
 }
 
 .valor{
