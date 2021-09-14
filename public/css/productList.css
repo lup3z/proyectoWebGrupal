@@ -1,0 +1,72 @@
+.contenedor2cart{
+    background-color:rgb(169, 203, 233);
+    opacity: 0.9;
+    padding :9px;
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid 3px cornflowerblue;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    margin-top: 80px; 
+    margin-bottom: 30px;
+}
+
+.contenedor3cart{
+    background-color:rgb(169, 203, 233);
+    opacity: 0.9;
+    padding :10px;
+    margin-top: 5px;
+    border:solid 3px cornflowerblue;
+    border-radius: 20px;
+    font-weight: 1000;
+    
+}
+
+.en-stock{
+    font-size: 70px;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+.foto{
+    position: relative;
+    left: 23px;
+    font-size: 18.5px;
+}
+
+.fecha-publicacion{
+    position: relative;
+    left: 23px;
+    font-size: 18.5px;
+}
+
+.autor{
+    font-size: 18.5px;
+}
+
+.escritor{
+    position: relative;
+    left: 4px;
+    font-size: 18.5px;
+}
+
+.dibujante{
+    position: relative;
+    left: 10px;
+    ffont-size: 18.5px;
+}
+
+.valor{
+    position: relative;
+    left: 10px;
+    font-size: 18.5px;
+}
+
+.fas.fa-shopping-cart{
+    font-size: 20px;
+}
