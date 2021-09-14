@@ -19,18 +19,18 @@
 
     <main>
         <h2 class="en-stock">EN STOCK</h2>
-        <table class="contenedor2cart">
-        <% products.forEach(product => { %>
-            <tr>
-                <ul type="none" class="contenedor3cart">
-                    <img class ="producto" src= <%= product.image  %> > 
-                    <li class="texto"><%= product.description  %></li>
-                    <li class="texto"><%= product.actualPrice  %></li>
-                    <li><i class="fas fa-shopping-cart"></i></li>
-                </ul>
-            </tr>
-            <% }); %> 
-        </table>
+        <div class="contenedor2cart">
+            <% products.forEach(product => { %>
+                <tr>
+                    <ul type="none" class="contenedor3cart">
+                        <img class ="producto" src= <%= product.image  %> > 
+                        <li class="texto"><%= product.description  %></li>
+                        <li class="texto"><%= product.actualPrice  %></li>
+                        <li><i class="fas fa-shopping-cart"></i></li>
+                    </ul>
+                </tr>
+                <% }); %> 
+        </div>
         
     </main>
 
