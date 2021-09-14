@@ -11,22 +11,28 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rampart+One&family=Special+Elite&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/stylescart.css">
+        <link rel="stylesheet" href="./css/productList.css">
         <title>Product List</title>
     </head>
 <body>
     <%- include('./partials/header')%>
 
     <main>
+
+        <h2 class="en-stock">EN STOCK</h2>
+
         <table class="contenedor2cart">
-            <tr class=contenedor3cart>
-                <td>Foto</td>
-                <td>Fecha de publicación</td>
-                <td>Autor</td>
-                <td>Escritor</td>
-                <td>Dibujante</td>
-                <td>Precio</td>
-                <td> </td>
-            </tr>    
+                <tr class=contenedor3cart>
+                    <td class="foto">Foto</td>
+                    <td class="fecha-publicacion">Fecha de<br>
+                         publicación</td>
+                    <td class="autor">Autor</td>
+                    <td class="escritor">Escritor</td>
+                    <td class="dibujante">Dibujante</td>
+                    <td class="valor">Precio</td>
+                    <td></td>
+                </tr>   
+   
 
             <tr class=contenedor3cart>
                 <td><img src="./img/zona84.jpg" class ="producto"></td>
