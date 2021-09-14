@@ -7,8 +7,6 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 var indexRouter = require("./routes/main.routes");
 
-
-
 app.use("/", indexRouter);
 
 /*

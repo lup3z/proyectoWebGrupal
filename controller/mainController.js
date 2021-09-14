@@ -33,6 +33,9 @@ const controlador = {
 
     
 
+    productList: (req,res) => {
+        res.render('productList')
+    }
 }
 
 module.exports = controlador;
