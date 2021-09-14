@@ -20,8 +20,9 @@ const controlador = {
         res.render('register')
     },
 
-    
-
+    productList: (req,res) => {
+        res.render('productList')
+    }
 }
 
 module.exports = controlador;
