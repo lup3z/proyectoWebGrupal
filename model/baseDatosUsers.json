@@ -1,0 +1,26 @@
+[
+    {
+        "id": "0",
+        "image": "../img/spider.jpg",
+        "description": "Spiderman",
+        "actualPrice": "$900"
+    },
+    {
+        "id": "1",
+        "image": "../img/zona84.jpg",
+        "description": "Zona84",
+        "actualPrice": "$500"
+    },
+    {
+        "id": "2",
+        "image": "../img/akira.jpg",
+        "description": "Akira",
+        "actualPrice": "$1200"
+    },
+    {
+        "id": "3",
+        "image": "../img/cortomaltes.jpg",
+        "description": "Corto Maltes",
+        "actualPrice": "$2.000"
+    }
+]
