@@ -11,11 +11,6 @@ const controlador = {
         res.render('productCart')
     },
 
-
-    productDetails: (req,res) => {
-        res.render('productDetails')
-    },
-
     register: (req,res) => {
         res.render('register')
     },
