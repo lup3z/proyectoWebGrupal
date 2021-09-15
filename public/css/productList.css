@@ -1,23 +1,30 @@
 .producto{
     width: 250px;
     opacity: 1;
-    justify-content: center;
-    }
+}
+
+.contenedor2cart{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 0;
+    background-color: unset;
+}
 
 .contenedor3cart{
     background-color:rgb(169, 203, 233);
-    opacity: 0.9;
-    padding :9px;
-    width:50%;
+    opacity: 1;
+    padding :11px;
+    width:20%;
     margin-left: auto;
     margin-right: auto;
-    border:solid 10px red;
     border-radius: 20px;
     display:flex;
+    margin-bottom: 25px;
     flex-direction: column;
-    margin-top: 80px; 
-    margin-bottom: 30px;
-
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .en-stock{
