@@ -18,7 +18,7 @@
         margin:auto;
        margin-top:8px;
        justify-content: space-between;
-        border:solid 20px cornflowerblue;
+        border:solid 10px cornflowerblue;
         border-radius: 8px;
         flex-wrap: wrap;
     }
@@ -72,7 +72,10 @@
 
     }
 
-
+    .producto{
+        width:100px;
+opacity: 1;
+    }
   
     .descripcion {
         font-size: 24px;
@@ -114,7 +117,7 @@
         font-family:  'Bangers';
         text-decoration: none;
         color:black;
-        margin-left: 200px;
+        margin-left: 50px;
         border-radius: 8px;
     }
 
