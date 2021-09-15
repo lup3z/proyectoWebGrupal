@@ -35,3 +35,8 @@ link al board del proyecto: https://grupo05digitalhouse.atlassian.net/jira/softw
 
 ## Feed back sprint 1
 Excelente propuesta muchachos.    calificacion ( 10/10 )
+
+# FeedBack sprint 2
+- Me encanta el diseno de la tienda de comics sin embargo le falta mas trabajo , si eligieron usar los carruseles porfi terminenlos , si bien tienen las rutas correspondiente NO ESTAN ligadas a las paginas por lo que no existe navegacion entre paginas, corrijan y sigan asi , me encanto su proyecto.
+
+-Calificacion (7/10)
