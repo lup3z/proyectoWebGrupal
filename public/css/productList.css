@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
 .producto{
     width: 250px;
     opacity: 1;
