@@ -16,4 +16,6 @@ router.post('/register', maincontroller.create);
 
 router.get('/productList', producListController.productList)
 
+router.get('/createProduct', producListController.createProduct)
+
 module.exports = router

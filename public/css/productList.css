@@ -3,32 +3,33 @@
     padding: 0px;
 	box-sizing: border-box;
 }
+.producto{
+    width: 250px;
+    opacity: 1;
+}
 
 .contenedor2cart{
-    background-color:rgb(169, 203, 233);
-    opacity: 0.9;
-    padding :9px;
-    width:50%;
-    margin-left: auto;
-    margin-right: auto;
-    border:solid 10px red;
-    border-radius: 20px;
-    display:flex;
-    flex-direction: column;
-    margin-top: 80px; 
-    margin-bottom: 30px;
-
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 0;
+    background-color: unset;
 }
 
 .contenedor3cart{
     background-color:rgb(169, 203, 233);
-    opacity: 0.9;
-    padding :10px;
-    margin-top: 5px;
-    border:solid 10px yellow;
+    opacity: 1;
+    padding :11px;
+    width:20%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 20px;
-    font-weight: 1000;
-    
+    display:flex;
+    margin-bottom: 25px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .en-stock{
@@ -40,38 +41,6 @@
     top: 40px;
 }
 
-.foto{
-    position: relative;
-    left: 23px;
-    font-size: 18.5px;
-}
-
-.fecha-publicacion{
-    position: relative;
-    left: 19px;
-    font-size: 18.5px;
-}
-
-.escritor{
-    font-size: 18.5px;
-}
-
-.dibujante{
-    position: relative;
-    left: 10px;
-    font-size: 18.5px;
-}
-
-.valor{
-    position: relative;
-    left: 10px;
-    font-size: 18.5px;
-}
-
 .fas.fa-shopping-cart{
     font-size: 20px;
-}
-.producto{
-    width:85px;
-    opacity: 1;
 }
