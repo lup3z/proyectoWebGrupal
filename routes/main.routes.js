@@ -18,4 +18,11 @@ router.get('/productList', producListController.productList)
 
 router.get('/createProduct', producListController.createProduct)
 
+router.post('/createProduct', producListController.abmproduct)
+
+router.get('/editProduct/:id', producListController.editProduct)
+router.put('/editProduct', function(req,res){
+    res.send('Estoy editando')
+})
+
 module.exports = router

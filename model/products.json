@@ -6,13 +6,13 @@
         "actualPrice": "$900"
     },
     {
-        "id": "1",
+        "id": 1,
         "image": "../img/zona84.jpg",
         "description": "Zona84",
         "actualPrice": "$500"
     },
     {
-        "id": "2",
+        "id": 2,
         "image": "../img/akira.jpg",
         "description": "Akira",
         "actualPrice": "$1200"

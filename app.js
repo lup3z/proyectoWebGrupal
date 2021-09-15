@@ -5,8 +5,10 @@ const path = require("path");
 app.set("views",path.join(__dirname, "./views"));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
-var indexRouter = require("./routes/main.routes");
+var methodOverride = require ('method-override')
 
+var indexRouter = require("./routes/main.routes");
+app.use(methodOverride("_method"));
 app.use("/", indexRouter);
 
 

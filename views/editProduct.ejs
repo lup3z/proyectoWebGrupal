@@ -20,43 +20,28 @@
         <div class="formulario">
             <h3 class="titulo-alta-producto">Crear un producto</h3>
             <br>
-            <form action="/abm-product" method="POST" class="formulario-alta-producto">
+            <form action="/editProduct?_method=PUT" method="POST" class="formulario-alta-producto">
                 <div class="control-formulario-producto">
                     <div>
                         <label for="nombre">Nombre del producto:</label>
-                        <input type="text" name="nombre" id="nombre" class="control">
-                        <span class="feedback"></span>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="descripcion">Descripción:</label>
-                        <textarea  name="description" id="descripcion" rows="3" class="control" placeholder="Escriba la descripcion aqui.."></textarea>
+                        <input type="text" name="description" id="nombre" class="control">
                         <span class="feedback"></span>
                     </div>
                     <br>
                     <div>
                         <label for="imagen">Ingrese imagen del producto:</label>
-                        <input type="file" name="producto" accept=".jpg,.png" multiple>
+                        <input type="file" name="image" accept=".jpg,.png" multiple>
                         <span class="feedback"></span>
                     </div>
                     <br>
                     <div>
                         <label for="precio">Precio:</label>
-                        <input type="text" name="precio" id="precio" class="control">
+                        <input type="text" name="actualPrice" id="precio" class="control">
                         <span class="feedback"></span>
                     </div>
                     <br>
                     <div>
-                        <label>Categoria:</label>
-                        <select class="categoria" name="categoria">
-                            <option value="com" name="com">Comic</option>
-                            <option value="man" name="man">Manga</option>
-                            <option value="fun" name="fun">Funco</option>
-                        </select>
-                    </div>
-                    <br>
-                    <div>
-                        <button type="submit" class="boton-formulario-alta">Crear Producto</button>
+                        <button type="submit" class="boton-formulario-alta">Editar Producto</button>
                         <button type="reset" class="boton-formulario-alta">Borrar</button>
                     </div>
                 </div>
