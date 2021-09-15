@@ -8,3 +8,6 @@ Lucia: sumo ruta de post y agrego la logica al controller
 14/09
 Guille: genero base de datos de productos.
 Nico: linkeo .json con productList.ejs para visualizar productos
+
+15/09
+Lu: sumo cambios en rutas para editar, no pude resolver recuperar datos el bd json para mostrarla en pantalla y editarla
