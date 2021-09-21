@@ -3,24 +3,28 @@
         "id": "0",
         "image": "../img/spider.jpg",
         "description": "Spiderman",
+        "categoria":"comic",
         "actualPrice": "$900"
     },
     {
         "id": 1,
         "image": "../img/zona84.jpg",
         "description": "Zona84",
+        "categoria":"comic",
         "actualPrice": "$500"
     },
     {
         "id": 2,
         "image": "../img/akira.jpg",
         "description": "Akira",
+        "categoria":"comic",
         "actualPrice": "$1200"
     },
     {
         "id": "3",
         "image": "../img/cortomaltes.jpg",
         "description": "Corto Maltes",
+        "categoria":"comic",
         "actualPrice": "$2.000"
     }
 ]

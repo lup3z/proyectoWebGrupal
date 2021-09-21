@@ -20,3 +20,7 @@ body{
     font-family: 'Bebas Neue', cursive;
     background-color:plum;
 }
+
+.text-danger{
+ color: red;
+}

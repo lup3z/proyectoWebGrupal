@@ -1,3 +1,8 @@
+const newUsuario = require('../model/usuarios.json');
+const fs = require("fs");
+const path = require('path');
+const { v4: uuidv4 } = require('uuid');
+
 const controlador = {
 
     main: (req, res) => {
@@ -15,13 +20,18 @@ const controlador = {
         res.render('register')
     },
 
-    create: (req,res) => {
+    registerCreate: (req,res) => {
         let usuario = {
-            mail: req.body.mail,
+            id: uuidv4(),
+            email: req.body.email,
             nombre: req.body.nombre,
-            contrasena: req.body.contrasena,
+            password: req.body.password,
             pais: req.body.pais
-        }
+        };
+        newUsuario.push(usuario);
+        fs.writeFileSync(path.join(__dirname,"../model/usuarios.json"), JSON.stringify(newUsuario, null, 4),{
+            encoding: "utf-8",
+        });
         res.redirect("/")
     },
 }

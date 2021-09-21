@@ -5,33 +5,13 @@ const path = require("path");
 app.set("views",path.join(__dirname, "./views"));
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 var methodOverride = require ('method-override')
 
 var indexRouter = require("./routes/main.routes");
 app.use(methodOverride("_method"));
 app.use("/", indexRouter);
 
-
-/*
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./view/home.html"));
-});
-
-app.get("/register", (req, res) => {
-  res.sendFile(path.join(__dirname, "./view/register.html"));
-});
-
-app.get("/productCart", (req, res) => {
-  res.sendFile(path.join(__dirname, "./view/productCart.html"));
-});
-
-app.get("/login", (req, res) => {
-  res.sendFile(path.join(__dirname, "./view/login.html"));
-});
-
-app.get("/productDetails", (req, res) => {
-  res.sendFile(path.join(__dirname, "./view/productDetails.html"));
-});*/
 
 const puerto = process.env.PORT || 3030
 

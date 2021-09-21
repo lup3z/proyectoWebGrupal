@@ -17,8 +17,6 @@
 
     <%- include('./partials/header')%>
 
-
-
     <main class="main-formulario">
         <div class="formulario">
             <h3 class="titulo-alta">Crear cuenta</h3>
@@ -47,10 +45,14 @@
                     </div>
                     <div>
                         <label>Pais:</label>
-                        <select class="pais">
-                            <option value="arg" name="arg">Argentina</option>
-                            <option value="uy" name="uy">Uruguay</option>
-                            <option value="chi" name="chi">Chile</option>
+                        <select name = "pais" class="pais">
+                            <option value="">Eligeun Pais</option>
+                            <%
+                            let pais= ['Argentina','Uruguay','Chile']
+                            %>
+                            <% for (const unPais of pais){ %>
+                                <option value="<%= unPais %>"> <%= unPais %> </option>
+                                <% } %>
                         </select>
                     </div>
                     <div>
