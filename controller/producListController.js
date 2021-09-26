@@ -18,10 +18,46 @@ const controller = {
         res.render('createProduct')
     },
 
+    deleteProduct: (req, res) => {
+        let items = newProductsbd.readJsonFile();
+        let filteredItems = items.filter(currentItem => req.params.id != id );
+        
+        this.writeJsonFile(filteredItems);
+        //newProductsbd.des
+    },
+
     editProduct: (req, res) => {
-        let idProduct = req.params.idProduct;
+        let idProduct = products.find(req.params.id);
         let productToEdit = products[idProduct];
         res.render('editProduct', { productToEdit: productToEdit })
+       
+/*
+        products.update({
+
+
+        })
+        let productToEdit = products[idProduct];
+        res.render('productList', { product: productToEdit });
+        res.redirect('/productList');
+        */
+    },
+
+    editProductPrueba: (req, res) => {
+         
+        let prueba = {
+            description: idProduct.body.description,
+            categoria: idProduct.body.categoria,
+            actualPrice:idProduct.body.precio,
+        }
+        let jsonData = JSON.stringify(newProductsbd);
+        fs.writeFile(path.join(__dirname,"../model/nuevosProductos.json"), jsonData, function(err) {
+            if (err) {
+                console.log(err);
+            }
+        });
+
+
+        res.redirect('/productList');
     },
 
     abmproduct: (req, res) => {

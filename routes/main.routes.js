@@ -57,9 +57,11 @@ router.get('/productList', producListController.productList)
 router.get('/createProduct', producListController.createProduct)
 router.post('/createProduct', uploadFile.single('producto'), producListController.abmproduct)
 
-router.get('/editProduct/:id', producListController.editProduct)
-router.put('/editProduct', function(req,res){
-    res.send('Estoy editando')
-})
+router.get('/editProduct/:id', producListController.editProduct)//editProductPrueba
+router.put('/:id', producListController.editProductPrueba)
+
+router.get('/productList', producListController.productList)
+router.delete('/productsList/:id', producListController.deleteProduct)
+
 
 module.exports = router
