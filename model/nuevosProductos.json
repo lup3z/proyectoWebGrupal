@@ -1,23 +1,16 @@
 [
     {
-        "id": 1,
-        "nombre": "hhhh",
-        "description": "hhhh",
-        "precio": "4444",
-        "producto": "img/1632188327634_img.png"
+        "id": "079519f9-5a16-4f15-a6d5-3662b65159c5",
+        "nombre": "estela",
+        "description": "estela",
+        "precio": "22",
+        "producto": "img/1632786780673_img.png"
     },
     {
-        "id": 1,
-        "nombre": "ttt",
-        "description": "tttt",
-        "precio": "55",
-        "producto": "img/1632188381599_img.png"
-    },
-    {
-        "id": 1,
-        "nombre": "yyyy",
-        "description": "yyyy",
-        "precio": "555",
-        "producto": "img/1632188401034_img.png"
+        "id": "5432af76-8829-44e0-8e96-6882c3915922",
+        "nombre": "pepe",
+        "description": "pepe",
+        "precio": "111",
+        "producto": "img/1632787810442_img.png"
     }
 ]
