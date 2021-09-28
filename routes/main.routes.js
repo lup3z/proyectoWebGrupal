@@ -52,14 +52,16 @@ router.get('/productCart', maincontroller.productCart);
 router.get('/register', maincontroller.register);
 router.post('/register', maincontroller.registerCreate);
 
-router.get('/productList', producListController.productList)
+router.get('/productList', producListController.productList);
 
-router.get('/createProduct', producListController.createProduct)
-router.post('/createProduct', uploadFile.single('producto'), producListController.abmproduct)
+router.get('/createProduct', producListController.createProduct);
+router.post('/createProduct', uploadFile.single('producto'), producListController.abmproduct);
 
-router.get('/editProduct/:id', producListController.editProduct)
-router.put('/editProduct', function(req,res){
-    res.send('Estoy editando')
-})
+router.get('/editProduct/:id', producListController.editProduct);//editProductPrueba
+router.put('/:id', uploadFile.single('producto'), producListController.editProductPrueba);
+
+router.get('/productList', producListController.productList);
+router.delete('/editProduct/:id', producListController.deleteProduct);
+
 
 module.exports = router
