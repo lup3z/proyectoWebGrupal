@@ -57,11 +57,12 @@ router.get('/productList', producListController.productList);
 router.get('/createProduct', producListController.createProduct);
 router.post('/createProduct', uploadFile.single('producto'), producListController.abmproduct);
 
-router.get('/editProduct/:id', producListController.editProduct);//editProductPrueba
-router.put('/:id', uploadFile.single('producto'), producListController.editProductPrueba);
+router.put('/editProduct/:id', producListController.productSaveEdited);
 
 router.get('/productList', producListController.productList);
-router.delete('/editProduct/:id', producListController.deleteProduct);
 
+
+router.get('/editProduct/:id', producListController.productEdit);
+router.delete('/editProduct/:id', producListController.productDelete);
 
 module.exports = router

@@ -20,43 +20,6 @@
     <title>Editar Producto</title>
 </head>
 <%- include('./partials/header')%>
-    <body>
-        <main class="main-formulario-alta-producto">
-            <div class="formulario">
-                <h3 class="titulo-alta-producto">Editar un producto</h3>
-                <br>
-                <form action="/editProduct/<%= productToEdit.id %>?_method=PUT" method="POST" enctype="multipart/form-data"
-                    class="formulario-alta-producto">
-                    <div class="control-formulario-producto">
-                        <div>
-                            <label for="">Nombre del producto:</label>
-                            <input type="text" name="description" id="nombre" class="control"
-                                value="<%= productToEdit.nombre %>">
-                        </div>
-                        <br>
-                        <div>
-                            <label for="imagen">Ingrese imagen del producto:</label>
-                            <input type="file" name="image" accept=".jpg,.png" multiple>
-                            <span class="feedback"></span>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="precio">Precio:</label>
-                            <input type="text" name="actualPrice" id="precio" class="control"
-                                value="<%= productToEdit.precio %>">
-                            <span class="feedback"></span>
-                        </div>
-                        <br>
-                        <div>
-                            <button type="submit" class="boton-formulario-alta">Editar Producto</button>
-                        </div>
-                    </div>
-                </form>
-                <form method="POST" action="/editProduct/<%= productToEdit.id %>?_method=DELETE">
-                    <button type="submit" class="boton-formulario-alta">Borrar</button>
-                </form>
-        </main>
-
-    </body>
+   
 
 </html>

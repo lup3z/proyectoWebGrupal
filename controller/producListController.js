@@ -18,47 +18,28 @@ const controller = {
         res.render('createProduct')
     },
 
-    deleteProduct: (req, res) => {
-        const id = req.params.id;
-        newProductsbd = newProductsbd.filter((item) => item.id != id);
-
-        fs.writeFileSync(
-            path.join(__dirname, "../model/nuevosProductos.json"),
-            JSON.stringify(newProductsbd, null, 4),
-            {
-                encoding: "utf-8",
-            }
-        );
-        res.render("productList", { products: newProductsbd });
+    productEdit:(req,res)=>{
+        const id= req.params.id;
+        const productToEdit = newProductsbd.find(item => item.id == id);
+        res.render('../views/editProduct', { productToEdit: productToEdit })
     },
 
-    editProduct: (req, res) => {
-        let id = req.params.id;
-        const productToEdit = newProductsbd.find((item) => item.id === id);
-        res.render('editProduct', { productToEdit: productToEdit })
-    },
-
-    editProductPrueba: (req, res) => {
-        const id = req.params.id;
+    productSaveEdited:(req,res)=>{
+        const id= parseInt(req.params.id);
         console.log(id);
         const archivo = req.file;
-        const { nombre, precio } = req.body;
-        const indexProducto = newProductsbd.findIndex((item) => item.id === id);
-        console.log("55555"+indexProducto);
-        newProductsbd[indexProducto] = {
-            id: id,
-            nombre: nombre,
-            producto: `img/${archivo.filename}`,
-            precio: precio,
+        const {nombre, precio} = req.body;
+        const saveEditedProduct={ 
+            "id":id,
+            "nombre":nombre,
+            "producto": `img/${archivo.filename}`,
+            "precio": precio,
         }
-        fs.writeFileSync(
-            path.join(__dirname, "../model/nuevosProductos.json"),
-            JSON.stringify(db, null, 4),
-            {
-                encoding: "utf8",
-            }
-        );
-        res.redirect('/productList');
+        dbProductos[id - 1] = saveEditedProduct;
+        fs.writeFileSync(path.join(__dirname, "../model/products.json"), JSON.stringify(dbProductos, null, 4), {
+            encoding: "utf8",
+        }); 
+        res.render(path.join(__dirname, '../views/productList'), { products: dbProductos });
     },
 
     abmproduct: (req, res) => {
@@ -74,12 +55,19 @@ const controller = {
         console.log(productoNuevos);
         newProductsbd.push(productoNuevos);
         fs.writeFileSync(
-            path.join(__dirname, "../model/nuevosProductos.json"),
+            path.join(__dirname, "../model/products.json"),
             JSON.stringify(newProductsbd, null, 4),
             {
                 encoding: "utf-8",
             });
         res.render("productList", { products: newProductsbd });
+    }, 
+    productDelete: (req,res)=>{
+        const idABorrar= parseInt(req.params.id);
+        let newModel = newProductsbd.filter((item) => item.id != idABorrar);
+        newProductsbd = newModel;
+        fs.writeFileSync(path.join(__dirname, "../model/products.json"), JSON.stringify(newProductsbd, null, 4), { encoding: "utf8", }); 
+        res.render(path.join(__dirname, '../views/productList.ejs'), { products: newProductsbd });
     }
 }
 

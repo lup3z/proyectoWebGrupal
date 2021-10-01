@@ -34,6 +34,7 @@ const controlador = {
         });
         res.redirect("/")
     },
+
 }
 
 module.exports = controlador;
