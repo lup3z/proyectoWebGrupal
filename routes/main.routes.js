@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const maincontroller = require('../controller/mainController');
-const producListController = require('../controller/producListController');
+const producListController = require('../controller/producListController')
 
 const multer = require('multer');
 const path = require('path');
@@ -33,7 +33,7 @@ const validationsCreateProduct = [
 			let fileExtension = path.extname(file.originalname);
 			if (!acceptedExtensions.includes(fileExtension)) {
 				throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
-			}
+			};
 		}
 
 		return true;
@@ -57,12 +57,17 @@ router.get('/productList', producListController.productList);
 router.get('/createProduct', producListController.createProduct);
 router.post('/createProduct', uploadFile.single('producto'), producListController.abmproduct);
 
-router.put('/editProduct/:id', producListController.productSaveEdited);
+router.post('/productList',producListController.productInsert);
+
+router.get('/editProduct/:id', producListController.editProduct);
+
+router.put('/:id', uploadFile.single('producto'), producListController.editProductPrueba);
 
 router.get('/productList', producListController.productList);
+router.delete('/editProduct/:id', producListController.deleteProduct);
+
+router.get('/productDetail/:id', producListController.productDetail);
 
 
-router.get('/editProduct/:id', producListController.productEdit);
-router.delete('/editProduct/:id', producListController.productDelete);
 
 module.exports = router

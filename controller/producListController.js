@@ -1,5 +1,5 @@
 const products = require('../model/products.json');
-let newProductsbd = require('../model/nuevosProductos.json');
+let newProductsbd = require('../model/products.json');
 const fs = require("fs");
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
@@ -18,28 +18,47 @@ const controller = {
         res.render('createProduct')
     },
 
-    productEdit:(req,res)=>{
-        const id= req.params.id;
-        const productToEdit = newProductsbd.find(item => item.id == id);
-        res.render('../views/editProduct', { productToEdit: productToEdit })
+    deleteProduct: (req, res) => {
+        const id = req.params.id;
+        newProductsbd = newProductsbd.filter((item) => item.id != id);
+
+        fs.writeFileSync(
+            path.join(__dirname, "../model/products.json"),
+            JSON.stringify(newProductsbd, null, 4),
+            {
+                encoding: "utf-8",
+            }
+        );
+        res.render("productList", { products: newProductsbd });
     },
 
-    productSaveEdited:(req,res)=>{
-        const id= parseInt(req.params.id);
+    editProduct: (req, res) => {
+        let id = req.params.id;
+        const productToEdit = newProductsbd.find((item) => item.id === id);
+        res.render('editProduct', { productToEdit: productToEdit })
+    },
+
+    editProductPrueba: (req, res) => {
+        const id = req.params.id;
         console.log(id);
         const archivo = req.file;
-        const {nombre, precio} = req.body;
-        const saveEditedProduct={ 
-            "id":id,
-            "nombre":nombre,
-            "producto": `img/${archivo.filename}`,
-            "precio": precio,
+        const { nombre, precio } = req.body;
+        const indexProducto = newProductsbd.findIndex((item) => item.id === id);
+        console.log("55555"+indexProducto);
+        newProductsbd[indexProducto] = {
+            id: id,
+            nombre: nombre,
+            producto: `img/${archivo.filename}`,
+            precio: precio,
         }
-        dbProductos[id - 1] = saveEditedProduct;
-        fs.writeFileSync(path.join(__dirname, "../model/products.json"), JSON.stringify(dbProductos, null, 4), {
-            encoding: "utf8",
-        }); 
-        res.render(path.join(__dirname, '../views/productList'), { products: dbProductos });
+        fs.writeFileSync(
+            path.join(__dirname, "../model/products.json"),
+            JSON.stringify(db, null, 4),
+            {
+                encoding: "utf8",
+            }
+        );
+        res.redirect('/productList');
     },
 
     abmproduct: (req, res) => {
@@ -61,13 +80,27 @@ const controller = {
                 encoding: "utf-8",
             });
         res.render("productList", { products: newProductsbd });
-    }, 
-    productDelete: (req,res)=>{
-        const idABorrar= parseInt(req.params.id);
-        let newModel = newProductsbd.filter((item) => item.id != idABorrar);
-        newProductsbd = newModel;
-        fs.writeFileSync(path.join(__dirname, "../model/products.json"), JSON.stringify(newProductsbd, null, 4), { encoding: "utf8", }); 
-        res.render(path.join(__dirname, '../views/productList.ejs'), { products: newProductsbd });
+    },
+    productInsert: (req, res) => {
+        const newId = newProductsbd[(newProductsbd.length) - 1].id + 1
+        const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=req.body;
+        const newProduct={ // creo un objeto con toda la info del body
+                "id": newId,
+                "image": "../img/site-not-found.png",
+                "descripcion": descripcion,
+                "categoria": categoria,
+                "actualPrice": actualPrice,             
+        };
+        newProductsbd.push(newProduct);
+        fs.writeFileSync(path.join(__dirname,"../model/products.json"), JSON.stringify(newProductsbd, null, 4), {
+            encoding: "utf8",
+          });
+          res.render(path.join(__dirname, '../views/productList.ejs'), { products: newProductsbd });
+    },
+    productDetail: (req, res) => {
+        const id = req.params.id;
+        const producto = newProductsbd.find(item => item.id == id);
+        res.render(path.join(__dirname, '../views/productDetail.ejs'), { product: producto })
     }
 }
 

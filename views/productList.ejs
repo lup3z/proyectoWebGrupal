@@ -26,9 +26,7 @@
                         <li class="texto"><%= product.description  %></li>
                         <li class="texto"><%= product.actualPrice  %></li>
                         <li><i class="fas fa-shopping-cart"></i></li>
-                        <form method="POST" action="/editProduct/<%= product.id %>?_method=DELETE">
-                            <input type="submit" class="prod-detail-buy-button" value="Eliminar">
-                        </form>
+                        <li><a href="/productDetail/<%= product.id %>">Detalles</a></li>
                     </ul>
                 </tr>
                 <% }); %> 
