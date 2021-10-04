@@ -1,6 +1,6 @@
 const express = require("express"); //le asignamos a la variable express el módulo de express
 const app = express(); //guardamos en la varaible app el resultado de invocar la función express y mediante ella tenemos acceso a todas las propiedades y métodos
-
+app.use(express.static('public')); //hace que la los archivos dentro de la carpeta public sean públicos para que puedan acceder los usuarios
 
 
 
