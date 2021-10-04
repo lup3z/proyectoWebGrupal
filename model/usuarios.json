@@ -1,0 +1,33 @@
+[
+    {
+        "nombre": "lucia",
+        "pais": "Argentina"
+    },
+    {
+        "nombre": "sksksk",
+        "pais": "Argentina"
+    },
+    {
+        "nombre": "uuuu",
+        "pais": "Argentina"
+    },
+    {
+        "email": "lalala@dkdkd.com",
+        "nombre": "alalal",
+        "password": [
+            "alalal",
+            "aallala"
+        ],
+        "pais": "Argentina"
+    },
+    {
+        "id": "d3297060-3746-4518-9f59-a0efb5cbe42e",
+        "email": "lalaal@dldld.com",
+        "nombre": "lalala",
+        "password": [
+            "alalal",
+            "lalala"
+        ],
+        "pais": "Argentina"
+    }
+]

@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+    }
+
+    body{
+        background-image: url('../img/backcomic.jpg')
+    }
+
+    .contenedor1cart{
+
+        display:flex;
+        background-color:rgb(169, 203, 233);
+        opacity: 0.9;
+        padding :20px;
+        width:90%;
+        margin:auto;
+       margin-top:8px;
+       justify-content: space-between;
+        border:solid 10px cornflowerblue;
+        border-radius: 8px;
+        flex-wrap: wrap;
+    }
+
+    .contenedor2cart{
+        display:flex;
+        background-color:rgb(169, 203, 233);
+        opacity: 0.9;
+        padding :10px;
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:100px;
+        justify-content:space-around;
+        border:solid 5px cornflowerblue;
+        border-radius: 3px;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+    .contenedor3cart{
+        display:flex;
+        background-color:rgb(169, 203, 233);
+        opacity: 0.9;
+        padding :20px;
+        width:100%;
+        margin:auto;
+        margin-top: 8px;
+        justify-content: space-between;
+        border:solid 3px cornflowerblue;
+        border-radius: 8px;
+        flex-wrap: wrap;
+        border-collapse: collapse;
+        text-align:center;
+    }
+
+    tr{
+        display: flex;
+        text-align:center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    td{
+        display: flex;
+        text-align:center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .producto{
+        width:100px;
+opacity: 1;
+    }
+  
+    .descripcion {
+        font-size: 24px;
+    }
+
+    .estado{
+        font-size: 12px;
+        
+    }
+    .carro {
+        width: 280px;
+        display:flex;
+        flex-wrap: wrap;
+        background-color:rgb(255, 94, 0);
+        margin-top:5px;
+        font-size: 40px;
+        font-family:  'Bangers';
+        margin-left: 200px;
+        border-radius: 8px;
+    }
+    .vaciar{
+        width: 150px;
+        display:flex;
+        background-color:rgba(245, 22, 6, 0.637);
+       
+        font-size: 30px;
+        text-decoration: none;
+        font-family:  'Bangers';
+        color:black;
+        margin-left:700px;
+        border-radius: 8px;
+    }
+    .comprar{
+        width: 165px;
+        display:flex;
+        background-color:rgba(95, 240, 12, 0.637);
+        margin-top:0px;
+        font-size: 45px;
+        font-family:  'Bangers';
+        text-decoration: none;
+        color:black;
+        margin-left: 50px;
+        border-radius: 8px;
+    }
+
+    .segui{
+        width: 300px;
+        display:flex;
+        background-color:rgba(209, 245, 6, 0.637);
+       ;
+        font-size: 45px;
+        text-decoration: none;
+        font-family:  'Bangers';
+        color:black;
+        margin:auto;
+        border-radius: 8px;
+    }
+
+
+
+
+
+
+    .main-header-top-bar{
+        display: flex;
+        flex-direction:row;
+        padding: 0 40px;
+        justify-content: space-between;
+    }
+    
+    .botton-bodyyy{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: 50vw;
+    }
+    
+    .logo{
+        display: flex;
+        position: absolute;
+        right: 50vw;
+    }
+    
+    .icons-header{
+        font-size:30px;
+        font-family: 'bangers';
+    }
+    
+    .icon-text{
+        padding: 40px 20px;
+        font-family: 'Bangers', cursive;
+        font-size: 30px;
+    }
+    
+    .main-header{
+        font-family: 'Bangers', cursive;
+        font-size: 2rem;
+        color: rgb(66, 116, 172);
+        background-color: rgb(197, 220, 226);
+        padding: 10px;
+        height: 8rem;
+    }
+
+    .titulo{
+        display: flex; 
+        justify-content: center;
+        margin-top: auto;
+        padding: 20px;
+    }
+    .buscador{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    .top-body{
+        background-image: url("/img/pexels-dayvison-tadeu-4142511.jpg");
+        background-size: cover;
+        background-position: center;
+        border: solid 3px olive;
+        padding: 30px
+    }
+    .pie{
+        background-color: palegoldenrod;
+        padding: 90px;
+    }
+    
+    .control {
+        width: 100%;
+        padding: 8px;
+    }
+    
+    button, input, optgroup, select, textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+    }
+    
+    
+    
+    .titulo-alta{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    
+    .pais{
+        border: 30px;
+    }
+
+
+    

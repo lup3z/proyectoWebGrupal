@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a0f8081e82.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rampart+One&family=Special+Elite&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/stylescart.css">
+        <link rel="stylesheet" href="./css/productList.css">
+        <title>Product List</title>
+    </head>
+<body>
+    <%- include('./partials/header')%>
+    <main>
+        <h2 class="en-stock">EN STOCK</h2>
+        <div class="contenedor2cart">
+            <% products.forEach(product => { %>
+                <tr>
+                    <ul type="none" class="contenedor3cart">
+                        <img class ="producto" src= <%= product.image  %>  
+                        <li class="texto"><%= product.description  %></li>
+                        <li class="texto"><%= product.actualPrice  %></li>
+                        <li><i class="fas fa-shopping-cart"></i></li>
+                        <li><a href="/productDetail/<%= product.id %>">Detalles</a></li>
+                    </ul>
+                </tr>
+                <% }); %> 
+        </div>
+        
+    </main>
+</body>
+</html>

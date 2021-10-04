@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
+
+.main-formulario-alta-producto {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    
+}
+
+body{
+    background-image: url("/img/pngwing.com (2).png");
+    color: rgb(20, 12, 12);
+    font-family: 'Bebas Neue', cursive;
+    background-color:plum;
+}
+
+.text-danger{
+ color: red;
+}
