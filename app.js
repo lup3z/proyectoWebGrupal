@@ -1,5 +1,9 @@
-const express = require("express");
-const app = express();
+const express = require("express"); //le asignamos a la variable express el módulo de express
+const app = express(); //guardamos en la varaible app el resultado de invocar la función express y mediante ella tenemos acceso a todas las propiedades y métodos
+
+
+
+
 app.set("view engine", "ejs");
 const path = require("path");
 app.set("views",path.join(__dirname, "./views"));
@@ -20,3 +24,5 @@ app.listen(puerto, () => {
 });
 
 module.exports = app;
+
+
