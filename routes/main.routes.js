@@ -1,5 +1,5 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express'); //le asignamos a la variable express el módulo de express
+const router = express.Router(); //en la variable router guardamos el método .Router de express
 const maincontroller = require('../controller/mainController');
 const producListController = require('../controller/producListController')
 

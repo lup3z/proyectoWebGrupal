@@ -1,0 +1,12 @@
+.contenedorA{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    
+}
+
+.contenedorB{
+    text-align: center;
+}

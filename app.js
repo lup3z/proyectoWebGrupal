@@ -1,23 +1,22 @@
-const express = require("express"); //le asignamos a la variable express el módulo de express
-const app = express(); //guardamos en la varaible app el resultado de invocar la función express y mediante ella tenemos acceso a todas las propiedades y métodos
-app.use(express.static('public')); //hace que la los archivos dentro de la carpeta public sean públicos para que puedan acceder los usuarios
-
-
-
-app.set("view engine", "ejs");
-const path = require("path");
-app.set("views",path.join(__dirname, "./views"));
-app.use(express.static('public'));
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-var methodOverride = require ('method-override')
-
-var indexRouter = require("./routes/main.routes");
-app.use(methodOverride("_method"));
-app.use("/", indexRouter);
-
-
+const express = require("express"); 
+const path = require("path"); 
+const methodOverride = require ('method-override');
+const indexRouter = require ("./routes/main.routes");
+const app = express(); 
 const puerto = process.env.PORT || 3030
+
+app.set("views",path.join(__dirname, "./views"));
+app.set("view engine", "ejs");
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.static('public')); 
+app.use(methodOverride("_method"));
+app.use("/", indexRouter); 
+app.use((req, res, next) => {
+  res.status(404).render('not-found')
+});
+
 
 app.listen(puerto, () => {
   console.log(`Server is running on PORT : ${puerto}`);
