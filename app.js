@@ -1,11 +1,11 @@
 const express = require("express"); 
 const path = require("path"); 
 const methodOverride = require ('method-override');
-const indexRouter = require ("./routes/main.routes");
+const indexRouter = require ("./src/routes/main.routes");
 const app = express(); 
 const puerto = process.env.PORT || 3030
 
-app.set("views",path.join(__dirname, "./views"));
+app.set("views",path.join(__dirname, "./src/views"));
 app.set("view engine", "ejs");
 
 app.use(express.json());
