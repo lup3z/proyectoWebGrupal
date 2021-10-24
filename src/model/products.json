@@ -285,5 +285,12 @@
         "description": "ffffffff",
         "precio": "55555",
         "producto": "img/1635020094303_img.png"
+    },
+    {
+        "id": "5e14272c-9239-4f91-a33a-45998be4f2b1",
+        "nombre": "super guille",
+        "description": "!!!!!!!",
+        "precio": "1",
+        "producto": "img/1635103832958_img.jpg"
     }
 ]
