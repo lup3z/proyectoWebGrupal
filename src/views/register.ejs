@@ -19,29 +19,52 @@
 
     <main class="main-formulario">
         <div class="formulario">
+
             <h3 class="titulo-alta">Crear cuenta</h3>
 
+           
+                
             <form action="/register" method="POST" class="formulario-alta">
                 <div class="control-formulario">
                     <div>
                         <label for="email">Ingrese eMail:</label>
                         <input type="email" name="email" id="email" class="control">
                         <span class="feedback"></span>
+                        <% if (locals.errors && errors.email) { %>
+                            <div class="text-danger">
+                                <%= errors.email.msg %> 
+                            </div>
+                        <% } %>
                     </div>
                     <div>
                         <label for="nombre">Ingrese nombre:</label>
                         <input type="text" name="nombre" id="nombre" class="control">
                         <span class="feedback"></span>
+                        <% if (locals.errors && errors.nombre) { %>
+									<div class="text-danger">
+										<%= errors.nombre.msg %> 
+									</div>
+								<% } %>
                     </div>
                     <div>
                         <label for="password">Ingrese contraseña:</label>
                         <input type="password" name="password" id="password" class="control">
                         <span class="feedback"></span>
+                        <% if (locals.errors && errors.password) { %>
+                            <div class="text-danger">
+                                <%= errors.password.msg %> 
+                            </div>
+                        <% } %>
                     </div>
                     <div>
                         <label for="password">Confirme contraseña:</label>
                         <input type="password" name="password" id="password" class="control">
                         <span class="feedback"></span>
+                        <% if (locals.errors && errors.password) { %>
+                            <div class="text-danger">
+                                <%= errors.password.msg %> 
+                            </div>
+                        <% } %>
                     </div>
                     <div>
                         <label>Pais:</label>

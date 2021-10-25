@@ -29,11 +29,6 @@ const controlador = {
         const resultValidation = validationResult(req);
        
         
-		
-
-
-
-
 		if (resultValidation.errors.length > 0) {
 			
             
