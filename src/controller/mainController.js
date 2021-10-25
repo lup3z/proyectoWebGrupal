@@ -51,4 +51,4 @@ const controlador = {
 	
 
 
-module.exports = controlador;
+module.exports = controlador
