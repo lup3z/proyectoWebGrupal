@@ -3,6 +3,11 @@ const fs = require("fs");
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 
+const bcrypt = require("bcryptjs");
+const { validationResult } = require('express-validator');
+
+
+
 const controlador = {
 
     main: (req, res) => {
@@ -21,20 +26,29 @@ const controlador = {
     },
 
     registerCreate: (req,res) => {
-        let usuario = {
-            id: uuidv4(),
-            email: req.body.email,
-            nombre: req.body.nombre,
-            password: req.body.password,
-            pais: req.body.pais
-        };
-        newUsuario.push(usuario);
-        fs.writeFileSync(path.join(__dirname,"../model/usuarios.json"), JSON.stringify(newUsuario, null, 4),{
-            encoding: "utf-8",
-        });
-        res.redirect("/")
-    },
+        const resultValidation = validationResult(req);
+       
+        
+		if (resultValidation.errors.length > 0) {
+			
+            
+             return res.render('register', {
+				errors: resultValidation.mapped(),
+				oldData: req.body
+			});
+		}
 
+		;
+	},
+	login: (req, res) => {
+		return res.render('userLoginForm');
+	},
+     profile: (req, res) => {
+		return res.render('userProfile');
+	},
 }
+
+	
+
 
 module.exports = controlador;
