@@ -292,5 +292,12 @@
         "description": "!!!!!!!",
         "precio": "1",
         "producto": "img/1635103832958_img.jpg"
+    },
+    {
+        "id": "729e6d76-1f12-4082-abff-d20541639452",
+        "nombre": "dsafa",
+        "description": "fgad",
+        "precio": "10",
+        "producto": "img/1635105019851_img.jpg"
     }
 ]
