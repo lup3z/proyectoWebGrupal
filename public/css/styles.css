@@ -3,12 +3,7 @@
     padding: 0px;
 	box-sizing: border-box;
 }
-.main-header-top-bar{
-    display: flex;
-    flex-direction:row;
-    padding: 0 40px;
-    justify-content: space-between;
-}
+
 .botton-bodyyy{
     display: flex;
     justify-content: center;
@@ -48,24 +43,9 @@
     100%{margin-left: -300%;}
 }
 
-.logo{
-    display: flex;
-    position: absolute;
-    right: 50vw;
-}
 
-.icons-header{
-    position: absolute;
-    right: 10vw;
-    justify-content: flex-end;
-    padding: 30px;
-    font-size: 30px;
-}
-.icon-text{
-    padding: 40px 20px;
-    font-family: 'Bangers', cursive;
-    font-size: 30px;
-}
+
+
 
 .titulo{
     display: flex; 
@@ -74,16 +54,6 @@
     padding: 10px;
 }
   
-
-.main-header{
-    font-family: 'Bangers', cursive;
-    font-size: 2rem;
-    color: rgb(66, 116, 172);
-    background-color: rgb(197, 220, 226);
-    padding: 10px;
-    height: 8rem;
-}
-
 .buscador{
     font-family:Arial, Helvetica, sans-serif;
     display: flex;
