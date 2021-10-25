@@ -15,6 +15,7 @@
     },
     {
         "id": "62678f62-4468-4543-9fd7-f3589bfeafb3",
+<<<<<<< HEAD
         "nombre": "Nicolas",
         "description": "12123123123",
         "precio": "16465",
@@ -299,5 +300,11 @@
         "description": "fgad",
         "precio": "10",
         "producto": "img/1635105019851_img.jpg"
+=======
+        "nombre": "yyy",
+        "description": "yyyy",
+        "producto": "img/1635123918572_img.png",
+        "precio": "6666"
+>>>>>>> 1f6964807a4bb2a24073568965d8857469c39dd7
     }
 ]

@@ -70,11 +70,10 @@ router.post('/createProduct', uploadFile.single('producto'),validationsCreatePro
 router.post('/productList',producListController.productInsert);
 
 router.get('/editProduct/:id', producListController.editProduct);
-
 router.put('/:id', uploadFile.single('producto'), producListController.editProductPrueba);
 
 router.get('/productList', producListController.productList);
-router.delete('/editProduct/:id', producListController.deleteProduct);
+router.delete('/:id', producListController.deleteProduct);
 
 router.get('/productDetail/:id', producListController.productDetail);
 
