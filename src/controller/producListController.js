@@ -34,7 +34,6 @@ const controller = {
 
     editProduct: (req, res) => {
         let id = req.params.id;
-        console.log(id)
         let productToEdit = products.find((item) => item.id === id);
         res.render('editProduct', { products: productToEdit })
     },
@@ -71,7 +70,6 @@ const controller = {
             categoria: req.body.categoria,
             producto: `img/${archivo.filename}`,
         };
-        console.log(productoNuevos);
         products.push(productoNuevos);
         fs.writeFileSync(
             path.join(__dirname, "../model/products.json"),
