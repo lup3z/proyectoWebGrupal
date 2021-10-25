@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
+
+.main-header{
+    background-color: rgb(197, 220, 226);
+    padding: 20px;
+    height: 140px; 
+}
+
+ .icon{
+    transform: scaleX(-1);
+    height: 100px;
+    
+}
+
+.logo-y-nombre{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;  
+}
+
+.icon-text{
+    font-family: 'Bangers', cursive;
+    font-size: 35px;
+    align-self: center;
+} 
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;   
+}  
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.barra-de-busqueda, .spidi{
+    display: none;
+}
+
+
+
+@media (min-width: 768px){
+    .main-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .icon-text{
+        font-size: 30px;
+    }
+
+    .navbar{
+        font-size: 20px;
+    }
+
+    li{
+        padding: 5px;
+    }
+    .barra-de-busqueda .spidi{
+        display: none;
+    }
+}
+    
+@media (min-width: 1200px){
+    .main-header{
+        display: flex;
+        justify-content: unset;
+    }
+    
+    .logo-y-nombre{
+        position: absolute;
+        left: 60px;
+    }
+    .navbar{
+        position: absolute;
+        right: 50px;
+        align-self: flex-end;
+    }
+    .barra-de-busqueda{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 53px;
+        
+    }
+    .barra-busqueda{   
+        width: 600px;
+    }
+    .spidi{
+        font-style: italic;
+        display: flex;
+        align-self: flex-end;
+        position: absolute;
+        left: 160px;
+
+    }
+}
+
+
+
+    
