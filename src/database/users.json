@@ -93,5 +93,12 @@
   "nombre": "mari",
   "password": "$2a$10$qG2StWVL2ZmLuNUUESUGce0jRsjPH7DlXgRFkU1Xr1PUEaVmlEdGS",
   "pais": "Argentina"
+ },
+ {
+  "id": 12,
+  "email": "guillermosebastianbarra@gm.com",
+  "nombre": "diego",
+  "password": "$2a$10$SDiyY.RYLQoryV6/ZsxNpe090Wjncg0uaAKyK.rHcUiyyArvyVyWK",
+  "pais": "Argentina"
  }
 ]
