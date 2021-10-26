@@ -1,10 +1,52 @@
 [
-    {
-     "id": 1,
-     "fullName": "Guille Barra",
-     "email": "Guille@dh.com",
-     "password": "$2a$10$kbHNepDXku1qKDytFK3RpuLtkW/dqMGDi4jXL7lNQUF8lm1HZ2.N.",
-     "country": "Burkina",
-     "avatar": "1609285636788_img.jpg"
-    }
-   ]
+ {
+  "id": 1,
+  "email": "guillermosebastianbarra@gmail.com",
+  "nombre": " guille",
+  "password": [
+   "123",
+   "1123"
+  ],
+  "pais": "Argentina"
+ },
+ {
+  "id": 2,
+  "email": "lucia@dh.com",
+  "nombre": "lucia",
+  "password": [
+   "abc",
+   "abc"
+  ],
+  "pais": "Uruguay"
+ },
+ {
+  "id": 3,
+  "email": "nico@dh.com",
+  "nombre": "nico",
+  "password": [
+   "ooo",
+   "ooo"
+  ],
+  "pais": "Uruguay"
+ },
+ {
+  "id": 4,
+  "email": "jose@dh.com",
+  "nombre": "pepe",
+  "password": [
+   "kkk",
+   "kkk"
+  ],
+  "pais": "Argentina"
+ },
+ {
+  "id": 5,
+  "email": "jia@h.com",
+  "nombre": "jia",
+  "password": [
+   "123",
+   "123"
+  ],
+  "pais": "Chile"
+ }
+]

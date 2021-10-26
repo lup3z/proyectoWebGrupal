@@ -1,4 +1,6 @@
+
 const newUsuario = require('../model/usuarios.json');
+const User = require('../model/Users');
 const fs = require("fs");
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
@@ -37,6 +39,10 @@ const controlador = {
 				oldData: req.body
 			});
 		}
+        let userToCreate = {
+            ...req.body
+        }
+        User.create(userToCreate);
 		return res.send('ok sirve');
 	},
 	
