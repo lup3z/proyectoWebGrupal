@@ -37,15 +37,9 @@ const controlador = {
 				oldData: req.body
 			});
 		}
-
-		;
+		return res.send('ok sirve');
 	},
-	login: (req, res) => {
-		return res.render('userLoginForm');
-	},
-     profile: (req, res) => {
-		return res.render('userProfile');
-	},
+	
 }
 
 	
