@@ -72,5 +72,26 @@
   "nombre": " guille",
   "password": "$2a$10$s/xbNCL2BGEeMn3UR8i1IuhABRaFWEeSMV6jTSboDy1rAgXfLfz4.",
   "pais": "Argentina"
+ },
+ {
+  "id": 9,
+  "email": "guillermosebastianbarra@mail.com",
+  "nombre": " guille",
+  "password": "$2a$10$ycWViiiYNSs84x0.nfDo.OA5xj.EKvb8ByKxS4OmxYL0rSeCAXfU6",
+  "pais": "Argentina"
+ },
+ {
+  "id": 10,
+  "email": "joe@hf.com",
+  "nombre": "joe",
+  "password": "$2a$10$JgY3y9kWoOb9f.14GW5vdOlyFNkWDtReVspWb3ExK2VhhFzbuiwk.",
+  "pais": "Argentina"
+ },
+ {
+  "id": 11,
+  "email": "maria@hf.com",
+  "nombre": "mari",
+  "password": "$2a$10$qG2StWVL2ZmLuNUUESUGce0jRsjPH7DlXgRFkU1Xr1PUEaVmlEdGS",
+  "pais": "Argentina"
  }
 ]

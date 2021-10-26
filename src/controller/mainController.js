@@ -38,6 +38,23 @@ const controlador = {
 				errors: resultValidation.mapped(),
 				oldData: req.body
 			});
+        }
+        let userInDB = User.findByField('email', req.body.email);
+
+		if (userInDB) {
+			return res.render('Register', {
+				errors: {
+					email: {
+						msg: 'Este email ya está registrado'
+					}
+				},
+				oldData: req.body
+			});
+
+
+
+
+
 		}
         let userToCreate = {
             ...req.body,
@@ -45,8 +62,8 @@ const controlador = {
             
             
         }
-        User.create(userToCreate);
-		return res.send('ok sirve');
+        let userCreated = User.create(userToCreate);
+		return res.redirect('/login');
 	},
 	
 }
