@@ -48,5 +48,29 @@
    "123"
   ],
   "pais": "Chile"
+ },
+ {
+  "id": 6,
+  "email": "jose@d.com",
+  "nombre": "uu",
+  "password": [
+   "uu",
+   "uu"
+  ],
+  "pais": "Argentina"
+ },
+ {
+  "id": 7,
+  "email": "guillermosebastianbarra@gmil.com",
+  "nombre": " guille",
+  "password": "wwwww",
+  "pais": "Argentina"
+ },
+ {
+  "id": 8,
+  "email": "guillermosebastianbarra@gil.com",
+  "nombre": " guille",
+  "password": "$2a$10$s/xbNCL2BGEeMn3UR8i1IuhABRaFWEeSMV6jTSboDy1rAgXfLfz4.",
+  "pais": "Argentina"
  }
 ]

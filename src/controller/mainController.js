@@ -5,7 +5,7 @@ const fs = require("fs");
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 
-const bcrypt = require("bcryptjs");
+const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator');
 
 
@@ -40,7 +40,10 @@ const controlador = {
 			});
 		}
         let userToCreate = {
-            ...req.body
+            ...req.body,
+            password: bcryptjs.hashSync(req.body.password, 10),
+            
+            
         }
         User.create(userToCreate);
 		return res.send('ok sirve');
