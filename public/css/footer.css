@@ -42,3 +42,12 @@
     text-shadow: 0 0 15px  #4dc247;
     transition: all 0.5s ease;
 }
+
+.footer-mensaje{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    margin-top: 8px;
+    text-align: center;
+}
