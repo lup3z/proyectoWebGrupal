@@ -100,5 +100,40 @@
   "nombre": "diego",
   "password": "$2a$10$SDiyY.RYLQoryV6/ZsxNpe090Wjncg0uaAKyK.rHcUiyyArvyVyWK",
   "pais": "Argentina"
+ },
+ {
+  "id": 13,
+  "email": "nmgomezok@gmail.com",
+  "nombre": "Nicolas Gomez",
+  "password": "$2a$10$hg6JKhSYxXT1BmJspl5Ju.E5NGg93vbJpHteeIUnHEUrLPjpmOuyy",
+  "pais": "Argentina"
+ },
+ {
+  "id": 14,
+  "email": "coco@coco.com",
+  "nombre": "coco",
+  "password": "$2a$10$PYlUyOJmqOlVtyG9k5oByudh2np7QNvP8cG.p7bix/XNcRnHKTGkm",
+  "pais": "Argentina"
+ },
+ {
+  "id": 15,
+  "email": "pedro@pedro.com",
+  "nombre": "Pedro Juan",
+  "password": "$2a$10$SHT/EHPr7lJOQEshNAI1Seq.enKwarauDxkWxzhK1HfXuLet8SEfO",
+  "pais": "Chile"
+ },
+ {
+  "id": 16,
+  "email": "hola@hola.com",
+  "nombre": "Nicolas",
+  "password": "$2a$10$hZ9f88H/HFEuFud1fupamuDeBaYWHNg8foW4hPuuGL/0KSv7obtqC",
+  "pais": "Chile"
+ },
+ {
+  "id": 17,
+  "email": "natalia@natalia.com",
+  "nombre": "natalia",
+  "password": "$2a$10$OsLqxvVmOIWI6NzYaEwqPuovFkyeRURYjtkLmJiRgbRYRBJHVJBJO",
+  "pais": "Chile"
  }
 ]

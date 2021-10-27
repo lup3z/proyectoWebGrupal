@@ -1,4 +1,7 @@
 const express = require("express"); 
+const session = require('express-session')
+const cookies = require('cookie-parser');
+const userLoggedMiddleware = require ('./src/middlewares/userLoggedMiddleware');
 const path = require("path"); 
 const methodOverride = require ('method-override');
 const indexRouter = require ("./src/routes/main.routes");
@@ -8,6 +11,15 @@ const puerto = process.env.PORT || 3030
 app.set("views",path.join(__dirname, "./src/views"));
 app.set("view engine", "ejs");
 
+
+app.use(session({
+  secret: "Shhh, It's a secret",
+  resave: false,
+saveUninitialized: false,
+}));
+
+app.use(cookies());
+app.use(userLoggedMiddleware);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public')); 

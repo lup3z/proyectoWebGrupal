@@ -15,14 +15,16 @@ const controlador = {
     main: (req, res) => {
        res.render('home')
     },
-   login: (req,res) => {
-       res.render('login')
+   login: (req,res) => {   
+        res.render('login')
     },
 
     productCart: (req,res) => {
         res.render('productCart')
     },
-
+    profile: (req, res) =>{
+        res.render('profile', {users: req.session.userLogged})
+    },
     register: (req,res) => {
         res.render('register')
     },
@@ -69,11 +71,16 @@ const controlador = {
         let userToLogin=User.findByField( 'email', req.body.email);
         if(userToLogin){
             let isOKThePass= bcryptjs.compareSync(req.body.password, userToLogin.password)
-             if( isOKThePass ){
-                 req.session.userLogged = userToLogin;
-                 res.redirect('/')
+            if( isOKThePass ){
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+
+                if(req.body.remember){
+                    res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 2 })
+                }
+                res.redirect('/profile')
                  
-             }else{
+            }else{
               res.render('login', {
                  errors: {
                      email:{
@@ -91,7 +98,13 @@ const controlador = {
             }
         });
     }
-},
+
+    },
+    logout: (req, res) =>{
+        res.clearCookie('userEmail');
+        req.session.destroy();
+        return res.redirect('/')
+    }
 }
 
 	

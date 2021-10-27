@@ -207,6 +207,11 @@ button, input, optgroup, select, textarea {
     color: red;
 }
 
+.remember{
+    color: white;
+}
+
+
 
 
 
@@ -271,3 +276,4 @@ button, input, optgroup, select, textarea {
     margin-left: 165px;
     border-radius: 8px;
 }
+
