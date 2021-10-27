@@ -68,19 +68,7 @@
                             </div>
                         <% } %>
                     </div>
-                    <div>
-                        <label for="password">Confirme contraseña:</label>
-                        <input type="password" 
-                        name="password" 
-                        id="password" 
-                        class="control">
-                        <span class="feedback"></span>
-                        <% if (locals.errors && errors.password) { %>
-                            <div class="text-danger">
-                                <%= errors.password.msg %> 
-                            </div>
-                        <% } %>
-                    </div>
+                    
                     <div>
                         <label>Pais:</label>
                         <select name = "pais" class="pais">

@@ -1,9 +1,11 @@
+
 const newUsuario = require('../model/usuarios.json');
+const User = require('../model/Users');
 const fs = require("fs");
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
 
-const bcrypt = require("bcryptjs");
+const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator');
 
 
@@ -36,19 +38,37 @@ const controlador = {
 				errors: resultValidation.mapped(),
 				oldData: req.body
 			});
-		}
+        }
+        let userInDB = User.findByField('email', req.body.email);
 
-		;
+		if (userInDB) {
+			return res.render('Register', {
+				errors: {
+					email: {
+						msg: 'Este email ya está registrado'
+					}
+				},
+				oldData: req.body
+			});
+
+
+
+
+
+		}
+        let userToCreate = {
+            ...req.body,
+            password: bcryptjs.hashSync(req.body.password, 10),
+            
+            
+        }
+        let userCreated = User.create(userToCreate);
+		return res.redirect('/login');
 	},
-	login: (req, res) => {
-		return res.render('userLoginForm');
-	},
-     profile: (req, res) => {
-		return res.render('userProfile');
-	},
+	
 }
 
 	
 
 
-module.exports = controlador;
+module.exports = controlador
