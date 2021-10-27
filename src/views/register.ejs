@@ -24,7 +24,7 @@
 
            
                 
-            <form action="/register" method="POST" class="formulario-alta">
+            <form action="/register" method="POST" class="formulario-alta"  enctype="multipart/form-data">
                 <div class="control-formulario">
                     <div>
                         <label for="email">Ingrese eMail:</label>
@@ -68,7 +68,11 @@
                             </div>
                         <% } %>
                     </div>
-                    
+                    <div>
+                        <label for="imagen">Ingresa tu foto:</label>
+                        <input type="file" name="perfil" accept=".jpg,.png" multiple>
+                        <span class="feedback"></span>
+                    </div>
                     <div>
                         <label>Pais:</label>
                         <select name = "pais" class="pais">

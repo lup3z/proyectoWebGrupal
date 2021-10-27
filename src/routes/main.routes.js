@@ -60,7 +60,7 @@ router.get('/login', maincontroller.login);
 router.get('/productCart', maincontroller.productCart);
 
 router.get('/register', maincontroller.register);
-router.post('/register',uservalidation, maincontroller.registerCreate);
+router.post('/register',uploadFile.single('producto') ,uservalidation, maincontroller.registerCreate);
 
 router.get('/productList', producListController.productList);
 
