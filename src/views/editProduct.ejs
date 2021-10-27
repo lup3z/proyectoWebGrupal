@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/a0f8081e82.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:ital,wght@0,700;1,700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rampart+One&family=Special+Elite&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <base href="/">
+        <link rel="stylesheet" href="./css/createProduct.css">
+        <link rel="stylesheet" href="./css/loginstyles.css">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/stylescart.css">
+        <title>Editar Producto</title>
+    </head>
+    
+    
+        <body>
+            <%- include('./partials/header')%>
+        <main class="main-formulario-alta-producto">
+            <div class="formulario">
+                <h3 class="titulo-alta-producto">Editar un producto</h3>
+                <br>
+                <form action="/<%= products.id %>?_method=PUT" method="POST" enctype="multipart/form-data"
+                    class="formulario-alta-producto">
+                    <div class="control-formulario-producto">
+                        <div>
+                            <label for="name">Nombre del producto:</label>
+                            <input type="text" name="nombre" id="nombre" class="control"
+                                value="<%= products.nombre %>">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="descripcion">Descripción:</label>
+                            <textarea name="description" id="descripcion" rows="3" class="control"
+                                placeholder="Escriba la descripcion aqui.."></textarea>
+                            <span class="feedback"></span>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="imagen">Ingrese imagen del producto:</label>
+                            <input type="file" name="producto" accept=".jpg,.png" multiple>
+                            <span class="feedback"></span>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="precio">Precio:</label>
+                            <input type="text" name="precio" id="precio" class="control"
+                                value="<%= products.precio %>">
+                            <span class="feedback"></span>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="submit" class="boton-formulario-alta">Editar Producto</button>
+                        </div>
+                    </div>
+                </form>
+                <form method="POST" action="/<%= products.id %>?_method=DELETE">
+                    <button type="submit" class="boton-formulario-alta">Borrar</button>
+                </form>
+        </main>
+
+    </body>
+
+</html>

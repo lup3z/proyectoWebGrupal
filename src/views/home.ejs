@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a0f8081e82.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rampart+One&family=Special+Elite&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Home</title>
+    <%- include('./partials/header')%>
+        <main>
+            <div class="body">
+                <div class="top-body">
+                    <div class="transbox">
+                        <h2 class="titulo">Bienvenidos a nuestra tienda!</h2>
+                        <div class="buscador">
+                            <input type="text" placeholder="Buscar productos, marcas">
+                            <select name="categorias">
+                                <option value="">Categorias</option>
+                                <% let categorias=['Comic','Manga','Novelas Graficas'] %>
+                                    <% for (const unaCategoria of categorias){ %>
+                                        <option value="<%= unaCategoria %>">
+                                            <%= unaCategoria %>
+                                        </option>
+                                        <% } %>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="botton-body">
+                    <ul>
+                        <li>
+                            <img src="./img/pexels-daria-sannikova-5266499.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/pexels-erik-mclean-7768663.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="./img/pexels-erik-mclean-7768661.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+        <%- include('./partials/footer')%>
+
+</html>

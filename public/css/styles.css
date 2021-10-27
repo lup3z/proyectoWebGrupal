@@ -1,0 +1,194 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
+
+.botton-bodyyy{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 50vw;
+}
+.botton-body{
+    width: 100%;
+    overflow: hidden;
+}
+
+.botton-body ul{
+    display: flex;
+    justify-content: center;
+    animation: cambio 20s infinite alternate linear;
+}
+
+.botton-body li{
+    width: 100%;
+    list-style: none;
+}
+
+/*
+.botton-body img{
+    width: 100%;
+    height: 100%;
+}*/
+
+@keyframes cambio {
+    0%{margin-left: 0%;}
+    20% {margin-left: 0%;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+
+
+
+.titulo{
+    display: flex; 
+    justify-content: center;
+    margin-top: auto;
+    padding: 10px;
+}
+  
+.buscador{
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    opacity: none;
+    justify-content: center;
+    font-size: 20px;
+}
+.top-body{
+    font-family: 'Special Elite', cursive;
+    font-size: x-large;
+    color: #de9393;
+    background-image: url("/img/pexels-dayvison-tadeu-4142511.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 160px;
+}
+
+.transbox {
+    position: absolute;
+    z-index: 1;
+    right: 25vw;
+    top: 140px;
+    margin: 40px;
+    background-color: #ffffff;
+    opacity: 0.6;
+    color: #000000;
+    padding: 40px;
+  }
+
+.pie{
+    background-color: palegoldenrod;
+    padding: 90px;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+}
+.form-control  is invalid
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.formulario-alta {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.titulo-alta{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.main-formulario{
+    background-image: url("/img/pexels-erik-mclean-7809123.jpg");
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    background-size: cover;
+    background-position: center;
+}
+
+.boton-formulario{
+    border-radius: 5px;
+    margin: 50px;
+    padding: 5px 10px;
+}
+
+.pais{
+    margin: 20px;
+    border: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.imgprod{
+    display: flex;
+    position:relative;
+    justify-content: center;
+    height: 180px;
+    
+}
+
+.descripcion{
+    font-family : Arial;
+    display: flex;
+    position:relative;
+    left:320px;
+    top:150px;
+}
+.precio{
+    font-family : Arial;
+    display: flex;
+    position:relative;
+    left:600px;
+    top:0px;
+    font-size:40px
+
+}
+.comprar{
+    font-family : Arial;
+    display: flex;
+    position:relative;
+    left:600px;
+    top: -165px;
+    font-size:30px
+
+}
+
+.segui{
+    font-family : Arial;
+    display: flex;
+    position:relative;
+    left:800px;
+    top: 10px;
+    font-size:30px
+
+}
+
+.td-comics{
+    background-color: white;
+}

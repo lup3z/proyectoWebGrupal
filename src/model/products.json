@@ -1,0 +1,23 @@
+[
+    {
+        "id": "079519f9-5a16-4f15-a6d5-3662b65159c5",
+        "nombre": "estela",
+        "description": "estela",
+        "precio": "22",
+        "producto": "img/1632786780673_img.png"
+    },
+    {
+        "id": "5432af76-8829-44e0-8e96-6882c3915922",
+        "nombre": "pepe",
+        "description": "pepe",
+        "precio": "111",
+        "producto": "img/1632787810442_img.png"
+    },
+    {
+        "id": "62678f62-4468-4543-9fd7-f3589bfeafb3",
+        "nombre": "yyy",
+        "description": "yyyy",
+        "producto": "img/1635123918572_img.png",
+        "precio": "6666"
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "email": "lalala@dkdkd.com",
+        "nombre": "alalal",
+        "password": [
+            "alalal",
+            "aallala"
+        ],
+        "pais": "Argentina"
+    },
+    {
+        "id": "d3297060-3746-4518-9f59-a0efb5cbe42e",
+        "email": "lalaal@dldld.com",
+        "nombre": "lalala",
+        "password": [
+            "alalal",
+            "lalala"
+        ],
+        "pais": "Argentina"
+    },
+    {
+        "id": "8d4834fb-34cd-4bfe-84af-f1cebbdb4764",
+        "email": "lalala@gmail.com",
+        "nombre": "lucia",
+        "password": [
+            "pepe123",
+            "pepe123"
+        ],
+        "pais": "Argentina"
+    },
+    {
+        "id": "186bddc0-1f26-4687-b9c4-0e85a76e23f5",
+        "email": "guillermosebastianbarra@gmail.com",
+        "nombre": "gfgf",
+        "password": [
+            "hghg",
+            "ghghg"
+        ],
+        "pais": "Argentina"
+    },
+    {
+        "id": "ac4c268c-2853-44a6-a9c4-5a3d23961689",
+        "email": "guillermosebastianbarra@hotmail.com",
+        "nombre": "ffff",
+        "password": [
+            "fffff",
+            "fffff"
+        ],
+        "pais": "Argentina"
+    }
+]

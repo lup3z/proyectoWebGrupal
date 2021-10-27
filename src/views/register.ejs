@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/a0f8081e82.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Registro</title>
+
+    <%- include('./partials/header')%>
+
+    <main class="main-formulario">
+        <div class="formulario">
+
+            <h3 class="titulo-alta">Crear cuenta</h3>
+
+           
+                
+            <form action="/register" method="POST" class="formulario-alta">
+                <div class="control-formulario">
+                    <div>
+                        <label for="email">Ingrese eMail:</label>
+                        <input type="email" 
+                        name="email" 
+                        id="email" 
+                        class="control"
+                        value="<%= locals.oldData ? oldData.email : null %>">
+                        <span class="feedback"></span>
+                        <% if (locals.errors && errors.email) { %>
+                            <div class="text-danger">
+                                <%= errors.email.msg %> 
+                            </div>
+                        <% } %>
+                    </div>
+                    <div>
+                        <label for="nombre">Ingrese nombre:</label>
+                        <input type="text" 
+                        name="nombre" 
+                        id="nombre" 
+                        class="control"
+                        value="<%= locals.oldData ? oldData.nombre : null %>">
+                        <span class="feedback"></span>
+                        <% if (locals.errors && errors.nombre) { %>
+									<div class="text-danger">
+										<%= errors.nombre.msg %> 
+									</div>
+								<% } %>
+                    </div>
+                    <div>
+                        <label for="password">Ingrese contraseña:</label>
+                        <input type="password" 
+                        name="password" 
+                        id="password" 
+                        class="control">
+                       
+                        <span class="feedback"></span>
+                        <% if (locals.errors && errors.password) { %>
+                            <div class="text-danger">
+                                <%= errors.password.msg %> 
+                            </div>
+                        <% } %>
+                    </div>
+                    
+                    <div>
+                        <label>Pais:</label>
+                        <select name = "pais" class="pais">
+                            <option value="">Eligeun Pais</option>
+                            <%
+                            let pais= ['Argentina','Uruguay','Chile']
+                            %>
+                            <% for (const unPais of pais){ %>
+                                <option value="<%= unPais %>"> <%= unPais %> </option>
+                                <% } %>
+                        </select>
+                        <% if (locals.errors && errors.pais) { %>
+                            <div class="text-danger">
+                                <%= errors.pais.msg %> 
+                            </div>
+                        <% } %>
+                    </div>
+                    <div>
+                        <button type="submit" class="boton-formulario">Crear Cuenta</button>
+                        <button type="reset" class="boton-formulario">Borrar</button>
+                    </div>
+                </div>
+        </div>
+        </form>
+    </main>
+</body>
+
+</html>
