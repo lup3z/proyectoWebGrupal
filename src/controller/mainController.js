@@ -65,7 +65,33 @@ const controlador = {
         let userCreated = User.create(userToCreate);
 		return res.redirect('/login');
 	},
-	
+    loginProcess: (req, res) => {
+        let userToLogin=User.findByField( 'email', req.body.email);
+        if(userToLogin){
+            let isOKThePass= bcryptjs.compareSync(req.body.password, userToLogin.password)
+             if( isOKThePass ){
+                 req.session.userLogged = userToLogin;
+                 res.redirect('/')
+                 
+             }else{
+              res.render('login', {
+                 errors: {
+                     email:{
+                         msg: 'Las credendicales son inválidas'
+                     }
+                 }
+             });
+            }
+        } else {
+         res.render('login', {
+            errors: {
+                email:{
+                    msg: 'No se encuentra este mail en nuestra base de datos'
+                }
+            }
+        });
+    }
+},
 }
 
 	

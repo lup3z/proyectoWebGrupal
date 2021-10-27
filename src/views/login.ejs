@@ -18,10 +18,13 @@
         <h4 class="enter">Login</h4>
     </header>
     <div class="formulario-login">
-        <form action="#" method="get" class="login-form">
+        <form action="/login" method="POST" class="login-form">
 
             <div>
-                <input type="text" required placeholder="Nombre de Usuario" name="Nombredeusuario">
+                <input type="text" required placeholder="Nombre de Usuario" name="email">
+                <% if (locals.errors && errors.email) { %>
+                        <p class="error"><%= errors.email.msg %></p>
+                <% } %>
                 <span class="feedback"></span>
             </div>
 
@@ -31,7 +34,7 @@
             </div>
 
             <div class="button-enviar">
-                <button type="submit"><a href="/">Enviar</a></button>
+                <button type="submit">Enviar</a></button>
             </div>
 
 

@@ -56,6 +56,7 @@ const uservalidation = [
 router.get('/', maincontroller.main);
 
 router.get('/login', maincontroller.login);
+router.post('/login', maincontroller.loginProcess);
 
 router.get('/productCart', maincontroller.productCart);
 
