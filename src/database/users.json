@@ -100,5 +100,12 @@
   "nombre": "diego",
   "password": "$2a$10$SDiyY.RYLQoryV6/ZsxNpe090Wjncg0uaAKyK.rHcUiyyArvyVyWK",
   "pais": "Argentina"
+ },
+ {
+  "id": 13,
+  "email": "lucia@gmail.com",
+  "nombre": "lucia",
+  "password": "$2a$10$rh2SdPXMfKKYjmrLjYtPkeapnqWhbtnv1ShuGBzM5XduifxXDRhT2",
+  "pais": "Argentina"
  }
 ]
