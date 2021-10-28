@@ -107,5 +107,29 @@
   "nombre": "lucia",
   "password": "$2a$10$rh2SdPXMfKKYjmrLjYtPkeapnqWhbtnv1ShuGBzM5XduifxXDRhT2",
   "pais": "Argentina"
+ },
+ {
+  "id": 14,
+  "email": "ffff@gmail.com",
+  "nombre": "lala",
+  "password": "$2a$10$Y0UMsmmAm7zkHtzeW9204O0mm3F5EmHBwefg0jprOvEFyKybPAzUi",
+  "pais": "Argentina",
+  "perfil": "1635379360688_img.png"
+ },
+ {
+  "id": 15,
+  "email": "wwww@ddd.com",
+  "nombre": "lucia",
+  "password": "$2a$10$392Q/zoZBEJ6Bxybwj8jQuR3Jso3UoaeS6gsiMjEdKQq2psbbkWAC",
+  "pais": "Argentina",
+  "perfil": "1635379816739_img.png"
+ },
+ {
+  "id": 16,
+  "email": "lu@gmail.com",
+  "nombre": "lu",
+  "password": "$2a$10$4nCI.udyzdysqoZSO6PAz.FK9VG20lFDetHCAh71DTzrcHFOpyrOW",
+  "pais": "Argentina",
+  "perfil": "img/1635380826476_img.png"
  }
 ]

@@ -9,8 +9,13 @@ const { body } = require('express-validator');
 
 
 const storage = multer.diskStorage({
+
     destination: (req, file, cb) => {
+        if(req.params.description == true){
         cb(null, './public/img/products')
+    }else{
+        cb(null, './public/img/profile')
+    }
     },
     filename: (req, file, cb) => {
         let fileName = `${Date.now()}_img${path.extname(file.originalname)}`;
@@ -60,7 +65,7 @@ router.get('/login', maincontroller.login);
 router.get('/productCart', maincontroller.productCart);
 
 router.get('/register', maincontroller.register);
-router.post('/register',uploadFile.single('producto') ,uservalidation, maincontroller.registerCreate);
+router.post('/register',uploadFile.single('perfil') ,uservalidation, maincontroller.registerCreate);
 
 router.get('/productList', producListController.productList);
 

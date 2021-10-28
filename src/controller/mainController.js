@@ -59,7 +59,7 @@ const controlador = {
         let userToCreate = {
             ...req.body,
             password: bcryptjs.hashSync(req.body.password, 10),
-            perfil: req.file.filename
+            perfil: 'img/'+req.file.filename
             
         }
         let userCreated = User.create(userToCreate);

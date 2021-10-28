@@ -12,5 +12,12 @@
         "description": "yyyy",
         "producto": "img/1635123918572_img.png",
         "precio": "6666"
+    },
+    {
+        "id": "54f4fd75-e19f-4386-8f66-5f46175ad062",
+        "nombre": "rrrr",
+        "description": "rrrrrrr",
+        "precio": "",
+        "producto": "img/1635379861210_img.png"
     }
 ]
