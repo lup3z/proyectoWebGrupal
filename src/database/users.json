@@ -213,5 +213,13 @@
   "password": "$2a$10$QTlhjDxUh0L/qCzP.RBxm.UsHNsQJ8Ll3tvzs.yN69rlkUJFTyHX6",
   "pais": "Argentina",
   "avatar": "img/profile/1635478783011_img.png"
+ },
+ {
+  "id": 28,
+  "email": "qqq@123.com",
+  "nombre": "lucia",
+  "password": "$2a$10$LhLwZAXftS4vBD9uCbJh4e6QIBsBiKRP3CFD3ytLIRHOv5gna4qPq",
+  "pais": "Argentina",
+  "avatar": "img/profile/1635538266945_img.png"
  }
 ]
