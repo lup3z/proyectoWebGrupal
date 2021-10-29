@@ -20,7 +20,8 @@ const storage = multer.diskStorage({
 
 const uploadFile= multer({ storage });
 
-
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 
 const validationsCreateProduct = [
@@ -55,11 +56,12 @@ const uservalidation = [
 
 router.get('/', maincontroller.main);
 
-router.get('/login', maincontroller.login);
+router.get('/login', guestMiddleware, maincontroller.login);
+router.post('/login', maincontroller.loginProcess);
 
 router.get('/productCart', maincontroller.productCart);
 
-router.get('/register', maincontroller.register);
+router.get('/register', guestMiddleware, maincontroller.register);
 router.post('/register',uservalidation, maincontroller.registerCreate);
 
 router.get('/productList', producListController.productList);
@@ -76,6 +78,10 @@ router.get('/productList', producListController.productList);
 router.delete('/:id', producListController.deleteProduct);
 
 router.get('/productDetail/:id', producListController.productDetail);
+
+
+router.get('/profile', authMiddleware, maincontroller.profile )
+router.get('/logout', maincontroller.logout);
 
 
 

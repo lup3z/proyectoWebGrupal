@@ -15,14 +15,16 @@ const controlador = {
     main: (req, res) => {
        res.render('home')
     },
-   login: (req,res) => {
-       res.render('login')
+   login: (req,res) => {   
+        res.render('login')
     },
 
     productCart: (req,res) => {
         res.render('productCart')
     },
-
+    profile: (req, res) =>{
+        res.render('profile', {users: req.session.userLogged})
+    },
     register: (req,res) => {
         res.render('register')
     },
@@ -65,7 +67,44 @@ const controlador = {
         let userCreated = User.create(userToCreate);
 		return res.redirect('/login');
 	},
-	
+    loginProcess: (req, res) => {
+        let userToLogin=User.findByField( 'email', req.body.email);
+        if(userToLogin){
+            let isOKThePass= bcryptjs.compareSync(req.body.password, userToLogin.password)
+            if( isOKThePass ){
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+
+                if(req.body.remember){
+                    res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 2 })
+                }
+                res.redirect('/profile')
+                 
+            }else{
+              res.render('login', {
+                 errors: {
+                     email:{
+                         msg: 'Las credendicales son inválidas'
+                     }
+                 }
+             });
+            }
+        } else {
+         res.render('login', {
+            errors: {
+                email:{
+                    msg: 'No se encuentra este mail en nuestra base de datos'
+                }
+            }
+        });
+    }
+
+    },
+    logout: (req, res) =>{
+        res.clearCookie('userEmail');
+        req.session.destroy();
+        return res.redirect('/')
+    }
 }
 
 	
