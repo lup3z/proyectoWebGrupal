@@ -82,6 +82,9 @@ router.delete('/:id', producListController.deleteProduct);
 
 router.get('/productDetail/:id', producListController.productDetail);
 
+// Perfil de Usuario
+router.get('/bienvenido', maincontroller.profile);
+
 
 
 module.exports = router

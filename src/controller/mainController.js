@@ -15,8 +15,8 @@ const controlador = {
     main: (req, res) => {
        res.render('home')
     },
-   login: (req,res) => {
-       res.render('login')
+   login: (req,res) => { 
+        res.render('login')
     },
 
     productCart: (req,res) => {
@@ -50,21 +50,25 @@ const controlador = {
 				},
 				oldData: req.body
 			});
-
-
-
-
-
 		}
         let userToCreate = {
             ...req.body,
             password: bcryptjs.hashSync(req.body.password, 10),
-            perfil: 'img/'+req.file.filename
+            perfil: 'img/profile/'+req.file.filename
             
         }
         let userCreated = User.create(userToCreate);
-		return res.redirect('/login');
+
+        return res.redirect('/login');
 	},
+
+    profile: (req, res) => {
+
+        console.log("qqq")
+		res.render('bienvenido', {
+            users: User
+        })
+	}
 	
 }
 
