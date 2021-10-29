@@ -12,16 +12,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/profile.css">
     <title>Registro</title>
 </head>
     <%- include('./partials/header')%>
-
-    <div>
-            <h2 class="saludo">Bienvenido <%= users.nombre %> de <%= users.pais %> </h2>
-            <br>
-            <h3>Has ingresado con el correo: <%= users.email%></h3>
-            <br>
-            <div>
-                <img src="<%= users.avatar %>" alt="Imagen del usuario" srcset="">
-            </div>
-    </div>
+<body>
+    <div class = "contenedor">
+        <br>
+        <div>
+            <img src="<%= users.avatar %>" alt="Imagen del usuario" srcset="" height="200" width="200" class="imgUsuario">
+        </div>
+        <br>
+        <h2 class="saludo">Bienvenid@ <%= users.nombre %> de <%= users.pais %>!! </h2>
+        <br>
+        <h3 class="infoSaludo">Has ingresado con el correo: <%= users.email%></h3>
+        <br>
+</div>
+</body>
+</html>
