@@ -17,6 +17,11 @@
     <%- include('./partials/header')%>
 
     <div>
-            <h2>Bienvenido <%= users.nombre %> de <%= users.pais %> </h2>
+            <h2 class="saludo">Bienvenido <%= users.nombre %> de <%= users.pais %> </h2>
+            <br>
             <h3>Has ingresado con el correo: <%= users.email%></h3>
+            <br>
+            <div>
+                <img src="<%= users.avatar %>" alt="Imagen del usuario" srcset="">
+            </div>
     </div>

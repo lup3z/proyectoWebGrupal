@@ -52,20 +52,16 @@ const controlador = {
 				},
 				oldData: req.body
 			});
-
-
-
-
-
 		}
         let userToCreate = {
             ...req.body,
             password: bcryptjs.hashSync(req.body.password, 10),
-            
+            avatar: 'img/profile/'+req.file.filename
             
         }
         let userCreated = User.create(userToCreate);
-		return res.redirect('/login');
+
+        return res.redirect('/login');
 	},
     loginProcess: (req, res) => {
         let userToLogin=User.findByField( 'email', req.body.email);
