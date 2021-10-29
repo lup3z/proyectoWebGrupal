@@ -203,7 +203,17 @@ button, input, optgroup, select, textarea {
 }
 
 
+<<<<<<< HEAD
 
+=======
+.error{
+    color: red;
+}
+
+.remember{
+    color: white;
+}
+>>>>>>> origin
 
 
 
@@ -269,4 +279,9 @@ button, input, optgroup, select, textarea {
     font-family:  'Bangers';
     margin-left: 165px;
     border-radius: 8px;
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> origin

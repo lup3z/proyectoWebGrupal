@@ -9,86 +9,85 @@
     <script src="https://kit.fontawesome.com/a0f8081e82.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Registro</title>
-
-    <%- include('./partials/header')%>
+</head>
+<%- include('./partials/header')%>
 
     <main class="main-formulario">
         <div class="formulario">
 
             <h3 class="titulo-alta">Crear cuenta</h3>
 
-           
-                
-            <form action="/register" method="POST" class="formulario-alta"  enctype="multipart/form-data">
+
+
+            <form action="/register" method="POST" class="formulario-alta" enctype="multipart/form-data">
                 <div class="control-formulario">
                     <div>
                         <label for="email">Ingrese eMail:</label>
-                        <input type="email" 
-                        name="email" 
-                        id="email" 
-                        class="control"
-                        value="<%= locals.oldData ? oldData.email : null %>">
+                        <input type="email" name="email" id="email" class="control"
+                            value="<%= locals.oldData ? oldData.email : null %>">
                         <span class="feedback"></span>
                         <% if (locals.errors && errors.email) { %>
                             <div class="text-danger">
-                                <%= errors.email.msg %> 
+                                <%= errors.email.msg %>
                             </div>
-                        <% } %>
+                            <% } %>
                     </div>
                     <div>
                         <label for="nombre">Ingrese nombre:</label>
-                        <input type="text" 
-                        name="nombre" 
-                        id="nombre" 
-                        class="control"
-                        value="<%= locals.oldData ? oldData.nombre : null %>">
+                        <input type="text" name="nombre" id="nombre" class="control"
+                            value="<%= locals.oldData ? oldData.nombre : null %>">
                         <span class="feedback"></span>
                         <% if (locals.errors && errors.nombre) { %>
-									<div class="text-danger">
-										<%= errors.nombre.msg %> 
-									</div>
-								<% } %>
+                            <div class="text-danger">
+                                <%= errors.nombre.msg %>
+                            </div>
+                            <% } %>
                     </div>
                     <div>
                         <label for="password">Ingrese contraseña:</label>
-                        <input type="password" 
-                        name="password" 
-                        id="password" 
-                        class="control">
-                       
+                        <input type="password" name="password" id="password" class="control">
+
                         <span class="feedback"></span>
                         <% if (locals.errors && errors.password) { %>
                             <div class="text-danger">
-                                <%= errors.password.msg %> 
+                                <%= errors.password.msg %>
                             </div>
-                        <% } %>
+                            <% } %>
                     </div>
                     <div>
                         <label for="imagen">Ingresa tu foto:</label>
-                        <input type="file" name="perfil" accept=".jpg,.png" multiple>
-                        <span class="feedback"></span>
+                        <input type="file" name="avatar" accept=".jpg,.png"
+                            class="form-control <%= locals.errors && errors.avatar ? 'is-invalid' : null %>" multiple>
+                        <% if (locals.errors && errors.avatar) { %>
+                            <div class="text-danger">
+                                <%= errors.avatar.msg %>
+                            </div>
+                            <% } %>
+                                <span class="feedback"></span>
                     </div>
                     <div>
                         <label>Pais:</label>
-                        <select name = "pais" class="pais">
+                        <select name="pais" class="pais">
                             <option value="">Eligeun Pais</option>
-                            <%
-                            let pais= ['Argentina','Uruguay','Chile']
-                            %>
-                            <% for (const unPais of pais){ %>
-                                <option value="<%= unPais %>"> <%= unPais %> </option>
-                                <% } %>
+                            <% let pais=['Argentina','Uruguay','Chile'] %>
+                                <% for (const unPais of pais){ %>
+                                    <option value="<%= unPais %>">
+                                        <%= unPais %>
+                                    </option>
+                                    <% } %>
                         </select>
                         <% if (locals.errors && errors.pais) { %>
                             <div class="text-danger">
-                                <%= errors.pais.msg %> 
+                                <%= errors.pais.msg %>
                             </div>
-                        <% } %>
+                            <% } %>
                     </div>
                     <div>
                         <button type="submit" class="boton-formulario">Crear Cuenta</button>
@@ -98,6 +97,6 @@
         </div>
         </form>
     </main>
-</body>
+    </body>
 
 </html>

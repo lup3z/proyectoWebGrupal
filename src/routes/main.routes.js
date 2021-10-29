@@ -25,7 +25,8 @@ const storage = multer.diskStorage({
 
 const uploadFile= multer({ storage });
 
-
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 
 const validationsCreateProduct = [
@@ -55,22 +56,37 @@ const uservalidation = [
     body('nombre').notEmpty().withMessage('Tienes que escribir un nombre'),
     body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
     body('pais').notEmpty().withMessage('Tienes que elegir un país'),
+    body('avatar').custom((value, { req }) => {
+		let file = req.file;
+		let acceptedExtensions = ['.jpg', '.png', '.gif'];
+		if (!file) {
+			throw new Error('Tienes que subir una imagen');
+		} else {
+			let fileExtension = path.extname(file.originalname);
+			if (!acceptedExtensions.includes(fileExtension)) {
+				throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
+			}
+		}
+
+		return true;
+	})
 
 ]
 
 router.get('/', maincontroller.main);
 
-router.get('/login', maincontroller.login);
+router.get('/login', guestMiddleware, maincontroller.login);
+router.post('/login', maincontroller.loginProcess);
 
 router.get('/productCart', maincontroller.productCart);
 
-router.get('/register', maincontroller.register);
-router.post('/register',uploadFile.single('perfil') ,uservalidation, maincontroller.registerCreate);
+router.get('/register', guestMiddleware, maincontroller.register);
+router.post('/register', uploadFile.single('avatar'), uservalidation, maincontroller.registerCreate);
 
 router.get('/productList', producListController.productList);
 
 router.get('/createProduct', producListController.createProduct);
-router.post('/createProduct', uploadFile.single('producto'),validationsCreateProduct, producListController.abmproduct);
+router.post('/createProduct', uploadFile.single('producto'), validationsCreateProduct, producListController.abmproduct);
 
 router.post('/productList',producListController.productInsert);
 
@@ -82,8 +98,9 @@ router.delete('/:id', producListController.deleteProduct);
 
 router.get('/productDetail/:id', producListController.productDetail);
 
-// Perfil de Usuario
-router.get('/bienvenido', maincontroller.profile);
+
+router.get('/profile', authMiddleware, maincontroller.profile )
+router.get('/logout', maincontroller.logout);
 
 
 
