@@ -22,9 +22,9 @@
             <% products.forEach(product => { %>
                 <tr>
                     <ul type="none" class="contenedor3cart">
-                        <img class ="producto" src= <%= product.image  %>  
-                        <li class="texto"><%= product.description  %></li>
-                        <li class="texto"><%= product.actualPrice  %></li>
+                        <img src= "<%= product.producto %>" class ="producto">  
+                        <li class="texto"><%= product.nombre %></li>
+                        <li class="texto"><%= product.precio %></li>
                         <li><i class="fas fa-shopping-cart"></i></li>
                         <li><a href="/productDetail/<%= product.id %>">Detalles</a></li>
                     </ul>

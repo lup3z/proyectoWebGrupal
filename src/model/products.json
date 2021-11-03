@@ -1,23 +1,26 @@
 [
     {
-        "id": "079519f9-5a16-4f15-a6d5-3662b65159c5",
-        "nombre": "estela",
-        "description": "estela",
-        "precio": "22",
-        "producto": "img/1632786780673_img.png"
+        "id": 1,
+        "nombre": "ppp",
+        "description": "ppppppppp",
+        "precio": "789",
+        "categoria": "Comic",
+        "producto": "img/products/1635901126164_img.png"
     },
     {
-        "id": "62678f62-4468-4543-9fd7-f3589bfeafb3",
-        "nombre": "yyy",
-        "description": "yyyy",
-        "producto": "img/1635123918572_img.png",
-        "precio": "6666"
+        "id": 2,
+        "nombre": "un producto",
+        "description": "una descripcion",
+        "precio": "123",
+        "categoria": "Comic",
+        "producto": "img/products/1635904314871_img.png"
     },
     {
-        "id": "54f4fd75-e19f-4386-8f66-5f46175ad062",
-        "nombre": "rrrr",
-        "description": "rrrrrrr",
-        "precio": "",
-        "producto": "img/1635379861210_img.png"
+        "id": 3,
+        "nombre": "otro producto",
+        "description": "descripcion de otro producto",
+        "precio": "356",
+        "categoria": "Novelas Graficas",
+        "producto": "img/products/1635904353980_img.png"
     }
 ]

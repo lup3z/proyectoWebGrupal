@@ -31,24 +31,25 @@ const controller = {
         res.render("productList", { products: products });
     },
 
-    editProduct: (req, res) => {
+    getProductToEdit: (req, res) => {
         let id = req.params.id;
-        let productToEdit = products.find((item) => item.id === id);
+        let productToEdit = products.find((item) => item.id == id);
         res.render('editProduct', { products: productToEdit })
     },
 
-    editProductPrueba: (req, res) => {
+    editProduct: (req, res) => {
         let id = req.params.id;
         const archivo = req.file;
-        const { nombre, precio, description } = req.body;
-        const indexProducto = products.findIndex((item) => item.id === id);
-        products[indexProducto] = {
-            id: id,
-            nombre: nombre,
-            description: description,
-            producto: `img/${archivo.filename}`,
-            precio: precio,
-        }
+        const { nombre, precio,categoria, description } = req.body;
+        products.forEach(product => {
+            if(product.id == id){
+            product.nombre= nombre,
+            product.description= description,
+            product.categoria= categoria,
+            product.producto= `img/products/${archivo.filename}`,
+            product.precio= precio
+            }
+        })
         fs.writeFileSync(
             path.join(__dirname, "../model/products.json"),
             JSON.stringify(products, null, 4),
@@ -61,13 +62,14 @@ const controller = {
 
     abmproduct: (req, res) => {
         let archivo = req.file;
+        const newId = products[(products.length) - 1].id + 1
         let productoNuevos = {
-            id: uuidv4(),
+            id: newId,
             nombre: req.body.nombre,
             description: req.body.description,
             precio: req.body.precio,
-            categoria: req.body.categoria,
-            producto: `img/${archivo.filename}`,
+            categoria: req.body.categorias,
+            producto: `img/products/${archivo.filename}`,
         };
         products.push(productoNuevos);
         fs.writeFileSync(

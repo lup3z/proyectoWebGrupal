@@ -21,7 +21,5 @@ body{
 
 .imgUsuario{
     top: -40px;
-    border: 1px solid rgb(20, 12, 12);
-    padding: 1em;
     border-radius: 50%;   
 }
