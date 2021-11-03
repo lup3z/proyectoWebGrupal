@@ -9,8 +9,13 @@ const { body } = require('express-validator');
 
 
 const storage = multer.diskStorage({
+
     destination: (req, file, cb) => {
+    if(req.body.description){
         cb(null, './public/img/products')
+    }else{
+        cb(null, './public/img/profile')
+    }
     },
     filename: (req, file, cb) => {
         let fileName = `${Date.now()}_img${path.extname(file.originalname)}`;
@@ -51,6 +56,20 @@ const uservalidation = [
     body('nombre').notEmpty().withMessage('Tienes que escribir un nombre'),
     body('password').notEmpty().withMessage('Tienes que escribir una contraseña'),
     body('pais').notEmpty().withMessage('Tienes que elegir un país'),
+    body('avatar').custom((value, { req }) => {
+		let file = req.file;
+		let acceptedExtensions = ['.jpg', '.png', '.gif'];
+		if (!file) {
+			throw new Error('Tienes que subir una imagen');
+		} else {
+			let fileExtension = path.extname(file.originalname);
+			if (!acceptedExtensions.includes(fileExtension)) {
+				throw new Error(`Las extensiones de archivo permitidas son ${acceptedExtensions.join(', ')}`);
+			}
+		}
+
+		return true;
+	})
 
 ]
 
@@ -62,17 +81,15 @@ router.post('/login', maincontroller.loginProcess);
 router.get('/productCart', maincontroller.productCart);
 
 router.get('/register', guestMiddleware, maincontroller.register);
-router.post('/register',uservalidation, maincontroller.registerCreate);
+router.post('/register', uploadFile.single('avatar'), uservalidation, maincontroller.registerCreate);
 
 router.get('/productList', producListController.productList);
 
 router.get('/createProduct', producListController.createProduct);
-router.post('/createProduct', uploadFile.single('producto'),validationsCreateProduct, producListController.abmproduct);
+router.post('/createProduct', uploadFile.single('producto'), validationsCreateProduct, producListController.abmproduct);
 
-router.post('/productList',producListController.productInsert);
-
-router.get('/editProduct/:id', producListController.editProduct);
-router.put('/:id', uploadFile.single('producto'), producListController.editProductPrueba);
+router.get('/editProduct/:id', producListController.getProductToEdit);
+router.put('/:id', uploadFile.single('producto'), producListController.editProduct);
 
 router.get('/productList', producListController.productList);
 router.delete('/:id', producListController.deleteProduct);

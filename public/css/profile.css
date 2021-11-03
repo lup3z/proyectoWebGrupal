@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+    background-color:plum;
+    font-family: 'Bebas Neue', cursive;
+
+}
+.contenedor{
+    width: 90vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    color: #a62e2e;
+    padding-top: 20px;
+    
+}
+
+.imgUsuario{
+    top: -40px;
+    border-radius: 50%;   
+}

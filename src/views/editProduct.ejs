@@ -54,6 +54,19 @@
                         </div>
                         <br>
                         <div>
+                            <label>Categoria:</label>
+                            <select name="categoria">
+                                <option value="">Categorias</option>
+                                <% let categorias=['Comic','Manga','Novelas Graficas'] %>
+                                    <% for (const unaCategoria of categorias){ %>
+                                        <option value="<%= unaCategoria %>">
+                                            <%= unaCategoria %>
+                                        </option>
+                                        <% } %>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
                             <label for="precio">Precio:</label>
                             <input type="text" name="precio" id="precio" class="control"
                                 value="<%= products.precio %>">

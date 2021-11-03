@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,28 +10,28 @@
 </head>
 
 <header class="main-header">
-   
-        <div class="logo-y-nombre">
-            <img src="./img/pinpng.com-evangelion-logo-png-5252667.png" class="icon">
-            <a class="icon-text">Koari Comic Store</a>
-        </div>
 
-        <p class="spidi">A great power comes with a great responsibility - Uncle Ben</p>
+    <div class="logo-y-nombre">
+        <img src="./img/pinpng.com-evangelion-logo-png-5252667.png" class="icon">
+        <a class="icon-text">Koari Comic Store</a>
+    </div>
 
-        <div class="barra-de-busqueda">
-            <input class="barra-busqueda" type="text" placeholder="Todos los comics  y mangas en un solo lugar..">
-            <button type="submit" class="boton-busqueda">Buscar</button>
-        </div> 
-        
-        <ul class="navbar">
-            <% if (locals.isLogged) { %>
-                <li><a href="/profile" class="far fa-user">   Mi usuario</a></li>
-                <li><a href="/productCart" class="fas fa-shopping-basket">   Mis compras</a></li>
-                <li><a href="/logout" class="fas fa-sign-out-alt">   Logout</a></li>
-            <% } else { %> 
-                <li><a href="/login" class="fas fa-sign-in-alt">   Ingresá</a></li>
-                <li><a href="/register" class="fas fa-cart-plus">   Creá tu cuenta</a></li>
-            <% } %>
-        </ul> 
-    
+    <p class="spidi">A great power comes with a great responsibility - Uncle Ben</p>
+
+    <div class="barra-de-busqueda">
+        <input class="barra-busqueda" type="text" placeholder="Todos los comics  y mangas en un solo lugar..">
+        <button type="submit" class="boton-busqueda">Buscar</button>
+    </div>
+
+    <ul class="navbar">
+        <% if (locals.isLogged) { %>
+            <li><a href="/profile" class="far fa-user"> Mi usuario</a></li>
+            <li><a href="/productCart" class="fas fa-shopping-basket"> Mis compras</a></li>
+            <li><a href="/logout" class="fas fa-sign-out-alt"> Logout</a></li>
+            <% } else { %>
+                <li><a href="/login" class="fas fa-sign-in-alt"> Ingresá</a></li>
+                <li><a href="/register" class="fas fa-cart-plus"> Creá tu cuenta</a></li>
+                <% } %>
+    </ul>
+
 </header>
