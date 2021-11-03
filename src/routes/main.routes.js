@@ -11,7 +11,7 @@ const { body } = require('express-validator');
 const storage = multer.diskStorage({
 
     destination: (req, file, cb) => {
-        if(req.params.description == true){
+    if(req.body.description){
         cb(null, './public/img/products')
     }else{
         cb(null, './public/img/profile')
@@ -90,8 +90,8 @@ router.post('/createProduct', uploadFile.single('producto'), validationsCreatePr
 
 router.post('/productList',producListController.productInsert);
 
-router.get('/editProduct/:id', producListController.editProduct);
-router.put('/:id', uploadFile.single('producto'), producListController.editProductPrueba);
+router.get('/editProduct/:id', producListController.getProductToEdit);
+router.put('/:id', uploadFile.single('producto'), producListController.editProduct);
 
 router.get('/productList', producListController.productList);
 router.delete('/:id', producListController.deleteProduct);
