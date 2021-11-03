@@ -237,5 +237,21 @@
   "password": "$2a$10$ZtleFDwyZP0PIwnuiv0AUOVDpMv04bI7uZ7an34qSEivD08h.gE/e",
   "pais": "Argentina",
   "avatar": "img/profile/1635904840262_img.png"
+ },
+ {
+  "id": 31,
+  "email": "guille@guille.com",
+  "nombre": "guille",
+  "password": "$2a$10$lrgaozXDUdj9K2k9VRIQXu0uv10zNY1S0iheUv9dnDjAeMWinkXiG",
+  "pais": "Argentina",
+  "avatar": "img/profile/1635905972092_img.jpg"
+ },
+ {
+  "id": 32,
+  "email": "guille@barra.com",
+  "nombre": "guille",
+  "password": "$2a$10$yKq11OiYipAj9m7zbh1dAOte9VTTo5Cuss7CWmYBzbrXBMZGWV3i6",
+  "pais": "Argentina",
+  "avatar": "img/profile/1635906104329_img.jpg"
  }
 ]

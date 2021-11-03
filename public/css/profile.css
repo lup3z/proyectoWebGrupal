@@ -23,3 +23,10 @@ body{
     top: -40px;
     border-radius: 50%;   
 }
+.main-header{
+    font-family: 'Bangers', cursive;
+    font-size: 25 px;
+    color: rgb(66, 116, 172);
+    background-color: rgb(197, 220, 226);
+    padding: 10px;
+    height: 8rem;}

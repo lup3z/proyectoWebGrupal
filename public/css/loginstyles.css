@@ -103,14 +103,7 @@ body{
     font-size: 30px;
 }
 
-.main-header{
-    font-family: 'Bangers', cursive;
-    font-size: 2rem;
-    color: rgb(66, 116, 172);
-    background-color: rgb(197, 220, 226);
-    padding: 10px;
-    height: 8rem;
-}
+
 
 .titulo{
     display: flex; 
@@ -203,17 +196,6 @@ button, input, optgroup, select, textarea {
 }
 
 
-<<<<<<< HEAD
-
-=======
-.error{
-    color: red;
-}
-
-.remember{
-    color: white;
-}
->>>>>>> origin
 
 
 
@@ -279,9 +261,11 @@ button, input, optgroup, select, textarea {
     font-family:  'Bangers';
     margin-left: 165px;
     border-radius: 8px;
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> origin
+.main-header{
+    font-family: 'Bangers', cursive;
+    font-size: 25 px;
+    color: rgb(66, 116, 172);
+    background-color: rgb(197, 220, 226);
+    padding: 10px;
+    height: 8rem;}

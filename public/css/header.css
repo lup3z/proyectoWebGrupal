@@ -95,7 +95,7 @@ a{
         
     }
     .barra-busqueda{   
-        width: 600px;
+        width: 300px;
     }
     .spidi{
         font-style: italic;
@@ -107,6 +107,12 @@ a{
     }
 }
 
-
+.main-header{
+    font-family: 'Bangers', cursive;
+    font-size: 25 px;
+    color: rgb(66, 116, 172);
+    background-color: rgb(197, 220, 226);
+    padding: 10px;
+    height: 8rem;}
 
     

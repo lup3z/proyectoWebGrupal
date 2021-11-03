@@ -170,14 +170,7 @@ opacity: 1;
         font-size: 30px;
     }
     
-    .main-header{
-        font-family: 'Bangers', cursive;
-        font-size: 2rem;
-        color: rgb(66, 116, 172);
-        background-color: rgb(197, 220, 226);
-        padding: 10px;
-        height: 8rem;
-    }
+    
 
     .titulo{
         display: flex; 
@@ -225,6 +218,19 @@ opacity: 1;
     .pais{
         border: 30px;
     }
+    .main-header{
+        font-family: 'Bangers', cursive;
+        font-size: 18 px;
+        color: rgb(66, 116, 172);
+        background-color: rgb(197, 220, 226);
+        padding: 10px;
+        height: 8rem;}
 
-
+        .main-header{
+            font-family: 'Bangers', cursive;
+            font-size: 25 px;
+            color: rgb(66, 116, 172);
+            background-color: rgb(197, 220, 226);
+            padding: 10px;
+            height: 8rem;}
     
