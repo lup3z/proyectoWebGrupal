@@ -229,5 +229,13 @@
   "password": "$2a$10$0TXW35GTb.RuQj8dsWYSm.GyPJeC6IQbmWa25M5uu/u7PIV35NJFS",
   "pais": "Argentina",
   "avatar": "img/profile/1635732260408_img.png"
+ },
+ {
+  "id": 30,
+  "email": "pepe@123.com",
+  "nombre": "lucia",
+  "password": "$2a$10$ZtleFDwyZP0PIwnuiv0AUOVDpMv04bI7uZ7an34qSEivD08h.gE/e",
+  "pais": "Argentina",
+  "avatar": "img/profile/1635904840262_img.png"
  }
 ]
