@@ -67,7 +67,7 @@ const controller = {
             description: req.body.description,
             precio: req.body.precio,
             categoria: req.body.categoria,
-            producto: `img/${archivo.filename}`,
+            producto: `img/${producto.filename}`,
         };
         products.push(productoNuevos);
         fs.writeFileSync(

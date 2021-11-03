@@ -11,3 +11,4 @@ Nico: linkeo .json con productList.ejs para visualizar productos
 
 15/09
 Lu: sumo cambios en rutas para editar, no pude resolver recuperar datos el bd json para mostrarla en pantalla y editarla
+

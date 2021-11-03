@@ -63,12 +63,10 @@
 }
 .top-body{
     font-family: 'Special Elite', cursive;
-    font-size: x-large;
-    color: #de9393;
     background-image: url("/img/pexels-dayvison-tadeu-4142511.jpg");
     background-size: cover;
     background-position: center;
-    padding: 160px;
+    height: 250px;
 }
 
 .transbox {

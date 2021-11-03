@@ -6,8 +6,8 @@
 
 .main-header{
     background-color: rgb(197, 220, 226);
-    padding: 20px;
-    height: 140px; 
+    padding: 15px;
+    height: 125px; 
 }
 
  .icon{
@@ -48,8 +48,6 @@ a{
 .barra-de-busqueda, .spidi{
     display: none;
 }
-
-
 
 @media (min-width: 768px){
     .main-header{
