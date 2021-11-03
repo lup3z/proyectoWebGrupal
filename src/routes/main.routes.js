@@ -88,8 +88,6 @@ router.get('/productList', producListController.productList);
 router.get('/createProduct', producListController.createProduct);
 router.post('/createProduct', uploadFile.single('producto'), validationsCreateProduct, producListController.abmproduct);
 
-router.post('/productList',producListController.productInsert);
-
 router.get('/editProduct/:id', producListController.getProductToEdit);
 router.put('/:id', uploadFile.single('producto'), producListController.editProduct);
 

@@ -81,23 +81,6 @@ const controller = {
         res.render("productList", { products: products });
     },
 
-    productInsert: (req, res) => {
-        const newId = products[(products.length) - 1].id + 1
-        const {nombre,descripcion,detalle,cantidad,precio,descuento,envio}=req.body;
-        const newProduct={ // creo un objeto con toda la info del body
-                "id": newId,
-                "image": "../img/site-not-found.png",
-                "descripcion": descripcion,
-                "categoria": categoria,
-                "actualPrice": actualPrice,             
-        };
-        products.push(newProduct);
-        fs.writeFileSync(path.join(__dirname,"../model/products.json"), JSON.stringify(products, null, 4), {
-            encoding: "utf8",
-          });
-          res.render(path.join(__dirname, '../views/productList.ejs'), { products: products });
-    },
-
     productDetail: (req, res) => {
         const id = req.params.id;
         const producto = products.find(item => item.id == id);
