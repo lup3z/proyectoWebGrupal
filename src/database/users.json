@@ -253,5 +253,13 @@
   "password": "$2a$10$yKq11OiYipAj9m7zbh1dAOte9VTTo5Cuss7CWmYBzbrXBMZGWV3i6",
   "pais": "Argentina",
   "avatar": "img/profile/1635906104329_img.jpg"
+ },
+ {
+  "id": 33,
+  "email": "tio@tio.com",
+  "nombre": "tio",
+  "password": "$2a$10$59Fwt/bJLX2H8aeRPoX35./IU0pb.WcLRSWxutPfAcn5GboV22ixS",
+  "pais": "Argentina",
+  "avatar": "img/profile/1635976827388_img.jpg"
  }
 ]
