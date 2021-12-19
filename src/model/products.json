@@ -17,10 +17,11 @@
     },
     {
         "id": "62678f62-4468-4543-9fd7-f3589bfeafb3",
-        "nombre": "yyy",
-        "description": "yyyy",
-        "producto": "img/1635123918572_img.png",
-        "precio": "6666"
+        "nombre": "prueba 123",
+        "description": "",
+        "producto": "img/products/1639926091381_img.jpg",
+        "precio": "6666",
+        "categoria": ""
     },
     {
         "id": "e448b7b7-c45c-415d-be1a-f1f4c4d0ce29",
