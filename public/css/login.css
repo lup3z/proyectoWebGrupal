@@ -1,41 +1,66 @@
-
-
 *{
     margin: 0px;
     padding: 0px;
 	box-sizing: border-box;
 }
+
+.formulario-login{
+    margin-left: 250px;
+}
+
 body{
     background-image: url('../img/backreg.jpg');
-    background-position: 
-    85% -2%;
+    background-position: 85% -2%; 
+}  
+
+.button-enviar .text-login{
+    background-color: black;
+    border: 0;
+    margin-top: 20px;
+    font-size: 25px;
 }
+
+.text-login {
+    font-family: 'Bangers', cursive;
+    color: white;
+}
+
+.error{
+    font-family: 'Bangers', cursive;
+    color: white;
+}
+
+.text-login2{
+    color: black;
+    font-family: 'Bangers', cursive;
+    width: 750px;
+}
+
+::placeholder{
+    font-family: 'Bangers', cursive;
+    color: black;
+    text-align: center;
+}
+
+
+
+
 
 .formulario-login .login-form {
     text-align: center;
-     margin-top: 11px;
+    margin-top: 11px;
     margin-left: 80px;
     width: 30%;
 }
-.formulario-login .login-form div input {
+.formulario-login .login-form div input  {
     margin: 19px 0;
     padding:7px;
     width: 40%;
 }
 
-.formulario-login .login-form .button-enviar  button{
-    width:  30%;
-    padding: 7px;
-    margin-bottom: 60px;
-    background-color: rgba(216, 36, 13, 0.815);
-    margin-top: 29px;
-    color:rgb(161, 82, 82);
-}
 
-.formulario-login .login-form .button-enviar  button a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
+
+
 
 .main-header-top-bar{
     display: flex;
@@ -252,14 +277,10 @@ button, input, optgroup, select, textarea {
     background-color: white;
 }
 .enter {
-    width: 90px;
-    display:flex;
-    flex-wrap: wrap;
-    background-color:rgb(241, 62, 18);
+    color: white;
     margin-top:140px;
     font-size: 40px;
     font-family:  'Bangers';
-    margin-left: 165px;
     border-radius: 8px;
 }
 .main-header{
