@@ -4,8 +4,14 @@
   box-sizing: border-box;
 }
 .producto {
-  width: 250px;
+  width: 210px;
   opacity: 1;
+}
+
+.producto:hover{
+  width: 250px;
+  transition-property: width;
+  transition-duration: 0.2s;
 }
 
 .contenedor2cart {
