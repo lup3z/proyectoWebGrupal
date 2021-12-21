@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,14 +17,9 @@
     <title>Registro</title>
 </head>
 <%- include('./partials/header')%>
-
     <main class="main-formulario">
         <div class="formulario">
-
             <h3 class="titulo-alta">Crear cuenta</h3>
-
-
-
             <form action="/register" method="POST" class="formulario-alta" enctype="multipart/form-data">
                 <div class="control-formulario">
                     <div>
@@ -53,7 +47,7 @@
                     <div>
                         <label for="password">Ingrese contraseña:</label>
                         <input type="password" name="password" id="password" class="control">
-
+    
                         <span class="feedback"></span>
                         <% if (locals.errors && errors.password) { %>
                             <div class="text-danger">
@@ -73,23 +67,6 @@
                                 <span class="feedback"></span>
                     </div>
                     <div>
-                        <label>Pais:</label>
-                        <select name="pais" class="pais">
-                            <option value="">Eligeun Pais</option>
-                            <% let pais=['Argentina','Uruguay','Chile'] %>
-                                <% for (const unPais of pais){ %>
-                                    <option value="<%= unPais %>">
-                                        <%= unPais %>
-                                    </option>
-                                    <% } %>
-                        </select>
-                        <% if (locals.errors && errors.pais) { %>
-                            <div class="text-danger">
-                                <%= errors.pais.msg %>
-                            </div>
-                            <% } %>
-                    </div>
-                    <div>
                         <button type="submit" class="boton-formulario">Crear Cuenta</button>
                         <button type="reset" class="boton-formulario">Borrar</button>
                     </div>
@@ -97,6 +74,4 @@
         </div>
         </form>
     </main>
-    </body>
-
 </html>

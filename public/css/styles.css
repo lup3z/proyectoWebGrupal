@@ -66,20 +66,10 @@
     background-image: url("/img/pexels-dayvison-tadeu-4142511.jpg");
     background-size: cover;
     background-position: center;
-    height: 250px;
+    height: 400px;
 }
 
-.transbox {
-    position: absolute;
-    z-index: 1;
-    right: 25vw;
-    top: 140px;
-    margin: 40px;
-    background-color: #ffffff;
-    opacity: 0.6;
-    color: #000000;
-    padding: 40px;
-  }
+
 
 .pie{
     background-color: palegoldenrod;
@@ -105,27 +95,32 @@ button, input, optgroup, select, textarea {
     align-items: center;
     justify-content: space-around;
     padding-top: 20px;
+    margin-top: 80px;
 }
 
-.titulo-alta{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
+.titulo-alta{ 
+    text-align: center;
+    position: relative;
+    top: 90px;
+    font-weight: 200;
 }
 
 .main-formulario{
     background-image: url("/img/pexels-erik-mclean-7809123.jpg");
-    font-size: 25px;
+    font-size: 18px;
     color: rgb(255, 255, 255);
-    font-family: 'Bebas Neue', cursive;
+    font-weight: 200;
+    font-family: "Bangers", cursive;
     background-size: cover;
     background-position: center;
+    height: 613px;
 }
 
 .boton-formulario{
     border-radius: 5px;
     margin: 50px;
     padding: 5px 10px;
+    margin-top: 20px;
 }
 
 .pais{

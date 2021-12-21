@@ -1,4 +1,4 @@
-let products = require("../model/products.json");
+let products = require("../models/products.json");
 const fs = require("fs");
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
@@ -61,17 +61,18 @@ const controller = {
     },
 
     abmproduct: (req, res) => {
-        let archivo = req.file;
-        const newId = products[(products.length) - 1].id + 1
-        let productoNuevos = {
+        const file = req.file;
+        let newId = products[(products.length) - 1].id + 1
+        let {nombre, description, precio, categoria} = req.body 
+        let newProduct = {
             id: newId,
             nombre: req.body.nombre,
             description: req.body.description,
             precio: req.body.precio,
             categoria: req.body.categoria,
-            producto: `img/${producto.filename}`,
+            producto: `img/${file.filename}`,
         };
-        products.push(productoNuevos);
+        products.push(newProduct);
         fs.writeFileSync(
             path.join(__dirname, "../model/products.json"),
             JSON.stringify(products, null, 4),

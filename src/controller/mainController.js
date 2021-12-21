@@ -1,9 +1,12 @@
-
-const newUsuario = require('../model/usuarios.json');
-const User = require('../model/Users');
+const { usersModel } = require('../models/User');
+const { productModel } = require('../models/Product');
+const newUsuario = require('../models/usuarios.json')
+const User = require('../models/Users');
 const fs = require("fs");
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
+const db = require('../database/models');
+
 
 const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator');
@@ -100,7 +103,22 @@ const controlador = {
         res.clearCookie('userEmail');
         req.session.destroy();
         return res.redirect('/')
+    },
+    list: (req, res) => {
+        db.Users.findAll()
+            .then(function(usuarios){
+                res.send({usuarios})
+
+            })
+    },
+    list2: (req, res) => {
+        db.Products.findAll()
+            .then(function(usuarios){
+                res.send({usuarios})
+
+            })
     }
+    
 }
 
 	

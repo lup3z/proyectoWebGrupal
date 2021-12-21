@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,74 +20,45 @@
 </head>
     <%- include('./partials/header')%>
         <main>
-            <div class="body">
+            <div>
                 <div class="top-body">
-                    <div class="transbox">
-                        <h2 class="titulo">Bienvenidos a nuestra tienda!</h2>
-                        <div class="buscador">
-                            <input type="text" placeholder="Buscar productos, marcas">
-                            <select name="categorias">
-                                <option value="">Categorias</option>
-                                <% let categorias=['Comic','Manga','Novelas Graficas'] %>
-                                    <% for (const unaCategoria of categorias){ %>
-                                        <option value="<%= unaCategoria %>">
-                                            <%= unaCategoria %>
-                                        </option>
-                                        <% } %>
-                            </select>
-                        </div>
+                    <div class="carousel">
+                                <ul>
+                                    <li><img src="./img/carousel/1.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/2.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/3.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/4.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/5.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/6.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/7.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/8.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/9.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/10.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/11.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/12.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/13.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/14.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/15.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/16.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/17.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/18.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/19.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/20.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/21.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/22.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/23.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/24.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/25.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/26.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/27.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/28.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/29.jpg" alt=""></li>
+                                    <li><img src="./img/carousel/30.jpg" alt=""></li>
+            
+                                </ul>
                     </div>
                 </div>
-                <!-- <div class="botton-body">
-                    <ul>
-                        <li>
-                            <img src="./img/pexels-daria-sannikova-5266499.jpg" alt="">
-                        </li>
-                        <li>
-                            <img src="./img/pexels-erik-mclean-7768663.jpg" alt="">
-                        </li>
-                        <li>
-                            <img src="./img/pexels-erik-mclean-7768661.jpg" alt="">
-                        </li>
-                    </ul>
-                </div> -->
-                <div class="carousel">
-                    <ul>
-                        <li><img src="./img/carousel/1.jpg" alt=""></li>
-                        <li><img src="./img/carousel/2.jpg" alt=""></li>
-                        <li><img src="./img/carousel/3.jpg" alt=""></li>
-                        <li><img src="./img/carousel/4.jpg" alt=""></li>
-                        <li><img src="./img/carousel/5.jpg" alt=""></li>
-                        <li><img src="./img/carousel/6.jpg" alt=""></li>
-                        <li><img src="./img/carousel/7.jpg" alt=""></li>
-                        <li><img src="./img/carousel/8.jpg" alt=""></li>
-                        <li><img src="./img/carousel/9.jpg" alt=""></li>
-                        <li><img src="./img/carousel/10.jpg" alt=""></li>
-                        <li><img src="./img/carousel/11.jpg" alt=""></li>
-                        <li><img src="./img/carousel/12.jpg" alt=""></li>
-                        <li><img src="./img/carousel/13.jpg" alt=""></li>
-                        <li><img src="./img/carousel/14.jpg" alt=""></li>
-                        <li><img src="./img/carousel/15.jpg" alt=""></li>
-                        <li><img src="./img/carousel/16.jpg" alt=""></li>
-                        <li><img src="./img/carousel/17.jpg" alt=""></li>
-                        <li><img src="./img/carousel/18.jpg" alt=""></li>
-                        <li><img src="./img/carousel/19.jpg" alt=""></li>
-                        <li><img src="./img/carousel/20.jpg" alt=""></li>
-                        <li><img src="./img/carousel/21.jpg" alt=""></li>
-                        <li><img src="./img/carousel/22.jpg" alt=""></li>
-                        <li><img src="./img/carousel/23.jpg" alt=""></li>
-                        <li><img src="./img/carousel/24.jpg" alt=""></li>
-                        <li><img src="./img/carousel/25.jpg" alt=""></li>
-                        <li><img src="./img/carousel/26.jpg" alt=""></li>
-                        <li><img src="./img/carousel/27.jpg" alt=""></li>
-                        <li><img src="./img/carousel/28.jpg" alt=""></li>
-                        <li><img src="./img/carousel/29.jpg" alt=""></li>
-                        <li><img src="./img/carousel/30.jpg" alt=""></li>
-
-                    </ul>
-                </div>
-            </div>
-
+            </div> 
         </main>
         <%- include('./partials/footer')%>
 

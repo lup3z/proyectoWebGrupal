@@ -1,54 +1,101 @@
-*{
-    margin: 0px;
-    padding: 0px;
-	box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-.producto{
-    width: 250px;
-    opacity: 1;
+.producto {
+  width: 250px;
+  opacity: 1;
 }
 
-.contenedor2cart{
+.contenedor2cart {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 0;
+  background-color: unset;
+}
+
+.contenedor3cart {
+  background-color: rgb(169, 203, 233);
+  opacity: 1;
+  padding: 11px;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  display: flex;
+  margin-bottom: 25px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.en-stock {
+  font-size: 70px;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
+
+.fas.fa-shopping-cart {
+  font-size: 20px;
+}
+
+.main-header {
+  font-family: "Bangers", cursive;
+  font-size: 25 px;
+  color: rgb(66, 116, 172);
+  background-color: rgb(197, 220, 226);
+  padding: 10px;
+  height: 8rem;
+}
+
+section {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+article {
+  margin: 10px;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 60px;
+}
+
+.hello{
+    height: 70px;
+    list-style:none;
+}
+
+.texto1{
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+}
+
+.ver{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    border: 0;
-    background-color: unset;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
 }
 
-.contenedor3cart{
-    background-color:rgb(169, 203, 233);
-    opacity: 1;
-    padding :11px;
-    width:20%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    display:flex;
-    margin-bottom: 25px;
-    flex-direction: column;
+.ver2{
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    padding: 0;
 }
-
-.en-stock{
-    font-size: 70px;
-    color: white;
-    font-weight: 800;
-    text-align: center;
-    position: relative;
-    top: 40px;
-}
-
-.fas.fa-shopping-cart{
-    font-size: 20px;
-}
-
-.main-header{
-    font-family: 'Bangers', cursive;
-    font-size: 25 px;
-    color: rgb(66, 116, 172);
-    background-color: rgb(197, 220, 226);
-    padding: 10px;
-    height: 8rem;}

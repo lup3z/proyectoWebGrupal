@@ -4,6 +4,10 @@
     overflow: hidden;
 }
 
+.carousel ul{
+    margin-top: 20px;
+}
+
 .carousel ul {
     padding: 5px;
     display: flex;

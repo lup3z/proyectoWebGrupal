@@ -99,5 +99,9 @@ router.get('/profile', authMiddleware, maincontroller.profile )
 router.get('/logout', maincontroller.logout);
 
 
+router.get('/hola123', maincontroller.list)
+router.get('/hola456', maincontroller.list2)
+
+
 
 module.exports = router
