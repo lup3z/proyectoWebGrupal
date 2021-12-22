@@ -17,11 +17,20 @@ const userController = {
         res.render("./user/register");
     },
     newUserRegister:(req, res) => {
-      
-
+        const resultValidation = validationResult(req);
+       
+        
+		if (resultValidation.errors.length > 0) {
+			
+            
+             return res.render('./user/register', {
+				errors: resultValidation.mapped(),
+				oldData: req.body
+			});
+        }
         let userInDB = User.findByField('email', req.body.email);
         if (userInDB) {
-             return res.render("/user/register", {
+             return res.render("./user/register", {
                  errors: {
                      email: {
                          msg: 'Este email ya está registrado'
@@ -30,10 +39,6 @@ const userController = {
                 oldData: req.body
             });
         }
-
-
-
-
         let userToCreate = {
              ...req.body,
              password: bcryptjs.hashSync(req.body.password, 10),

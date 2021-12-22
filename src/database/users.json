@@ -377,5 +377,19 @@
   "nombre": "dsfsdf",
   "password": "$2a$10$cRAi/D.i9FqbvC6JSNPnWeSpiSzRpvnlxA8M6ifP5a/XIuFKNq4vK",
   "avatar": "img/1640141767343_img.jpg"
+ },
+ {
+  "id": 51,
+  "email": "sandrasm123@gmail.com",
+  "nombre": "Sandra Susana Martinez",
+  "password": "$2a$10$ThecFxIR.dtByZvV332Mj.U4e2MXiC3YC.4NZ6WmbTucYxIqYvrQq",
+  "avatar": "img/1640170909424_img.jpg"
+ },
+ {
+  "id": 52,
+  "email": "djfjdfdjfhdsfsss223434@gmail.com",
+  "nombre": "coco123",
+  "password": "$2a$10$5o/XcMUrgHfK8zGlgg/RJOIVAScsL5X3aDjUHgZ/ibPx7YgFJu0a6",
+  "avatar": "img/1640171927202_img.jpg"
  }
 ]
