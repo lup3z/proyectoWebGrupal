@@ -391,5 +391,12 @@
   "nombre": "coco123",
   "password": "$2a$10$5o/XcMUrgHfK8zGlgg/RJOIVAScsL5X3aDjUHgZ/ibPx7YgFJu0a6",
   "avatar": "img/1640171927202_img.jpg"
+ },
+ {
+  "id": 53,
+  "email": "jakukna@gmail.com",
+  "nombre": "jakuna",
+  "password": "$2a$10$S2RqeZxo2VQYggdt4Z525.BRnXReh5hkJziM6mPori0dzyaYHm7sK",
+  "avatar": "img/1640173519620_img.jpg"
  }
 ]

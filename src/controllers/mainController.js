@@ -1,20 +1,10 @@
 const { productModel } = require('../models/Product');
 
-
-
-
-
-
 const controlador = {
 
     main: (req, res) => {
        res.render('home')
-    },
-
-    productCart: (req,res) => {
-        res.render('productCart')
-    },
-   
+    },   
     list: (req, res) => {
         db.Users.findAll()
             .then(function(usuarios){
@@ -29,10 +19,7 @@ const controlador = {
 
             })
     }
-    
 }
-
-	
 
 
 module.exports = controlador
