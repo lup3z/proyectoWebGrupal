@@ -1,12 +1,9 @@
-const { usersModel } = require('../models/User');
-const User = require('../models/Users');
-
 const fs = require("fs");
 const path = require("path");
 const { validationResult } = require('express-validator');
 const bcryptjs = require('bcryptjs');
 const { v4: uuidv4 } = require('uuid');
-const db = require('../database/models');
+const User = require('../models/Users');
 
 
 const userController = {
