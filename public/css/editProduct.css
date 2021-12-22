@@ -1,0 +1,11 @@
+.textos-ver{
+    font-family: "Bangers", cursive;
+    color: white;
+    font-weight: 200;
+}
+
+.ahora{
+    display: flex;
+    flex-direction: row;
+}
+

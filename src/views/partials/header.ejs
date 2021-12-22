@@ -11,7 +11,7 @@
     <div class="main-header">
         <div class="center-test">
             <div class="logo-y-nombre">
-                <a href="/"><img src="./img/pinpng.com-evangelion-logo-png-5252667.png" class="icon"></a>
+                <a href="/"><img src="../img/pinpng.com-evangelion-logo-png-5252667.png" class="icon"></a>
                 <p class="text-header">Koari Comic Store</p>
                 <p class="text-header">A great power comes with a great responsibility - Uncle Ben</p>
             </div>
@@ -20,12 +20,12 @@
     <div class="second-bar">
         <ul class="navbar">
             <% if (locals.isLogged) { %>
-                <li><a href="/profile" class="far fa-user"> Mi usuario</a></li>
+                <li><a href="/user/profile" class="far fa-user"> Mi usuario</a></li>
                 <li><a href="/productCart" class="fas fa-shopping-basket"> Mis compras</a></li>
-                <li><a href="/logout" class="fas fa-sign-out-alt"> Logout</a></li>
+                <li><a href="/user/logout" class="fas fa-sign-out-alt"> Logout</a></li>
                 <% } else { %>
-                    <li><a href="/login" class="fas fa-sign-in-alt"> Ingresá</a></li>
-                    <li><a href="/register" class="fas fa-cart-plus"> Creá tu cuenta</a></li>
+                    <li><a href="/user/login" class="fas fa-sign-in-alt"> Ingresá</a></li>
+                    <li><a href="/user/register" class="fas fa-cart-plus"> Creá tu cuenta</a></li>
                     <% } %>
         </ul>
     </div>

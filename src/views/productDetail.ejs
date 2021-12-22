@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,40 +15,26 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rampart+One&family=Special+Elite&display=swap"
         rel="stylesheet">
     <base href="/">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/stylescart.css">
-    <link rel="stylesheet" href="./css/productList.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/productDetail.css">
     <title>Product List</title>
 </head>
-
 <body>
     <%- include('./partials/header')%>
         <main>
             <tr>
-                <ul type="none" class="contenedor3cart">
+                <ul type="none" class="contenedor">
                     <img src="../<%= product.producto %>" class="producto" height="200" width="200">
-                    <h2 class="nombre">
-                        <%= product.nombre %>
-                    </h2>
-                    <br>
-                    <h4 class="costo">
-                        Costo: <%= product.precio %>
-                    </h4>
-                    <br>
-                    <h4 class="categoria">
-                        Categoria: <%= product.categoria %>
-                    </h4>
-                    <br>
-                    <h4 class="detalle">
-                        Descripcion: <%= product.description %>
-                    </h4>
-                    <br>
-                    <form method="GET" action="/editProduct/<%= product.id %>">
-                        <input type="submit" value="Editar" name="Editar" class="btnForm btnFormEdit">
-                    </form>
+                    <div class="descripcion">
+                        <p class="nombre"> Título: <%= product.nombre %> </p>
+                        <p class="costo"> Valor: $<%= product.precio %> </p>
+                        <p class="detalle">Descripción: <%= product.description %> </p>
+                        <form method="GET" action="/editProduct/<%= product.id %>">
+                            <input type="submit" value="Editar" name="Editar" class="btnForm btnFormEdit">
+                        </form>
+                    </div>
                 </ul>
             </tr>
         </main>
 </body>
-
 </html>

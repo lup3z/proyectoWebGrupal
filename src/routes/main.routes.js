@@ -1,7 +1,7 @@
 const express = require('express'); 
 const router = express.Router(); 
-const maincontroller = require('../controller/mainController');
-const producListController = require('../controller/producListController')
+const maincontroller = require('../controllers/mainController');
+const producListController = require('../controllers/producListController')
 
 const multer = require('multer');
 const path = require('path');
@@ -13,7 +13,7 @@ const storage = multer.diskStorage({
 		if(req.body.description){
 			cb(null, './public/img')
 		}else{
-			cb(null, './public/img/profile')
+			cb(null, './public/img')
 		}
 		},
     filename: (req, file, cb) => {
@@ -73,13 +73,7 @@ const uservalidation = [
 
 router.get('/', maincontroller.main);
 
-router.get('/login', guestMiddleware, maincontroller.login);
-router.post('/login', maincontroller.loginProcess);
-
 router.get('/productCart', maincontroller.productCart);
-
-router.get('/register', guestMiddleware, maincontroller.register);
-router.post('/register', upload.single('avatar'), uservalidation, maincontroller.registerCreate);
 
 router.get('/productList', producListController.productList);
 
@@ -93,11 +87,6 @@ router.get('/productList', producListController.productList);
 router.delete('/:id', producListController.deleteProduct);
 
 router.get('/productDetail/:id', producListController.productDetail);
-
-
-router.get('/profile', authMiddleware, maincontroller.profile )
-router.get('/logout', maincontroller.logout);
-
 
 router.get('/hola123', maincontroller.list)
 router.get('/hola456', maincontroller.list2)

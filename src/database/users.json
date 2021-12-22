@@ -261,5 +261,121 @@
   "password": "$2a$10$59Fwt/bJLX2H8aeRPoX35./IU0pb.WcLRSWxutPfAcn5GboV22ixS",
   "pais": "Argentina",
   "avatar": "img/profile/1635976827388_img.jpg"
+ },
+ {
+  "id": 34,
+  "email": "mila@mila.com.ar",
+  "nombre": "milanesa",
+  "password": "$2a$10$MVVE3K8XQi3/tuoXcRUhxe4US59U4xX8DBcN9pp69PdiaBuXysEm2",
+  "avatar": "img/profile/1640126530038_img.jpg"
+ },
+ {
+  "id": 35,
+  "email": "chori@gmail.com",
+  "nombre": "chori123",
+  "password": "$2a$10$wfsPbZ5VupYhVOo5ek.O4e7JSvnW/2uEyOOc6xW9aTC6TDLeqJndO",
+  "avatar": "img/profile/1640126599096_img.jpg"
+ },
+ {
+  "id": 36,
+  "email": "nati@gmail.com",
+  "nombre": "nati123",
+  "password": "$2a$10$n/yRwet6kg38pSDzaannyu/JfgYmcCmZC3CXnhn9yAErigeWtRYWW",
+  "avatar": "img/profile/1640126642881_img.jpg"
+ },
+ {
+  "id": 37,
+  "email": "lanata@gmail.com",
+  "nombre": "latana",
+  "password": "$2a$10$kJGF4HNfeYf5909G7TF0becELkaDDNRjyhxUARifW2tfNu6J0zK4K",
+  "avatar": "img/profile/1640126880346_img.jpg"
+ },
+ {
+  "id": 38,
+  "email": "firu@gmail.com",
+  "nombre": "firu123",
+  "password": "$2a$10$7AwBC96S8tOGgM3nbGOb3OJ/DIDnvqgXtmheFFlIkKGsXqf2DKwgq",
+  "avatar": "img/profile/1640126918292_img.jpg"
+ },
+ {
+  "id": 39,
+  "email": "juajo@gmail.cm",
+  "nombre": "juanjo123",
+  "password": "$2a$10$c0TWgkceFitCFE4FbypigOa/Kh2.XcxwJs.5/997TSf254I44EqMG",
+  "avatar": "img/profile/1640126971692_img.jpg"
+ },
+ {
+  "id": 40,
+  "email": "sssss@gmail.com",
+  "nombre": "sssss",
+  "password": "$2a$10$XbEe9yadapJfUlsZb9qs6OZXq.6nRyS5wtodLoWQgW1iAfewercVa",
+  "avatar": "img/profile/1640127459930_img.jpg"
+ },
+ {
+  "id": 41,
+  "email": "diego123@gmail.com",
+  "nombre": "diego123",
+  "password": "$2a$10$qYCbTRfAkLjVTpakj/.P0O.GsIrapsLHIytDfzBNWoBruJxarPi/6",
+  "avatar": "img/profile/1640127884928_img.jpg"
+ },
+ {
+  "id": 42,
+  "email": "3242344@gmail.com",
+  "nombre": "23423423",
+  "password": "$2a$10$sphgFIie58zlz84TsBNo6.tfFC4sHVYfRhM4qreJHsaJ5EDyb5fLe",
+  "avatar": "img/profile/1640127952694_img.jpg"
+ },
+ {
+  "id": 43,
+  "email": "lacosa123@gmail.com",
+  "nombre": "la cosa",
+  "password": "$2a$10$A9.j7JhKeED7iAA7VsEj9eRB5OvkQJ9yNyO85Mmlvo.MPlLsWofy.",
+  "avatar": "1640135893201_img.jpg"
+ },
+ {
+  "id": 44,
+  "email": "lacosa123@gmail.com",
+  "nombre": "la cosa",
+  "password": "$2a$10$YHZmFQKj7EG2q5.3zjS1Iu.69gArvvKx76RIlLxV8H8kmv89Uj/pu",
+  "avatar": "1640136139829_img.jpg"
+ },
+ {
+  "id": 45,
+  "email": "sdkofjhdsfq@gmail.com",
+  "nombre": "fjsdhfdsf",
+  "password": "$2a$10$/Wblp.RVYARkyMp2VTZIwuYPgs9zYhixhax/7O/NaC5d0/rTaZDbC",
+  "avatar": "img/profile/1640136267933_img.jpg"
+ },
+ {
+  "id": 46,
+  "email": "nicogomez23@hotmail.com",
+  "nombre": "dsfsafsdf",
+  "password": "$2a$10$.WiTak.FcxPgj8kKoA.wY.wEj.O.oS3VUTKo.BuXQtd6GzKAeC1me",
+  "avatar": "1640141496110_img.jpg"
+ },
+ {
+  "id": 47,
+  "email": "pedro123321@gmail.com",
+  "nombre": "pedro123",
+  "password": "$2a$10$Ralk7OszEcnN/uQss6hpe.XLlwldFw4fk.kwb1.gidblK5/dapftq"
+ },
+ {
+  "id": 48,
+  "email": "sadasdasdasdasd@gmail.com",
+  "nombre": "dfsjkf",
+  "password": "$2a$10$HEc.aqJu.EzKK27n45G6dOxHjvNkYuY94dPQagqZ3QsbWUtgbwTty"
+ },
+ {
+  "id": 49,
+  "email": "werwer@sdnjkfhds.com",
+  "nombre": "werwer",
+  "password": "$2a$10$PRWzicC46IjD6IDG1MXm6uHPvQeKNRO3Fv7.0bHNbz1PhCrRVdpIu"
+ },
+ {
+  "id": 50,
+  "email": "wqewqewqe@gmail.com",
+  "nombre": "dsfsdf",
+  "password": "$2a$10$cRAi/D.i9FqbvC6JSNPnWeSpiSzRpvnlxA8M6ifP5a/XIuFKNq4vK",
+  "avatar": "img/1640141767343_img.jpg"
  }
 ]

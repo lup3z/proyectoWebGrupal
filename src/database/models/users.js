@@ -18,10 +18,6 @@ module.exports = function (sequelize, DataTypes) {
     password: {
         type: DataTypes.STRING(255),
         allowNull: false
-    },
-    avatar: {
-        type: DataTypes.STRING(255),
-        allowNull: true
     }
   }, {
     sequelize,
