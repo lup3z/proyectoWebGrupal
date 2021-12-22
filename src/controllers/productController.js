@@ -32,7 +32,7 @@ const productController = {
             {
                 encoding: "utf-8",
             });
-        res.render("./product/productList", { products: products });
+            res.render("./product/productList", {products:products });
     },
     productDetail: (req, res) => {
         const id = req.params.id;
@@ -78,9 +78,7 @@ const productController = {
             }
         );
         res.render("./product/productList", { products: products });
-    },
-
-    
+    }
 }
 
 module.exports = productController;

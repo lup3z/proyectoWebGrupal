@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a0f8081e82.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comic+Neue:ital,wght@0,700;1,700&display=swap"
-        rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-        <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rampart+One&family=Special+Elite&display=swap"
-        rel="stylesheet">
-    <base href="/">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/productDetail.css">
-    <title>Product List</title>
+    <%- include('../partials/head')%> 
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/productDetail.css">
+    <title>Product Detail</title>
 </head>
 <body>
     <%- include('../partials/header')%>
         <main>
             <tr>
                 <ul type="none" class="contenedor">
-                    <img src="../<%= product.producto %>" class="producto" height="200" width="200">
+                    <img src="../../<%= product.producto %>" class="producto" height="200" width="200">
                     <div class="descripcion">
                         <p class="nombre"> Título: <%= product.nombre %> </p>
                         <p class="costo"> Valor: $<%= product.precio %> </p>
                         <p class="detalle">Descripción: <%= product.description %> </p>
-                        <form method="GET" action="./product/editProduct/<%= product.id %>">
+                        <form method="GET" action="../editProduct/<%= product.id %>">
                             <input type="submit" value="Editar" name="Editar" class="btnForm btnFormEdit">
                         </form>
                     </div>
