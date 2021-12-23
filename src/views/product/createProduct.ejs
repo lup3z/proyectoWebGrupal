@@ -3,72 +3,61 @@
 <head>
     <%- include('../partials/head')%> 
     <link rel="stylesheet" href="../css/createProduct.css">
-    <link rel="stylesheet" href="../css/loginstyles.css">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/stylescart.css">
     <title>Crear Producto</title>
 </head>
     <body>
         <%- include('../partials/header')%>
-        <main class="main-formulario-alta-producto">
-            <div class="formulario">
-                <h3 class="titulo-alta-producto">Crear un producto</h3>
+        <div class="main-formulario-alta-producto">
+            <div>
+                <h3>Crear un producto</h3>
                 <br>
-                <form action="./createProduct" method="POST" class="formulario-alta-producto"
-                    enctype="multipart/form-data">
-                    <div class="control-formulario-producto">
-                        <div>
-                            <label for="nombre">Nombre del producto:</label>
-                            <input type="text" name="nombre" id="nombre"
-                                class="control <%= locals.errors && errors.nombre ? 'is-invalid' : null %>"
-                                value="<%= locals.oldData ? oldData.nombre : null %>">
+                <form action="./createProduct" method="POST" enctype="multipart/form-data">
+                <div>
+                    <div class="row">
+                        <label for="nombre">Título:</label>
+                        <input type="text" name="nombre" id="nombre" class="barra" "<%= locals.errors && errors.nombre ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.nombre : null %>">
                             <% if (locals.nombre && errors.nombre) { %>
                                 <%= errors.nombre.msg %>
-                                    <% } %>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="descripcion">Descripción:</label>
-                            <textarea name="description" id="descripcion" rows="3" class="control"
-                                placeholder="Escriba la descripcion aqui.."></textarea>
-                            <span class="feedback"></span>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="imagen">Ingrese imagen del producto:</label>
-                            <input type="file" name="producto" accept=".jpg,.png" multiple>
-                            <span class="feedback"></span>
-                        </div>
-                        <br>
-                        <div>
-                            <label for="precio">Precio:</label>
-                            <input type="text" name="precio" id="precio" class="control">
-                            <span class="feedback"></span>
-                        </div>
-                        <br>
-                        <div>
-                            <label>Categoria:</label>
-                            <select name="categorias">
-                                <option value="">Categorias</option>
-                                <% let categorias=['Comic','Manga','Novelas Graficas'] %>
-                                    <% for (const unaCategoria of categorias){ %>
-                                        <option value="<%= unaCategoria %>">
-                                            <%= unaCategoria %>
-                                        </option>
-                                        <% } %>
-                            </select>
-                        </div>
-                        <br>
-                        <div>
-                            <button type="submit" class="boton-formulario-alta">Crear Producto</button>
-                            <button type="reset" class="boton-formulario-alta">Borrar</button>
-                        </div>
+                            <% } %>
                     </div>
-            </div>
-            </form>
-        </main>
-
+                    <div class="row">
+                        <label for="descripcion">Descripción:</label>
+                        <input class="barra" name="description" id="descripcion"></input>
+                        <span class="feedback"></span>
+                    </div>
+                    <div class="row">
+                        <label for="volumen">Volumen:</label>
+                        <input class="barra" name="volumen" id="volumen"></input>
+                        <span class="feedback"></span>
+                    </div>
+                    <div class="row">
+                        <label for="autores">Autor:</label>
+                        <input class="barra" name="autor" id="autor" ></input>
+                        <span class="feedback"></span>
+                    </div>
+                    <div class="row">
+                        <label for="fecha">Edición:</label>
+                        <input class="barra" name="edicion" id="edicion"></input>
+                        <span class="feedback"></span>
+                    </div>
+                    <div class="row">
+                        <label for="precio">Precio:</label>
+                        <input class="barra" type="text" name="precio" id="precio">
+                        <span class="feedback"></span>
+                    </div>
+                    <div class="row">
+                        <label for="imagen">Imagen:</label>
+                        <input class="barra-imagen" type="file" name="producto" accept=".jpg,.png" multiple>
+                        <span class="feedback"></span>
+                    </div>
+                    <div class="botonera">
+                        <button type="submit">Crear Producto</button>
+                        <button type="reset">Borrar</button>
+                    </div>
+                </div>
+                </form>
+            </div> 
+        </div>
     </body>
-
 </html>

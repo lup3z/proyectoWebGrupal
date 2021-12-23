@@ -5,30 +5,58 @@
 }
 
 .main-formulario-alta-producto {
-    display: flex;
-    width: 90vw;
-    margin: auto;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 20px;
-    
+	max-width: 100%;
+	padding: 25px;
+	margin: 1% auto 0;
+	position: relative;
+	z-index: 1;
+    width: 500px;
+    margin-top: 70px;
 }
 
+h3{
+    text-align: center;
+}
+
+
 body{
-    background-image: url("/img/pngwing.com (2).png");
+    background-image: url("/img/pexels-dayvison-tadeu-4142511.jpg");
     color: rgb(20, 12, 12);
-    font-family: 'Bebas Neue', cursive;
-    background-color:plum;
+    font-family: 'Bangers', cursive;
+    background-size: cover;
+}
+
+.row{
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+label{
+    position: relative;
+    top: 3px;
+    text-align: center;
+    width: 25%;
+}
+
+.barra{
+    width: 450px;
+}
+
+.barra-imagen{
+    width: 450px;
+    text-align: center;
+    position: relative;
+    left: 45px;
 }
 
 .text-danger{
  color: red;
 }
 
-.main-header{
-    font-family: 'Bangers', cursive;
-    font-size: 25 px;
-    color: rgb(66, 116, 172);
-    background-color: rgb(197, 220, 226);
-    padding: 10px;
-    height: 8rem;}
+.botonera{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}

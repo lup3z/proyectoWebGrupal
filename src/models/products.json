@@ -1,1 +1,302 @@
-[]
+[
+    {
+        "id": 3,
+        "nombre": "The Walking Dead N° 88",
+        "description": "We Find Ourselves, Pt. 4",
+        "volumen": "The Walking dead",
+        "autor": "Robert Kirkman",
+        "edicion": "Agosto del 2011",
+        "precio": "1000",
+        "producto": "img/1640215200958_img.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "The Walking dead N° 74",
+        "description": "Too Far Gone, Pt. 2",
+        "volumen": "The Walking dead",
+        "autor": "Robert Kirkman",
+        "edicion": "julio del 2010",
+        "precio": "900",
+        "producto": "img/1640215487238_img.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "The Walking dead N° 151",
+        "description": "Call to Arms",
+        "volumen": "The Walking dead",
+        "autor": "Robert Kirkman",
+        "edicion": "Febrero del 2016",
+        "precio": "1050",
+        "producto": "img/1640215547034_img.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "The Walking dead N° 171",
+        "description": "Fear the Princess",
+        "volumen": "The Walking dead",
+        "autor": "Robert Kirkman",
+        "edicion": "Septiembre del 2017",
+        "precio": "1250",
+        "producto": "img/1640215592805_img.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "The Walking dead N° 188",
+        "description": "Falling Into Place",
+        "volumen": "The Walking dead",
+        "autor": "Robert Kirkman",
+        "edicion": "febrero del 2019",
+        "precio": "1600",
+        "producto": "img/1640215639579_img.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Dorohedoro N° 2",
+        "description": "libro de hechizos del 7 al 11",
+        "volumen": "volumen único",
+        "autor": "q hayashida",
+        "edicion": "agosto del 2010",
+        "precio": "800",
+        "producto": "img/1640215787681_img.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Dorohedoro N° 11",
+        "description": "Libro de hechizos varios",
+        "volumen": "volumen único",
+        "autor": "q hayashida",
+        "edicion": "diciembre del 2013",
+        "precio": "800",
+        "producto": "img/1640216154138_img.jpg"
+    },
+    {
+        "id": 10,
+        "nombre": "Dorohedoro N° 4",
+        "description": "Libro de hechizos varios",
+        "volumen": "volumen único",
+        "autor": "q hayashida",
+        "edicion": "Agosto del 2011",
+        "precio": "800",
+        "producto": "img/1640216206210_img.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Spiderman N° 40",
+        "description": "desunidos",
+        "volumen": "Panini Comics Colección ",
+        "autor": "J. Michael Straczynski &  Paul Jenkins",
+        "edicion": "Julio del 2005",
+        "precio": "1500",
+        "producto": "img/1640216413914_img.jpg"
+    },
+    {
+        "id": 12,
+        "nombre": "Spiderman N° 49",
+        "description": "sin descripción",
+        "volumen": "Panini Comics Colección ",
+        "autor": "J. Michael Straczynski &  Paul Jenkins",
+        "edicion": "abril del 2006",
+        "precio": "1000",
+        "producto": "img/1640216501588_img.jpg"
+    },
+    {
+        "id": 13,
+        "nombre": "Spiderman N° 55",
+        "description": "sin descripción",
+        "volumen": "Panini Comics Colección ",
+        "autor": "J. Michael Straczynski & Reginald Hudlin",
+        "edicion": "Octubre del 2006",
+        "precio": "3000",
+        "producto": "img/1640216684650_img.jpg"
+    },
+    {
+        "id": 14,
+        "nombre": "Naruto N° 29",
+        "description": "Kakashi vs. Itachi!!",
+        "volumen": "Naruto Shippuden",
+        "autor": "Masashi Kishimoto",
+        "edicion": "mayo del 2008",
+        "precio": "650",
+        "producto": "img/1640216765007_img.jpg"
+    },
+    {
+        "id": 15,
+        "nombre": "Naruto N° 43",
+        "description": "The Man With the Truth",
+        "volumen": "Naruto Shippuden",
+        "autor": "Masashi Kishimoto",
+        "edicion": "april del 2009",
+        "precio": "650",
+        "producto": "img/1640216820802_img.jpg"
+    },
+    {
+        "id": 16,
+        "nombre": "Naruto N° 72",
+        "description": "Uzumaki Naruto",
+        "volumen": "Naruto Shippuden",
+        "autor": "Masashi Kishimoto",
+        "edicion": "octubre del 2015",
+        "precio": "1850",
+        "producto": "img/1640216874804_img.jpg"
+    },
+    {
+        "id": 17,
+        "nombre": "wolverine N° 312",
+        "description": "remus",
+        "volumen": "Marvel premium comics editions",
+        "autor": "joph loeb",
+        "edicion": "octubre del 2012",
+        "precio": "1450",
+        "producto": "img/1640216982422_img.jpg"
+    },
+    {
+        "id": 18,
+        "nombre": "wolverine N° 305",
+        "description": "rot part one",
+        "volumen": "Marvel premium comics editions",
+        "autor": "cullen bunn",
+        "edicion": "junio del 2012",
+        "precio": "1450",
+        "producto": "img/1640217034077_img.jpg"
+    },
+    {
+        "id": 19,
+        "nombre": "wolverine N° 300",
+        "description": "back in japan part one",
+        "volumen": "Marvel premium comics editions",
+        "autor": "jason aaron",
+        "edicion": "marzo del 2012",
+        "precio": "3000",
+        "producto": "img/1640217086028_img.jpg"
+    },
+    {
+        "id": 20,
+        "nombre": "wolverine N° 7",
+        "description": "Wolverine vs The X-Men, Part 2 of 3",
+        "volumen": "Marvel premium comics editions",
+        "autor": "jason aaron",
+        "edicion": "mayo del 2011",
+        "precio": "950",
+        "producto": "img/1640217136071_img.jpg"
+    },
+    {
+        "id": 21,
+        "nombre": "one piece N° 93",
+        "description": "The star of ebisu",
+        "volumen": "one piece",
+        "autor": "eiichiro oda",
+        "edicion": "abril del 2020",
+        "precio": "1600",
+        "producto": "img/1640217285176_img.jpg"
+    },
+    {
+        "id": 22,
+        "nombre": "one piece N° 89",
+        "description": "bad end musical",
+        "volumen": "one piece",
+        "autor": "eiichiro oda",
+        "edicion": "febrero del 2019",
+        "precio": "1600",
+        "producto": "img/1640217338813_img.jpg"
+    },
+    {
+        "id": 23,
+        "nombre": "one piece N° 73",
+        "description": "Operation Dressrosa S.O.P.",
+        "volumen": "one piece",
+        "autor": "eiichiro oda",
+        "edicion": "enero del 2015",
+        "precio": "950",
+        "producto": "img/1640217422895_img.jpg"
+    },
+    {
+        "id": 24,
+        "nombre": "one piece N° 56",
+        "description": "Thank You",
+        "volumen": "one piece",
+        "autor": "eiichiro oda",
+        "edicion": "febrero del 2011",
+        "precio": "450",
+        "producto": "img/1640217460913_img.jpg"
+    },
+    {
+        "id": 25,
+        "nombre": "capitan america 616",
+        "description": "70th Anniversary Issue",
+        "volumen": "capitan america volumen unico",
+        "autor": "alec siegel",
+        "edicion": "mayo del 2011",
+        "precio": "850",
+        "producto": "img/1640217545393_img.jpg"
+    },
+    {
+        "id": 26,
+        "nombre": "capitan america 611",
+        "description": "the Trial of Captain America, Part One",
+        "volumen": "capitan america volumen unico",
+        "autor": "ed brubaker",
+        "edicion": "diciembre del 2010",
+        "precio": "1250",
+        "producto": "img/1640217594791_img.jpg"
+    },
+    {
+        "id": 27,
+        "nombre": "capitan america 601",
+        "description": "Red, White and Blue-Blood",
+        "volumen": "capitan america volumen unico",
+        "autor": "ed brubaker",
+        "edicion": "septiembre del 2009",
+        "precio": "1500",
+        "producto": "img/1640217643728_img.jpg"
+    },
+    {
+        "id": 28,
+        "nombre": "batman N° 608",
+        "description": "Hush Chapter One: The Ransom",
+        "volumen": "batman volumen unico",
+        "autor": "joph loeb",
+        "edicion": "diciembre del 2002",
+        "precio": "3200",
+        "producto": "img/1640217731455_img.png"
+    },
+    {
+        "id": 29,
+        "nombre": "batman N° 614",
+        "description": "Hush Chapter Seven : The Joke",
+        "volumen": "batman volumen unico",
+        "autor": "joph loeb",
+        "edicion": "junio del 2003",
+        "precio": "1250",
+        "producto": "img/1640217772094_img.png"
+    },
+    {
+        "id": 30,
+        "nombre": "batman N° 688",
+        "description": "long Shadows, Part One: Old Sins Cast Long Shadows",
+        "volumen": "batman volumen unico",
+        "autor": "judd winick",
+        "edicion": "septiembre del 2009",
+        "precio": "2300",
+        "producto": "img/1640217822378_img.jpg"
+    },
+    {
+        "id": 31,
+        "nombre": "the spectre N° 24",
+        "description": "They Say It's Your Birthday!",
+        "volumen": "the spectre  vol.2",
+        "autor": "J. M. DeMatteis",
+        "edicion": "febrero del 2003",
+        "precio": "1350",
+        "producto": "img/1640217901344_img.jpg"
+    },
+    {
+        "id": 32,
+        "nombre": "the spectre N° 5",
+        "description": "the who faces of evil!",
+        "volumen": "the spectre  vol.2",
+        "autor": "J. M. DeMatteis",
+        "edicion": "Julio del 2001",
+        "precio": "2560",
+        "producto": "img/1640217973081_img.jpg"
+    }
+]

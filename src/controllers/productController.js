@@ -18,13 +18,15 @@ const productController = {
     abmproduct: (req, res) => {
         const file = req.file;
         let newId = products[(products.length) - 1].id + 1
-        let {nombre, description, precio, categoria} = req.body 
+        let {nombre, description, volumen, autor, edicion, precio} = req.body 
         let newProduct = {
             id: newId,
             nombre: req.body.nombre,
             description: req.body.description,
+            volumen: req.body.volumen,
+            autor:req.body.autor,
+            edicion:req.body.edicion,
             precio: req.body.precio,
-            categoria: req.body.categoria,
             producto: `img/${file.filename}`,
         };
         products.push(newProduct);
