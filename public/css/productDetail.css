@@ -35,3 +35,12 @@ body{
     font-family: 'Bangers', cursive;
     background-size: cover;
 }
+
+.descripcion{
+    border: solid 1px white;
+    margin-left: 40px;
+}
+
+.detalle{
+    font-size: 21px;
+}

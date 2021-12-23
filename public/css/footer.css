@@ -19,28 +19,46 @@
     font-size: 20px;
 }
 
+.contenedor .fa-facebook{
+    color: black;
+}
+
+.contenedor .fa-instagram{
+    color: black;
+}
+
+.contenedor .fa-google{
+    color: black;
+}
+
+.contenedor .fa-whatsapp{
+    color: black;
+}
+
+
+
 .contenedor ul li:hover .fa-facebook{
-    color: #3b5998;
-    text-shadow: 0 0 15px #3b5998;
-    transition: all 0.5s ease;
+    color: blue;
+    text-shadow: 0 0 15px blue;
+    transition: all 0.2s ease;
 }
 
 .contenedor ul li:hover .fa-instagram{
     color:#bc2a8d;
     text-shadow: 0 0 15px #bc2a8d;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 .contenedor ul li:hover .fa-google{
     color: #dd4b39;
     text-shadow: 0 0 15px  #dd4b39;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
 }
 
 .contenedor ul li:hover .fa-whatsapp{
     color: #4dc247;
-    text-shadow: 0 0 15px  #4dc247;
-    transition: all 0.5s ease;
+    text-shadow: 0 0 300px  #4dc247;
+    transition: all 0.2s ease;
 }
 
 .footer-mensaje{
