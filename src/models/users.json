@@ -12,5 +12,12 @@
   "nombre": "fran",
   "password": "$2a$10$/yPRQpxtm3b.lf3R0f2cE.LKByzTE28PyWxOEXK.C.IrrNx1GwgBC",
   "avatar": "img/1640220118589_img.jpg"
+ },
+ {
+  "id": 3,
+  "email": "jere@gmail.com",
+  "nombre": "jere",
+  "password": "$2a$10$XZtdck5StGqXaDodpFg7m.ke6Zaf5ak4jeqajT9QJeGkDoWvi0rCC",
+  "avatar": "img/1640223634476_img.jpg"
  }
 ]
