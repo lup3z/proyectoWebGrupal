@@ -21,10 +21,11 @@
         <ul class="navbar">
             <% if (locals.isLogged) { %>
                 <li><a href="/user/profile" class="far fa-user"> Mi usuario</a></li>
-                <li><a href="/productCart" class="fas fa-shopping-basket"> Mis compras</a></li>
+                <li><a href="/product/productList" class="fas fa-shopping-basket"> En Stock</a></li>
                 <li><a href="/user/logout" class="fas fa-sign-out-alt"> Logout</a></li>
                 <% } else { %>
                     <li><a href="/user/login" class="fas fa-sign-in-alt"> Ingresá</a></li>
+                    <li><a href="/product/productList" class="fas fa-shopping-basket"> En Stock</a></li>
                     <li><a href="/user/register" class="fas fa-cart-plus"> Creá tu cuenta</a></li>
                     <% } %>
         </ul>

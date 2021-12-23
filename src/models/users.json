@@ -5,5 +5,12 @@
   "nombre": "Nicolas Martin Gomez",
   "password": "$2a$10$wqOVlBfpu1ZGByWZgEy/kuslDO/PcvZQFPTESbWYQW89JfdCc8D5W",
   "avatar": "img/1640190624775_img.jpg"
+ },
+ {
+  "id": 2,
+  "email": "fran@gmail.com",
+  "nombre": "fran",
+  "password": "$2a$10$/yPRQpxtm3b.lf3R0f2cE.LKByzTE28PyWxOEXK.C.IrrNx1GwgBC",
+  "avatar": "img/1640220118589_img.jpg"
  }
 ]

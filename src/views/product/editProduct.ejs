@@ -3,55 +3,60 @@
 <head>
     <%- include('../partials/head')%> 
     <link rel="stylesheet" href="../../css/createProduct.css">
-    <link rel="stylesheet" href="../../css/loginstyles.css">
-    <link rel="stylesheet" href="../../css/styles.css">
-    <link rel="stylesheet" href="../../css/stylescart.css">
     <link rel="stylesheet" href="../../css/normalize.css">
-    <link rel="stylesheet" href="../../css/editProduct.css">
+    <title>Crear Producto</title>
     <title>Editar Producto</title>
 </head>
-        <body>
-            <%- include('../partials/header')%>
-                <main class="main-formulario-alta-producto">
-                    <div class="formulario">
-                        <h3 class="titulo-alta-producto">Editar un producto</h3>
-                                               
-                        <form action="../<%= products.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-                            <div class="control-formulario-producto">
-                                
-                                <div class="input_field">
-                                    <label for="name" class="textos-ver">Título:</label>
-                                    <input type="text" name="nombre" id="nombre" class="control" value="<%= products.nombre %>">
-                                </div>
-                                <div class="input_field">
-                                    <label for="descripcion" class="textos-ver">Descripción:</label>
-                                    <input type="text" name="descripcion" id="descripcion" class="control"
-                                        value="<%= products.description %>">
-                                    <span class="feedback"></span>
-                                </div>
-
-                                <div>
-                                    <label for="imagen" class="textos-ver">Imagen:</label>
-                                    <input type="file" name="producto" accept=".jpg,.png" multiple>
-                                    <span class="feedback"></span>
-                                </div>
-
-                                <div>
-                                    <label for="precio" class="textos-ver">Precio:</label>
-                                    <input type="text" name="precio" id="precio" class="control" value="<%= products.precio %>">
-                                    <span class="feedback"></span>
-                                </div>
-
-                                <div>
-                                    <button type="submit" class="boton-formulario-alta">Editar Producto</button>
-                                </div>
-                            </div>
-                        </form>
-                        <form method="POST" action="../<%= products.id %>?_method=DELETE">
-                            <button type="submit" class="boton-formulario-alta">Borrar</button>
-                        </form>
-                    </div>
-                        
-                </main>
-        </body>
+<body>
+    <%- include('../partials/header')%>
+    <div class="main-formulario-alta-producto">
+        <div>
+                <h3>Editar un producto</h3>
+                <br>                           
+                <form action="../<%= products.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                    <div>
+                        <div class="row">
+                            <label for="name">Título:</label>
+                            <input type="text" name="nombre" id="nombre" class="barra" value="<%= products.nombre %>">
+                        </div>
+                        <div class="row">
+                            <label for="descripcion">Descripción:</label>
+                            <input class="barra" name="description" id="descripcion" value="<%= products.description %>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="volumen">Volumen:</label>
+                            <input class="barra" name="volumen" id="volumen" value="<%= products.volumen%>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="autores">Autor:</label>
+                            <input class="barra" name="autor" id="autor" value="<%= products.autor%>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="fecha">Edición:</label>
+                            <input class="barra" name="edicion" id="edicion" value="<%= products.edicion %>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="precio">Precio:</label>
+                            <input class="barra" type="text" name="precio" id="precio" value="<%= products.precio %>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="imagen">Imagen:</label>
+                            <input class="barra-imagen" type="file" name="producto" accept=".jpg,.png" multiple></input>
+                            <span class="feedback"></span>
+                        </div>
+                    </div> 
+                </form>
+                <div class="botonera">
+                    <button type="submit" class="botonera">Editar</button>
+                    <form method="POST" action="../<%= products.id %>?_method=DELETE">
+                        <button type="botonera">Borrar</button>
+                    </form>
+                </div>
+        </div>             
+    </body>
 </html>

@@ -49,12 +49,14 @@ const productController = {
     editProduct: (req, res) => {
         let id = req.params.id;
         const archivo = req.file;
-        const { nombre, precio,categoria, description } = req.body;
+        const {nombre, description, volumen, autor, edicion, precio} = req.body;
         products.forEach(product => {
             if(product.id == id){
             product.nombre= nombre,
             product.description= description,
-            product.categoria= categoria,
+            product.volumen=volumen,
+            product.autor=autor,
+            product.edicion=edicion,
             product.producto= `img/${archivo.filename}`,
             product.precio= precio
             }
