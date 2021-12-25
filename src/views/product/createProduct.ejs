@@ -2,62 +2,65 @@
 <html lang="es">
 <head>
     <%- include('../partials/head')%> 
-    <link rel="stylesheet" href="../css/createProduct.css">
+    <link rel="stylesheet" href="../css/product/create&EditProduct.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <title>Crear Producto</title>
 </head>
-    <body>
-        <%- include('../partials/header')%>
+<body>
+    <%- include('../partials/header')%>
         <div class="main-formulario-alta-producto">
             <div>
                 <h3>Crear un producto</h3>
                 <br>
                 <form action="./createProduct" method="POST" enctype="multipart/form-data">
-                <div>
-                    <div class="row">
-                        <label for="nombre">Título:</label>
-                        <input type="text" name="nombre" id="nombre" class="barra" "<%= locals.errors && errors.nombre ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.nombre : null %>">
+                    <div>
+                        <div class="row">
+                            <label for="nombre">Título:</label>
+                            <input type="text" name="nombre" id="nombre"
+                                class="barra" "<%= locals.errors && errors.nombre ? 'is-invalid' : null %>"
+                                value="<%= locals.oldData ? oldData.nombre : null %>">
                             <% if (locals.nombre && errors.nombre) { %>
                                 <%= errors.nombre.msg %>
-                            <% } %>
+                                    <% } %>
+                        </div>
+                        <div class="row">
+                            <label for="descripcion">Descripción:</label>
+                            <input class="barra" name="description" id="descripcion"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="volumen">Volumen:</label>
+                            <input class="barra" name="volumen" id="volumen"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="autores">Autor:</label>
+                            <input class="barra" name="autor" id="autor"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="fecha">Edición:</label>
+                            <input class="barra" name="edicion" id="edicion"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="precio">Precio:</label>
+                            <input class="barra" type="text" name="precio" id="precio">
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="imagen">Imagen:</label>
+                            <input class="barra-imagen" type="file" name="producto" accept=".jpg,.png" multiple>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="botonera">
+                            <button type="submit">Crear Producto</button>
+                            <button type="reset">Borrar</button>
+                        </div>
                     </div>
-                    <div class="row">
-                        <label for="descripcion">Descripción:</label>
-                        <input class="barra" name="description" id="descripcion"></input>
-                        <span class="feedback"></span>
-                    </div>
-                    <div class="row">
-                        <label for="volumen">Volumen:</label>
-                        <input class="barra" name="volumen" id="volumen"></input>
-                        <span class="feedback"></span>
-                    </div>
-                    <div class="row">
-                        <label for="autores">Autor:</label>
-                        <input class="barra" name="autor" id="autor" ></input>
-                        <span class="feedback"></span>
-                    </div>
-                    <div class="row">
-                        <label for="fecha">Edición:</label>
-                        <input class="barra" name="edicion" id="edicion"></input>
-                        <span class="feedback"></span>
-                    </div>
-                    <div class="row">
-                        <label for="precio">Precio:</label>
-                        <input class="barra" type="text" name="precio" id="precio">
-                        <span class="feedback"></span>
-                    </div>
-                    <div class="row">
-                        <label for="imagen">Imagen:</label>
-                        <input class="barra-imagen" type="file" name="producto" accept=".jpg,.png" multiple>
-                        <span class="feedback"></span>
-                    </div>
-                    <div class="botonera">
-                        <button type="submit">Crear Producto</button>
-                        <button type="reset">Borrar</button>
-                    </div>
-                </div>
                 </form>
-            </div> 
+            </div>
         </div>
-    </body>
+</body>
+
 </html>

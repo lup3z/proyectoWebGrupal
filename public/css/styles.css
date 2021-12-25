@@ -195,33 +195,3 @@ button, input, optgroup, select, textarea {
 }
 
 
-
-.texto1{
-    font-family: "Bangers", cursive;
-    font-size: 20px;
-}
-
-.texto{
-    font-family: "Bangers", cursive;
-    font-size: 18px;
-    color: red;
-}
-
-
-.ver .fas{
-    color:#39b54a;
-    display: block;
-    font-size: 35px;
-    padding: 5px;
-    width: 37px;
-    height: 37px;
-    border: 1px solid #39b54a;
-    border-radius: 50%;
-    position: relative;
-    left: 20px;
-}
-
-article:hover .ver .fas{
-    transition: 1000ms;
-    transform: rotate(-45deg);
-}

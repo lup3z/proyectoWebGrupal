@@ -42,7 +42,6 @@
 .icon{
     transform: scaleX(-1);
     height: 100px;
-    
 }
 
 .navbar{
@@ -63,8 +62,6 @@
 .navbar li{
     list-style: none;
 }
-
-
 
 @media (min-width: 768px){
     .main-header{
@@ -94,11 +91,5 @@
         display: flex;
         justify-content: unset;
     }
-    
-    
-    
-    
-    
-   
 }
 

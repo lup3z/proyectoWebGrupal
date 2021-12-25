@@ -35,8 +35,6 @@
     color: black;
 }
 
-
-
 .contenedor ul li:hover .fa-facebook{
     color: blue;
     text-shadow: 0 0 15px blue;

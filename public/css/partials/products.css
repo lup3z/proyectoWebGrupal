@@ -1,0 +1,62 @@
+.texto1{
+    font-family: "Bangers", cursive;
+    font-size: 20px;
+}
+
+.texto{
+    font-family: "Bangers", cursive;
+    font-size: 18px;
+    color: red;
+    text-align: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 2px;
+}
+
+.ver .fas{
+    color:#39b54a;
+    display: block;
+    font-size: 20px;
+    padding: 5px;
+    width: 37px;
+    height: 37px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    position: relative;
+    left: 20px;
+    bottom: 10px;
+}
+
+
+article:hover .ver .fas{
+    transition: 1000ms;
+    transform: rotate(-45deg);
+}
+
+body {
+    background-image: url("../../img/backcomic.jpg");
+}
+
+.producto {
+    width: 210px;
+    opacity: 1;
+}
+  
+.producto:hover{
+    width: 250px;
+    transition-property: width;
+    transition-duration: 0.2s;
+}
+
+.hello{
+    height: 70px;
+    list-style:none;
+}
+
+.ver{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
