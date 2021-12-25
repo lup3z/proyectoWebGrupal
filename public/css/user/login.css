@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url("../../img/backreg.jpg");
+  background-position: 85% -2%;
+}
+
 .formulario-login {
   margin-left: 250px;
 }
@@ -47,25 +52,20 @@
   font-size: 25px;
 }
 
-body {
-  background-image: url("../../img/backreg.jpg");
-  background-position: 85% -2%;
+.error {
+  font-family: "Bangers", cursive;
+  color: white;
 }
 
-.error{
-    font-family: 'Bangers', cursive;
+::placeholder {
+  font-family: "Bangers", cursive;
+  color: black;
+  text-align: center;
+}
+
+.text-login-remember-me{
+    font-family: "Bangers", cursive;
     color: white;
-}
+    font-weight: 500;
 
-::placeholder{
-    font-family: 'Bangers', cursive;
-    color: black;
-    text-align: center;
-}
-
-button, input, optgroup, select, textarea {
-    font-family: inherit;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0;
 }
