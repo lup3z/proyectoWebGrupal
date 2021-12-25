@@ -1,36 +1,60 @@
-*{
-    margin: 0px;
-    padding: 0px;
-	box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-.formulario-login{
-    margin-left: 250px;
+.formulario-login {
+  margin-left: 250px;
 }
 
-body{
-    background-image: url('../../img/backreg.jpg');
-    background-position: 85% -2%; 
-}  
-
-.button-enviar .text-login{
-    background-color: black;
-    border: 0;
-    margin-top: 20px;
-    font-size: 25px;
+.formulario-login .login-form {
+  text-align: center;
+  margin-top: 11px;
+  margin-left: 80px;
+  width: 30%;
 }
 
+.formulario-login .login-form div input {
+  margin: 19px 0;
+  padding: 7px;
+  width: 40%;
+}
 
+.enter {
+  color: white;
+  margin-top: 140px;
+  font-size: 40px;
+  font-family: "Bangers";
+  border-radius: 8px;
+}
+
+.text-login2 {
+  color: black;
+  font-family: "Bangers", cursive;
+  width: 750px;
+}
+
+.text-login {
+  font-family: "Bangers", cursive;
+  color: white;
+}
+
+.button-enviar .text-login {
+  background-color: black;
+  border: 0;
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+body {
+  background-image: url("../../img/backreg.jpg");
+  background-position: 85% -2%;
+}
 
 .error{
     font-family: 'Bangers', cursive;
     color: white;
-}
-
-.text-login2{
-    color: black;
-    font-family: 'Bangers', cursive;
-    width: 750px;
 }
 
 ::placeholder{
@@ -39,37 +63,9 @@ body{
     text-align: center;
 }
 
-.formulario-login .login-form {
-    text-align: center;
-    margin-top: 11px;
-    margin-left: 80px;
-    width: 30%;
-}
-.formulario-login .login-form div input  {
-    margin: 19px 0;
-    padding:7px;
-    width: 40%;
-}
-
 button, input, optgroup, select, textarea {
     font-family: inherit;
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
 }
-
-.enter {
-    color: white;
-    margin-top:140px;
-    font-size: 40px;
-    font-family:  'Bangers';
-    border-radius: 8px;
-}
-
-.main-header{
-    font-family: 'Bangers', cursive;
-    font-size: 25 px;
-    color: rgb(66, 116, 172);
-    background-color: rgb(197, 220, 226);
-    padding: 10px;
-    height: 8rem;}
