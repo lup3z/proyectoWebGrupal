@@ -67,5 +67,8 @@ body {
     font-family: "Bangers", cursive;
     color: white;
     font-weight: 500;
+}
 
+input{
+  text-align: center;
 }

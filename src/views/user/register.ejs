@@ -7,64 +7,59 @@
     <title>Register</title>
 </head>
 <%- include('../partials/header')%>
-
-
-
-    <main class="main-formulario">
-        <div class="formulario">
-            <h3 class="titulo-alta">Crear cuenta</h3>
-            <form action="./register" method="POST" class="formulario-alta" enctype="multipart/form-data">
-                <div class="control-formulario">
+    <div class="formulario-login">
+        <form action="./register" method="POST" enctype="multipart/form-data" class="login-form">
+            <h3 class="enter">Crear cuenta</h3>
+            <div>
+                <input type="email" name="email" id="email" value="<%= locals.oldData ? oldData.email : null %>" required placeholder="Correo electrónico">
+                <span class="feedback"></span>
+                <% if (locals.errors && errors.email) { %>
                     <div>
-                        <label for="email">Ingrese eMail:</label>
-                        <input type="email" name="email" id="email" class="control"
-                            value="<%= locals.oldData ? oldData.email : null %>">
+                        <%= errors.email.msg %>
+                    </div>
+                    <% } %>
+            </div>
+            <div>
+                <input type="text" name="nombre" id="nombre" value="<%= locals.oldData ? oldData.nombre : null %>" required placeholder="Nombre">
+                <span class="feedback"></span>
+                <% if (locals.errors && errors.nombre) { %>
+                    <div>
+                        <%= errors.nombre.msg %>
+                    </div>
+                    <% } %>
+            </div>
+            <div>
+                <input type="text" name="apellido" id="apellido" value="<%= locals.oldData ? oldData.apellido : null %>" required placeholder="Apellido">
+                <span class="feedback"></span>
+            </div>
+            <div>
+                <input type="password" name="password" id="password" required placeholder="Password">
+                <span class="feedback"></span>
+                <% if (locals.errors && errors.password) { %>
+                    <div>
+                        <%= errors.password.msg %>
+                    </div>
+                    <% } %>
+            </div>
+            <div>
+                <input type="number" name="dni" id="dni" value="<%= locals.oldData ? oldData.dni : null %>" required placeholder="DNI">
+                <span class="feedback"></span>
+            </div>
+            <div class="imagen-class">
+                <label for="imagen" class="text01">Ingresa tu foto:</label>
+                <input type="file" name="avatar" accept=".jpg,.png"
+                    class="form-control" value="<%= locals.errors && errors.avatar ? 'is-invalid' : null %>" multiple>
+                <% if (locals.errors && errors.avatar) { %>
+                    <div class="text-danger">
+                        <%= errors.avatar.msg %>
+                    </div>
+                    <% } %>
                         <span class="feedback"></span>
-                        <% if (locals.errors && errors.email) { %>
-                            <div class="text-danger">
-                                <%= errors.email.msg %>
-                            </div>
-                            <% } %>
-                    </div>
-                    <div>
-                        <label for="nombre">Ingrese nombre:</label>
-                        <input type="text" name="nombre" id="nombre" class="control"
-                            value="<%= locals.oldData ? oldData.nombre : null %>">
-                        <span class="feedback"></span>
-                        <% if (locals.errors && errors.nombre) { %>
-                            <div class="text-danger">
-                                <%= errors.nombre.msg %>
-                            </div>
-                            <% } %>
-                    </div>
-                    <div>
-                        <label for="password">Ingrese contraseña:</label>
-                        <input type="password" name="password" id="password" class="control">
-    
-                        <span class="feedback"></span>
-                        <% if (locals.errors && errors.password) { %>
-                            <div class="text-danger">
-                                <%= errors.password.msg %>
-                            </div>
-                            <% } %>
-                    </div>
-                    <div>
-                        <label for="imagen">Ingresa tu foto:</label>
-                        <input type="file" name="avatar" accept=".jpg,.png"
-                            class="form-control <%= locals.errors && errors.avatar ? 'is-invalid' : null %>" multiple>
-                        <% if (locals.errors && errors.avatar) { %>
-                            <div class="text-danger">
-                                <%= errors.avatar.msg %>
-                            </div>
-                            <% } %>
-                                <span class="feedback"></span>
-                    </div>
-                    <div>
-                        <button type="submit" class="boton-formulario">Crear Cuenta</button>
-                        <button type="reset" class="boton-formulario">Borrar</button>
-                    </div>
-                </div>
-            </form>   
-        </div>
-    </main>
+            </div>
+            <div class="botonera">
+                <button type="submit">Crear Cuenta</button>
+                <button type="reset">Borrar</button>
+            </div>
+        </form>
+    </div>
 </html>

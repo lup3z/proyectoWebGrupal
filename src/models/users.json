@@ -19,5 +19,14 @@
   "nombre": "jere",
   "password": "$2a$10$XZtdck5StGqXaDodpFg7m.ke6Zaf5ak4jeqajT9QJeGkDoWvi0rCC",
   "avatar": "img/1640223634476_img.jpg"
+ },
+ {
+  "id": 4,
+  "email": "mariaagustina.acevedodiaz@gmail.com",
+  "nombre": "Maria agustina",
+  "apellido": "acevedo diaz",
+  "password": "$2a$10$mJetiEKiqvjNvacxu91SJ.harMXK1yGP1TUYC9nvcwI.Wn/tfC5.C",
+  "dni": "35325122",
+  "avatar": "img/1640456385399_img.jpg"
  }
 ]
