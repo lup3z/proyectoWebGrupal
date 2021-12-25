@@ -16,36 +16,41 @@
                 <form action="../<%= products.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
                     <div>
                         <div class="row">
-                            <label for="name">Título:</label>
+                            <label for="name">Título</label>
                             <input type="text" name="nombre" id="nombre" class="barra" value="<%= products.nombre %>">
                         </div>
                         <div class="row">
-                            <label for="descripcion">Descripción:</label>
+                            <label for="descripcion">Descripción</label>
                             <input class="barra" name="description" id="descripcion" value="<%= products.description %>"></input>
                             <span class="feedback"></span>
                         </div>
                         <div class="row">
-                            <label for="volumen">Volumen:</label>
+                            <label for="volumen">Volumen</label>
                             <input class="barra" name="volumen" id="volumen" value="<%= products.volumen%>"></input>
                             <span class="feedback"></span>
                         </div>
                         <div class="row">
-                            <label for="autores">Autor:</label>
+                            <label for="autores">Autor</label>
                             <input class="barra" name="autor" id="autor" value="<%= products.autor%>"></input>
                             <span class="feedback"></span>
                         </div>
                         <div class="row">
-                            <label for="fecha">Edición:</label>
+                            <label for="editorial">Editorial</label>
+                            <input class="barra" name="editorial" id="editorial" value="<%= products.editorial%>"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="fecha">Edición</label>
                             <input class="barra" name="edicion" id="edicion" value="<%= products.edicion %>"></input>
                             <span class="feedback"></span>
                         </div>
                         <div class="row">
-                            <label for="precio">Precio:</label>
+                            <label for="precio">Precio</label>
                             <input class="barra" type="text" name="precio" id="precio" value="<%= products.precio %>"></input>
                             <span class="feedback"></span>
                         </div>
                         <div class="row">
-                            <label for="imagen">Imagen:</label>
+                            <label for="imagen">Imagen</label>
                             <input class="barra-imagen" type="file" name="producto" accept=".jpg,.png" multiple></input>
                             <span class="feedback"></span>
                         </div>

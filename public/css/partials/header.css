@@ -63,6 +63,20 @@
     list-style: none;
 }
 
+.avatar-img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 5px;
+    border-radius: 50%;
+}
+
+.pic-plus-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
 @media (min-width: 768px){
     .main-header{
         display: flex;

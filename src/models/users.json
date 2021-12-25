@@ -1,32 +1,11 @@
 [
  {
   "id": 1,
-  "email": "nicogomez23@hotmail.com",
-  "nombre": "Nicolas Martin Gomez",
-  "password": "$2a$10$wqOVlBfpu1ZGByWZgEy/kuslDO/PcvZQFPTESbWYQW89JfdCc8D5W",
-  "avatar": "img/1640190624775_img.jpg"
- },
- {
-  "id": 2,
-  "email": "fran@gmail.com",
-  "nombre": "fran",
-  "password": "$2a$10$/yPRQpxtm3b.lf3R0f2cE.LKByzTE28PyWxOEXK.C.IrrNx1GwgBC",
-  "avatar": "img/1640220118589_img.jpg"
- },
- {
-  "id": 3,
-  "email": "jere@gmail.com",
-  "nombre": "jere",
-  "password": "$2a$10$XZtdck5StGqXaDodpFg7m.ke6Zaf5ak4jeqajT9QJeGkDoWvi0rCC",
-  "avatar": "img/1640223634476_img.jpg"
- },
- {
-  "id": 4,
-  "email": "mariaagustina.acevedodiaz@gmail.com",
-  "nombre": "Maria agustina",
-  "apellido": "acevedo diaz",
-  "password": "$2a$10$mJetiEKiqvjNvacxu91SJ.harMXK1yGP1TUYC9nvcwI.Wn/tfC5.C",
-  "dni": "35325122",
-  "avatar": "img/1640456385399_img.jpg"
+  "email": "nicogomez23@gmail.com",
+  "nombre": "Nicolás Martín",
+  "apellido": "Gómez",
+  "password": "$2a$10$LPYOLo/gIHqpD7GOqzyC5.ig76CKTTW7vqCX36z2aedJLczCFmuVG",
+  "dni": "34906299",
+  "avatar": "img/1640461278295_img.jpg"
  }
 ]

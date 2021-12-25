@@ -15,7 +15,7 @@
                 <form action="./createProduct" method="POST" enctype="multipart/form-data">
                     <div>
                         <div class="row">
-                            <label for="nombre">Título:</label>
+                            <label for="nombre">Título</label>
                             <input type="text" name="nombre" id="nombre"
                                 class="barra" "<%= locals.errors && errors.nombre ? 'is-invalid' : null %>"
                                 value="<%= locals.oldData ? oldData.nombre : null %>">
@@ -24,32 +24,37 @@
                                     <% } %>
                         </div>
                         <div class="row">
-                            <label for="descripcion">Descripción:</label>
+                            <label for="descripcion">Descripción</label>
                             <input class="barra" name="description" id="descripcion"></input>
                             <span class="feedback"></span>
                         </div>
                         <div class="row">
-                            <label for="volumen">Volumen:</label>
+                            <label for="volumen">Volumen</label>
                             <input class="barra" name="volumen" id="volumen"></input>
                             <span class="feedback"></span>
                         </div>
                         <div class="row">
-                            <label for="autores">Autor:</label>
+                            <label for="autores">Autor</label>
                             <input class="barra" name="autor" id="autor"></input>
                             <span class="feedback"></span>
                         </div>
                         <div class="row">
-                            <label for="fecha">Edición:</label>
+                            <label for="editorial">Editorial</label>
+                            <input class="barra" name="editorial" id="editorial"></input>
+                            <span class="feedback"></span>
+                        </div>
+                        <div class="row">
+                            <label for="fecha">Edición</label>
                             <input class="barra" name="edicion" id="edicion"></input>
                             <span class="feedback"></span>
                         </div>
                         <div class="row">
-                            <label for="precio">Precio:</label>
+                            <label for="precio">Precio</label>
                             <input class="barra" type="text" name="precio" id="precio">
                             <span class="feedback"></span>
                         </div>
                         <div class="row">
-                            <label for="imagen">Imagen:</label>
+                            <label for="imagen">Imagen</label>
                             <input class="barra-imagen" type="file" name="producto" accept=".jpg,.png" multiple>
                             <span class="feedback"></span>
                         </div>
