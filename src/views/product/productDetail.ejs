@@ -9,23 +9,50 @@
 <body>
     <%- include('../partials/header')%>
         <main>
-            <tr>
-                <ul type="none" class="contenedor">
+            <div type="none" class="contenedor">
+                <div class="foto-detalles">
                     <img src="../../<%= product.producto %>" class="producto" height="200" width="200">
-                    <div class="descripcion">
-                        <p class="detalle"> Título: <%= product.nombre %> </p>
-                        <p class="detalle">Descripción: <%= product.description %> </p>
-                        <p class="detalle">Volumen: <%= product.volumen %> </p>
-                        <p class="detalle">Autor: <%= product.autor %> </p>
-                        <p class="detalle">Edición: <%= product.edicion %> </p>
-                        <p class="detalle"> Valor: $<%= product.precio %> </p>
+                    <div class="total1">
+                        <div class="total">
+                            <div class="text01">
+                                <p class="detalle8">
+                                    <%= product.nombre %>
+                                </p>
+                                <p class="detalle9">$<%= product.precio %>
+                                </p>
+                            </div>
+                            <div class="descripcion">
+                                <div class="text03">
+                                    <p class="talento">Talento</p>
+                                    <p class="detalle1">Autor: <%= product.autor %>
+                                    </p>
+                                    <p class="detalle5">Artista: <%= product.artista %>
+                                    </p>
+                                </div>
+                                <div class="text02">
+                                    <p class="especificaciones">Especificaciones</p>
+                                    <p class="detalle1">Volumen: <%= product.volumen %>
+                                    </p>
+                                    <p class="detalle1"> Valor: $<%= product.precio %>
+                                    </p>
+                                    <p class="detalle1">Editorial: <%= product.editorial %>
+                                    </p>
+                                    <p class="detalle1">Edición: <%= product.edicion %>
+                                    </p>
+                                    <p class="detalle1">Cantidad de páginas: <%= product.qDePaginas %>
+                                    </p>
+                                    <p class="detalle5">Color/Blanco&Negro: <%= product.colorObyn %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="texto04-desc">Descripción: <%= product.description %>
+                        </p>
                         <form method="GET" action="../editProduct/<%= product.id %>">
-                            <input type="submit" value="Editar" name="Editar" class="btnForm btnFormEdit">
+                            <input type="submit" value="Editar" name="Editar" class="btnForm">
                         </form>
                     </div>
-                </ul>
-            </tr>
-
+                </div>
         </main>
 </body>
 </html>

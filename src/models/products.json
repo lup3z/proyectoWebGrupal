@@ -22,7 +22,7 @@
     {
         "id": 5,
         "nombre": "The Walking dead N° 151",
-        "description": "Call to Arms",
+        "description": "Call to Arms. Call to Arms. Call to Arms. Call to Arms. Call to Arms.",
         "volumen": "The Walking dead",
         "autor": "Robert Kirkman",
         "edicion": "Febrero del 2016",
@@ -288,5 +288,16 @@
         "edicion": "Julio del 2001",
         "precio": "2560",
         "producto": "img/1640217973081_img.jpg"
+    },
+    {
+        "id": 33,
+        "nombre": "spiderman prueba 123",
+        "description": "esta es una prueba para ver si funciona la editorial",
+        "volumen": "volumen 1",
+        "autor": "yo, quien más",
+        "editorial": "yo, quien más",
+        "edicion": "Agosto 2011",
+        "precio": "899",
+        "producto": "img/1640463728579_img.jpg"
     }
 ]

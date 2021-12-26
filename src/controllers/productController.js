@@ -9,23 +9,23 @@ const productController = {
     productList: (req, res) => {
         res.render('./product/productList', {products: products})
     },
-    productCart: (req,res) => {
-        res.render('./product/productCart')
-    },
     createProduct: (req, res) => {
         res.render('./product/createProduct')
     },
     abmproduct: (req, res) => {
         const file = req.file;
         let newId = products[(products.length) - 1].id + 1
-        let {nombre, description, volumen, autor, editorial, edicion, precio} = req.body 
+        let {nombre, description, volumen, autor, artista, editorial, qDePaginas, colorObyn, edicion, precio} = req.body 
         let newProduct = {
             id: newId,
             nombre: req.body.nombre,
             description: req.body.description,
             volumen: req.body.volumen,
             autor:req.body.autor,
+            artista: req.body.artista,
             editorial: req.body.autor,
+            qDePaginas: req.body.qDePaginas,
+            colorObyn: req.body.colorObyn,
             edicion:req.body.edicion,
             precio: req.body.precio,
             producto: `img/${file.filename}`,
@@ -50,14 +50,17 @@ const productController = {
     editProduct: (req, res) => {
         let id = req.params.id;
         const archivo = req.file;
-        const {nombre, description, volumen, autor, editorial, edicion, precio} = req.body
+        const {nombre, description, volumen, autor, artista, qDePaginas, colorObyn, editorial, edicion, precio} = req.body
         products.forEach(product => {
             if(product.id == id){
             product.nombre= nombre,
             product.description= description,
             product.volumen=volumen,
             product.autor=autor,
+            product.artista=artista,
             product.editorial=editorial,
+            product.qDePaginas=qDePaginas,
+            product.colorObyn= colorObyn,
             product.edicion=edicion,
             product.producto= `img/${archivo.filename}`,
             product.precio= precio

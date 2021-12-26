@@ -9,28 +9,6 @@
    width: 310px;
 }
 
-.descripcion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    border: solid 1px white;
-    margin-left: 40px;
-}
-
-.contenedor{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-p{
-    padding: 10px;
-    font-family: 'Bangers', cursive;
-    font-size: 18px;
-}
-
 body{
     background-image: url("/img/backcomic.jpg");
     color: white;
@@ -38,8 +16,92 @@ body{
     background-size: cover;
 }
 
+.detalle8{
+    font-size: 30px;
+    color: red;
+}
+
+.detalle9{
+    font-size: 30px;
+    color: yellow;
+}
+
+.text01{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+
+.foto-detalles{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.contenedor{
+    margin-top: 45px;
+    width: 55%;
+    position: relative;
+    left: 350px;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: row;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+}
+
+.total1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+    background-color: rgba(236, 236, 236, 0.3);
+    padding: 15px;
+    
+}
+
+.text02{
+    margin-left: 28px;
+    width: 50%;
+}
+
+.descripcion{
+    width: 100%;
+
+}
+
+.detalle1{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top: solid white 1px;
+}
+
+.detalle5{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: solid white 1px;
+    border-top: solid white 1px;
+}
 
 
-.detalle{
-    font-size: 21px;
+.talento{
+    padding-bottom: 10px;
+}
+
+.text03{
+    width: 40%;
+}
+
+.texto04-desc{
+    margin-top: 30px;
+}
+
+form{
+    text-align: center;
+    margin-top: 35px;
 }
