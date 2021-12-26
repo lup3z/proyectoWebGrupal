@@ -291,13 +291,16 @@
     },
     {
         "id": 33,
-        "nombre": "spiderman prueba 123",
-        "description": "esta es una prueba para ver si funciona la editorial",
-        "volumen": "volumen 1",
-        "autor": "yo, quien más",
-        "editorial": "yo, quien más",
-        "edicion": "Agosto 2011",
-        "precio": "899",
-        "producto": "img/1640463728579_img.jpg"
+        "nombre": "Wonder Woman N° 80",
+        "description": "This issue carries on directly from the last one as Wonder Woman is forced to fight Circe.  There was an interesting altercation immediately before Diana realizes something is wrong.  Seeing that her plan isn't working Circe instead tells Diana she will return Themyscira providing that she takes the life of an innocent.",
+        "volumen": "volumen 2",
+        "autor": "Christopher Priest",
+        "artista": "Trish Mulvihill & Romeo Tanghal",
+        "editorial": "dc comics",
+        "qDePaginas": "27",
+        "colorObyn": "color",
+        "edicion": "agosto 1994",
+        "precio": "850",
+        "producto": "img/1640481105903_img.jpg"
     }
 ]

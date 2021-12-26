@@ -23,7 +23,7 @@ const productController = {
             volumen: req.body.volumen,
             autor:req.body.autor,
             artista: req.body.artista,
-            editorial: req.body.autor,
+            editorial: req.body.editorial,
             qDePaginas: req.body.qDePaginas,
             colorObyn: req.body.colorObyn,
             edicion:req.body.edicion,
