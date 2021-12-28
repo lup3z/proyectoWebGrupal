@@ -11,17 +11,46 @@ module.exports = function (sequelize, DataTypes) {
         type: DataTypes.STRING(255),
         allowNull: false
     },
-    name: {
+    nombre: {
         type: DataTypes.STRING(255),
         allowNull: false
+    },
+    apellido: {
+      type: DataTypes.STRING(255),
+      allowNull: false
     },
     password: {
         type: DataTypes.STRING(255),
         allowNull: false
+    },
+    dni: {
+      type: DataTypes.STRING(255),
+      allowNull: false
+    },
+    avatar: {
+      type: DataTypes.STRING(255),
+      allowNull: false
     }
   }, {
     sequelize,
-    tableName: 'user',
+    tableName: 'users',
     timestamps: false,
+    indexes: [
+      {
+        name: "PRIMARY",
+        unique: true,
+        using: "BTREE",
+        fields: [
+          { name: "id" },
+        ]
+      },
+      {
+        name: "idusercategory",
+        using: "BTREE",
+        fields: [
+          { name: "idUserCategory" },
+        ]
+      },
+    ]
   });
 };

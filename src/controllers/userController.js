@@ -1,9 +1,8 @@
-const fs = require("fs");
-const path = require("path");
 const { validationResult } = require('express-validator');
 const bcryptjs = require('bcryptjs');
 const { v4: uuidv4 } = require('uuid');
-const User = require('../models/Users');
+const db = require ('../database/models')
+const { usersModel } = require('../models/usersModel');
 
 
 const userController = {
@@ -13,10 +12,9 @@ const userController = {
     register: (req, res) => {
         res.render("./user/register");
     },
-    newUserRegister:(req, res) => {
+    newUserRegister: async (req, res) => {
+        try {
         const resultValidation = validationResult(req);
-       
-        
 		if (resultValidation.errors.length > 0) {
 			
             
@@ -25,25 +23,32 @@ const userController = {
 				oldData: req.body
 			});
         }
-        let userInDB = User.findByField('email', req.body.email);
-        if (userInDB) {
-             return res.render("./user/register", {
-                 errors: {
-                     email: {
-                         msg: 'Este email ya está registrado'
-                     }
-                },
-                oldData: req.body
-            });
-        }
-        let userToCreate = {
-             ...req.body,
-             password: bcryptjs.hashSync(req.body.password, 10),
-            avatar: 'img/'+req.file.filename
-        }
-         let userCreated = User.create(userToCreate);
+        
+            let userInDB = await usersModel.findByField('email', req.body.email);
+            if (userInDB) {
+                return res.render("./user/register", {
+                    errors: {
+                        email: {
+                            msg: 'Este email ya está registrado'
+                        }
+                    },
+                    oldData: req.body
+                });
+            }
+            const id = await usersModel.generateId();
+        
+            let userToCreate = {
+                ...req.body, 
+                password: bcryptjs.hashSync(req.body.password, 10),
+                avatar: 'img/' + req.file.filename
+            }
+            await usersModel.create(userToCreate);
 
-         res.render("./user/login");
+            res.render("./user/login");
+        } catch (error) {
+            res.send('hola')
+        }
+        
     },
     loginProcess: (req, res) => {
         let userToLogin = User.findByField( 'email', req.body.email);

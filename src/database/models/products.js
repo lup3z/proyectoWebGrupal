@@ -15,18 +15,56 @@ module.exports = function (sequelize, DataTypes) {
         type: DataTypes.STRING(255),
         allowNull: false
     },
+     description: {
+        type: DataTypes.STRING(255),
+        allowNull: false
+    }, 
+    autor: {
+        type: DataTypes.STRING(255),
+        allowNull: false
+    },
+    artista: {
+      type: DataTypes.STRING(255),
+      allowNull: false
+    },
+    editorial: {
+      type: DataTypes.STRING(255),
+      allowNull: false
+    },
+    qDePaginas: {
+      type: DataTypes.STRING(255),
+      allowNull: false
+    },
+    colorObyn: {
+      type: DataTypes.STRING(255),
+      allowNull: false
+    },
+    edicion: {
+      type: DataTypes.STRING(255),
+      allowNull: false
+    },
     price: {
         type: DataTypes.STRING(255),
         allowNull: true
     },
-    image: {
+    producto: {
       type: DataTypes.STRING(255),
       allowNull: true
-  }
-  }, {
-    sequelize,
-    tableName: 'product',
-    timestamps: false,
-  });
-};
-
+    }
+    }, {
+      sequelize,
+      tableName: 'products',
+      timestamps: false,
+      indexes: [
+        {
+          name: "PRIMARY",
+          unique: true,
+          using: "BTREE",
+          fields: [
+            { name: "id" },
+          ]
+        }
+      ]
+    });
+  };
+  
