@@ -25,36 +25,19 @@ const productsModel = {
             where: { id: id }
         })
     },
-
-
-
-
-
-
-    findByField: async function (field, text) {
-        let productFound = await db.products.findOne({
-            where: { [field]: text }
-        })
-        return await productFound;
-    },
-
-    findAllByField: async function (field, text) {
-        let productsFound = await db.products.findAll({
-            where: { [field]: text }
-        })
-        return await productsFound;
-    },
     update: async function (productData, id) {
         await db.products.update({
-            name: productData.name,
-            description: productData.description,
-            image: productData.image,
-            idProductsCategory: productData.idProductsCategory,
-            size: productData.size,
-            price: productData.price,
-            inSale: productData.inSale,
-            discountPrice: productData.discountPrice,
-            discount: productData.discount
+            nombre: productData.nombre,
+            descripcion: productData.descripcion,
+            volumen: productData.volumen,
+            autor: productData.autor,
+            artista: productData.artista,
+            editorial: productData.editorial,
+            qDePaginas: productData.qDePaginas,
+            colorObyn: productData.colorObyn,
+            edicion: productData.edicion,
+            precio: productData.precio,
+            imagen: productData.imagen
         },{
             where: { id: id }
         })

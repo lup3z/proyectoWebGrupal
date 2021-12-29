@@ -69,14 +69,14 @@
                             <input class="barra-imagen" type="file" name="producto" accept=".jpg,.png" multiple></input>
                             <span class="feedback"></span>
                         </div>
+                        <div class="botonera">
+                            <button type="submit" class="botonera">Editar</button>
+                            <form method="POST" action="../<%= products.id %>?_method=DELETE">
+                                <button type="botonera">Borrar</button>
+                            </form>
                     </div> 
                 </form>
-                <div class="botonera">
-                    <button type="submit" class="botonera">Editar</button>
-                    <form method="POST" action="../<%= products.id %>?_method=DELETE">
-                        <button type="botonera">Borrar</button>
-                    </form>
-                </div>
+              
         </div>             
     </body>
 </html>
