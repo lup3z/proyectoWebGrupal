@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: row; 
     color:black;
-    width: 900px;
+    
     align-items: center;
     justify-content: space-around;
     align-self: center;
@@ -35,7 +35,7 @@
 
 .center-test{
     position: absolute;
-    left: 300px;
+    
     align-self: center;
 }
 

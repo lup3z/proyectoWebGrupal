@@ -1,8 +1,13 @@
+.carousel{
+    display: none;
+}
+
 @media (min-width: 1330px) {
   .carousel {
     width: 1482px;
     margin: auto;
     overflow: hidden;
+    display: block;
   }
 
   .carousel ul {
