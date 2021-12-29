@@ -61,7 +61,7 @@
 
 .footer-mensaje{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     margin-bottom: 25px;
     margin-top: 8px;

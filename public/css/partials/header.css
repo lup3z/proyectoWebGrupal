@@ -27,6 +27,11 @@
     align-items: center;
 }
 
+.icon{
+    transform: scaleX(-1);
+    height: 100px;
+}
+
 .text-header{
     font-size: 25px;
     font-family: 'Bangers', cursive;
@@ -38,17 +43,13 @@
     height: 2rem;
 }
 
-
-.icon{
-    transform: scaleX(-1);
-    height: 100px;
-}
-
 .navbar{
     display: flex;
     flex-direction: row;
     text-decoration: none;
     justify-content: space-evenly;
+    position: relative;
+    top: 6px;
 }
 
 .navbar a{
@@ -80,5 +81,7 @@
 @media (min-width: 1330px) {
     .text-header-sub{
         display: block;
+        font-size: 25px;
+        font-family: 'Bangers', cursive;
     }
 }
