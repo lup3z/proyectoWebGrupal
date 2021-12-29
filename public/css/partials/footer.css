@@ -8,8 +8,8 @@
   flex-direction: row;
   justify-content: space-around;
   position: absolute;
-  bottom: 1px;
-  left: 125px;
+  bottom: 72px;
+  left: 100px;
   
 }
 
@@ -84,3 +84,13 @@ p {
   font-family: "Bangers", cursive;
 }
 
+.lastfooter{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dhfoto{
+    width: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
