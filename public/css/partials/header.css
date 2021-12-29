@@ -77,33 +77,6 @@
     justify-content: flex-end;
 }
 
-@media (min-width: 768px){
-    .main-header{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .navbar{
-        font-size: 20px;
-    }
-
-    li{
-        padding: 5px;
-    }
-    .barra-de-busqueda .spidi{
-        display: none;
-    }
-}
-    
-@media (min-width: 1200px){
-    .main-header{
-        display: flex;
-        justify-content: unset;
-    }
-}
-
 @media (min-width: 1330px) {
     
     }
