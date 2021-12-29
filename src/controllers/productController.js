@@ -31,7 +31,7 @@ const productController = {
             const products = await productsModel.findAll(); 
             res.render('./product/productList', {products})
         } catch (error) {
-        res.status(404).render('404-page.ejs');
+        res.status(404).render('not-found');
         }  
     },
     productDetail: async function (req, res) {
