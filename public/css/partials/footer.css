@@ -1,76 +1,81 @@
-.contenedor{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    position: relative;
-    bottom: 120px;
+.black {
+  height: 3rem;
+  background-color: black;
 }
 
-.contenedor ul{
-    list-style: none;
+.contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.contenedor ul li{
-    width: 75px;
-    height: 75px;
-    line-height: 75px;
-    margin: 0 10px;
-    text-align: center;
-    float: left;
-    transition: all 0.5s ease;
-    font-size: 25px;
+.contenedor ul {
+  list-style: none;
 }
 
-.contenedor .fa-facebook{
-    color: black;
+.contenedor ul li {
+  height: 75px;
+  line-height: 75px;
+  margin: 0 10px;
+  text-align: center;
+  float: left;
+  transition: all 0.5s ease;
+  font-size: 20px;
+  position: relative;
+  bottom: 54px;
 }
 
-.contenedor .fa-instagram{
-    color: black;
+.contenedor .fa-facebook {
+  color: white;
 }
 
-.contenedor .fa-google{
-    color: black;
+.contenedor .fa-instagram {
+  color: white;
 }
 
-.contenedor .fa-whatsapp{
-    color: black;
+.contenedor .fa-google {
+  color: white;
 }
 
-.contenedor ul li:hover .fa-facebook{
-    color: blue;
-    text-shadow: 0 0 15px blue;
-    transition: all 0.2s ease;
+.contenedor .fa-whatsapp {
+  color: white;
 }
 
-.contenedor ul li:hover .fa-instagram{
-    color:#bc2a8d;
-    text-shadow: 0 0 15px #bc2a8d;
-    transition: all 0.2s ease;
+.contenedor ul li:hover .fa-facebook {
+  color: blue;
+  text-shadow: 0 0 15px blue;
+  transition: all 0.2s ease;
 }
 
-.contenedor ul li:hover .fa-google{
-    color: #dd4b39;
-    text-shadow: 0 0 15px  #dd4b39;
-    transition: all 0.2s ease;
+.contenedor ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.2s ease;
 }
 
-.contenedor ul li:hover .fa-whatsapp{
-    color: #4dc247;
-    text-shadow: 0 0 300px  #4dc247;
-    transition: all 0.2s ease;
+.contenedor ul li:hover .fa-google {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.2s ease;
 }
 
-.footer-mensaje{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    position: relative;
-    bottom: 50px;
+.contenedor ul li:hover .fa-whatsapp {
+  color: #4dc247;
+  text-shadow: 0 0 300px #4dc247;
+  transition: all 0.2s ease;
 }
 
-p{
-    font-weight: 500;
-    font-family: "Bangers", cursive;
+.footer-mensaje {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+p {
+  font-weight: 500;
+  font-family: "Bangers", cursive;
 }
