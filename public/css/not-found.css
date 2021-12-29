@@ -27,12 +27,6 @@ h5{
   width: 350px;
 }
 
-/* @media (min-width: 500px) { fgfdgfdgfdg
-   {
-    
-  }
-} */
-
 @media (min-width: 1330px) {
   .contenedorA {
     display: flex;
