@@ -29,7 +29,7 @@ const productController = {
     productList: async function (req, res) {
         try{
             const products = await productsModel.findAll(); 
-            return res.render('/product/productList', {products})
+            return res.render('./product/productList', {products})
         } catch (error) {
         res.status(404).render('not-found');
         }  
