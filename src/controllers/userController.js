@@ -1,9 +1,6 @@
 const { validationResult } = require('express-validator');
 const bcryptjs = require('bcryptjs');
-const { v4: uuidv4 } = require('uuid');
-const db = require ('../database/models')
 const  usersModel = require('../models/usersModel');
-
 
 const userController = {
     login: (req, res) => {
@@ -47,7 +44,6 @@ const userController = {
             res.status(404).render('not-found');
         }
     },
-
     loginProcess: async function (req, res) {
         try {
         let userToLogin = await usersModel.findByField('email', req.body.email);

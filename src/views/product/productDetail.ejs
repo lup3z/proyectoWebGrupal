@@ -11,7 +11,7 @@
         <main>
             <div type="none" class="contenedor">
                 <div class="foto-detalles">
-                    <img src="../../<%= product.producto %>" class="producto" height="200" width="200">
+                    <img src="../../<%= product.imagen %>" class="producto" height="200" width="200">
                     <div class="total1">
                         <div class="total">
                             <div class="text01">
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="texto04-desc">Descripción: <%= product.description %>
+                        <p class="texto04-desc">Descripción: <%= product.descripcion %>
                         </p>
                         <form method="GET" action="../editProduct/<%= product.id %>">
                             <input type="submit" value="Editar" name="Editar" class="btnForm">

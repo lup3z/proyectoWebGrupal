@@ -14,9 +14,22 @@ const productsModel = {
             return 1;
         }
     },
+    create: async function (newProduct) {
+        await db.products.create(newProduct)
+    },
     findByPk: async function (id) {
         return await db.products.findByPk(id);
     },
+    delete: async function (id) {
+        await db.products.destroy({
+            where: { id: id }
+        })
+    },
+
+
+
+
+
 
     findByField: async function (field, text) {
         let productFound = await db.products.findOne({
@@ -31,10 +44,6 @@ const productsModel = {
         })
         return await productsFound;
     },
-
-    create: async function (newProduct) {
-        await db.products.create(newProduct)
-    },
     update: async function (productData, id) {
         await db.products.update({
             name: productData.name,
@@ -47,11 +56,6 @@ const productsModel = {
             discountPrice: productData.discountPrice,
             discount: productData.discount
         },{
-            where: { id: id }
-        })
-    },
-    delete: async function (id) {
-        await db.products.destroy({
             where: { id: id }
         })
     }

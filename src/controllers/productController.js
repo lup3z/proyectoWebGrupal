@@ -6,20 +6,9 @@ const  productsModel = require('../models/productsModel');
 const { validationResult } = require('express-validator');
 
 const productController = {
-    productList: async function (req, res) {
-        try{
-            const products = await productsModel.findAll(); 
-            res.render('./product/productList', {products})
-        } catch (error) {
-        res.status(404).render('404-page.ejs');
-    }
-        
-    },
-    createProduct: (req, res) => {
-        res.render('./product/createProduct')
-    },
-    abmproduct: async function (req, res) {
+    createProduct: async function (req, res) {
         try {
+            const products = await productsModel.findAll();
             const file = req.file;
             const id = await productsModel.generateId();
             
@@ -29,21 +18,41 @@ const productController = {
                 imagen: `img/${file.filename}`,
             }
             await productsModel.create(newProduct);            
-            res.render("./product/productList");
+            res.render("./product/productList", {products});
         } catch (error) {
             res.status(404).render('not-found');
         } 
     },
-    productDetail: (req, res) => {
-        const id = req.params.id;
-        const producto = products.find(item => item.id == id);
-        res.render(path.join(__dirname, '../views/product/productDetail'), { product: producto })
+    getCreateProduct: (req, res) => {
+        res.render('./product/createProduct')
     },
-    getProductToEdit: (req, res) => {
-        let id = req.params.id;
-        let productToEdit = products.find((item) => item.id == id);
-        res.render("./product/editProduct", { products: productToEdit })
+    productList: async function (req, res) {
+        try{
+            const products = await productsModel.findAll(); 
+            res.render('./product/productList', {products})
+        } catch (error) {
+        res.status(404).render('404-page.ejs');
+        }  
     },
+    productDetail: async function (req, res) {
+        try{
+            const id = req.params.id;
+            const product = await productsModel.findByPk(id);
+            res.render('../views/product/productDetail', {product})
+        } catch (error) {
+            res.status(404).render('not-found');
+        } 
+    },
+    getProductToEdit: async function (req, res) {
+        try{
+            const id = req.params.id;
+            const products = await productsModel.findByPk(id);
+            res.render("./product/editProduct", {products})
+        } catch (error) {
+            res.status(404).render('not-found');
+        } 
+    },
+
     editProduct: (req, res) => {
         let id = req.params.id;
         const archivo = req.file;
@@ -72,18 +81,16 @@ const productController = {
         );
         res.render( "./product/productList",{ products: products });
     },
-    deleteProduct: (req, res) => {
-        const id = req.params.id;
-        products = products.filter((item) => item.id != id);
-
-        fs.writeFileSync(
-            path.join(__dirname, "../models/products.json"),
-            JSON.stringify(products, null, 4),
-            {
-                encoding: "utf-8",
-            }
-        );
-        res.render("./product/productList", { products: products });
+    
+    
+    deleteProduct:  async function (req, res) {
+        try{
+            const products = await productsModel.findAll();
+            await productsModel.delete(req.params.id);
+            return res.render("./product/productList", {products});
+        } catch (error) {
+            res.status(404).render('not-found');
+        } 
     }
 }
 

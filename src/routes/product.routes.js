@@ -45,8 +45,8 @@ const validationsCreateProduct = [
 ]
 
 router.get('/productList', productController.productList);
-router.get('/createProduct', productController.createProduct);
-router.post('/createProduct', upload.single("imagen"), validationsCreateProduct, productController.abmproduct);
+router.get('/createProduct', productController.getCreateProduct);
+router.post('/createProduct', upload.single("imagen"), validationsCreateProduct, productController.createProduct);
 router.get('/productDetail/:id', productController.productDetail);
 router.get('/editProduct/:id', productController.getProductToEdit);
 router.put('/:id', upload.single('producto'), productController.editProduct);
