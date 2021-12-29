@@ -7,19 +7,26 @@
 .main-header{
     font-family: 'Bangers', cursive;
     background-color: rgb(197, 220, 226);
-    padding: 15px;
-    height: 6.5rem;
-    margin: 0 auto;
+    height: 6.5rem;  
+}
+
+.text-header-sub{
+    display: none;
+}
+
+.center-test{
+    width: 100%;
 }
 
 .logo-y-nombre{
     display: flex;
     flex-direction: row; 
     color:black;
-    
-    align-items: center;
+    width: 100%;
     justify-content: space-around;
-    align-self: center;
+    align-items: center;
+    border: 1px solid red;
+
 }
 
 .text-header{
@@ -33,11 +40,6 @@
     height: 2rem;
 }
 
-.center-test{
-    position: absolute;
-    
-    align-self: center;
-}
 
 .icon{
     transform: scaleX(-1);
