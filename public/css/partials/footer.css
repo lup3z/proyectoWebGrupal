@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: relative;
+    bottom: 120px;
 }
 
 .contenedor ul{
@@ -16,7 +18,7 @@
     text-align: center;
     float: left;
     transition: all 0.5s ease;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .contenedor .fa-facebook{
@@ -63,9 +65,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-bottom: 25px;
-    margin-top: 8px;
     text-align: center;
+    position: relative;
+    bottom: 50px;
 }
 
 p{

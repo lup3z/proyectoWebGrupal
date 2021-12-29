@@ -1,7 +1,16 @@
-.top-body{
-    font-family: 'Special Elite', cursive;
+.top-body {
+  font-family: "Special Elite", cursive;
+  background-image: url("/img/pexels-dayvison-tadeu-4142511.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+}
+
+@media (min-width: 1330px) {
+  .top-body {
     background-image: url("/img/pexels-dayvison-tadeu-4142511.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
+  }
 }
