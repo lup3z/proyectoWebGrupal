@@ -4,7 +4,6 @@ const usersModel = {
     findAll: async function () {
         return await db.users.findAll()
     },
-
     generateId: async function (){
         let users = await this.findAll();
         let lastUser = await users.pop();

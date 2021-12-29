@@ -1,41 +1,38 @@
-let products = require("../models/products.json");
 const fs = require("fs");
 const path = require('path');
 const { v4: uuidv4 } = require('uuid');
+const  productsModel = require('../models/productsModel');
 
 const { validationResult } = require('express-validator');
 
 const productController = {
-    productList: (req, res) => {
-        res.render('./product/productList', {products: products})
+    productList: async function (req, res) {
+        try{
+            const products = await productsModel.findAll(); 
+            res.render('./product/productList', {products})
+        } catch (error) {
+        res.status(404).render('404-page.ejs');
+    }
+        
     },
     createProduct: (req, res) => {
         res.render('./product/createProduct')
     },
-    abmproduct: (req, res) => {
-        const file = req.file;
-        let newId = products[(products.length) - 1].id + 1
-        let {nombre, description, volumen, autor, artista, editorial, qDePaginas, colorObyn, edicion, precio} = req.body 
-        let newProduct = {
-            id: newId,
-            nombre: req.body.nombre,
-            description: req.body.description,
-            volumen: req.body.volumen,
-            autor:req.body.autor,
-            artista: req.body.artista,
-            editorial: req.body.editorial,
-            qDePaginas: req.body.qDePaginas,
-            colorObyn: req.body.colorObyn,
-            edicion:req.body.edicion,
-            precio: req.body.precio,
-            producto: `img/${file.filename}`,
-        };
-        products.push(newProduct);
-        fs.writeFileSync(path.join(__dirname, "../models/products.json"), JSON.stringify(products, null, 4),
-            {
-                encoding: "utf-8",
-            });
-            res.render("./product/productList", {products:products });
+    abmproduct: async function (req, res) {
+        try {
+            const file = req.file;
+            const id = await productsModel.generateId();
+            
+            let newProduct = {
+                id: id,
+                ...req.body,
+                imagen: `img/${file.filename}`,
+            }
+            await productsModel.create(newProduct);            
+            res.render("./product/productList");
+        } catch (error) {
+            res.status(404).render('not-found');
+        } 
     },
     productDetail: (req, res) => {
         const id = req.params.id;

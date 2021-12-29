@@ -7,15 +7,15 @@ module.exports = function (sequelize, DataTypes) {
       allowNull: false,
       primaryKey: true
     },
-    name: {
+    nombre: {
         type: DataTypes.STRING(255),
         allowNull: false
     },
-    description: {
+    descripcion: {
         type: DataTypes.STRING(255),
         allowNull: false
     },
-     description: {
+    volumen: {
         type: DataTypes.STRING(255),
         allowNull: false
     }, 
@@ -43,11 +43,11 @@ module.exports = function (sequelize, DataTypes) {
       type: DataTypes.STRING(255),
       allowNull: false
     },
-    price: {
+    precio: {
         type: DataTypes.STRING(255),
         allowNull: true
     },
-    producto: {
+    imagen: {
       type: DataTypes.STRING(255),
       allowNull: true
     }
