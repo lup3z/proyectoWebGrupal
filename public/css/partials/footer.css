@@ -7,6 +7,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  position: absolute;
+  bottom: 1px;
+  left: 125px;
+  
 }
 
 .contenedor ul {
@@ -21,8 +25,8 @@
   float: left;
   transition: all 0.5s ease;
   font-size: 20px;
-  position: relative;
-  bottom: 54px;
+  
+
 }
 
 .contenedor .fa-facebook {
@@ -79,3 +83,4 @@ p {
   font-weight: 500;
   font-family: "Bangers", cursive;
 }
+
