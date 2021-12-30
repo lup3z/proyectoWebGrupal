@@ -32,6 +32,8 @@ Nicolás: 31, polítologo especializado en politícas de transparencia instituci
 
 link al board del proyecto: https://grupo05digitalhouse.atlassian.net/jira/software/projects/PI/boards/2
 
+link a la app heroku: https://koari.herokuapp.com/
+
 
 ## Feed back sprint 1
 Excelente propuesta muchachos.    calificacion ( 10/10 )
