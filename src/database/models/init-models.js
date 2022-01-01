@@ -14,6 +14,7 @@ function initModels(sequelize) {
   return {
     products,
     users,
+    usercategories,
   };
 }
 module.exports = initModels;

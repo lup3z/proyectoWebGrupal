@@ -20,7 +20,7 @@ const usersModel = {
     findByField: async function (field, text) {
         return await db.users.findOne({
             where: { [field]: text }
-        })
+        });
     },
     findAllByField: async function (field, text) {
         return await db.users.findAll({
