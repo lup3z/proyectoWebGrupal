@@ -9,16 +9,18 @@ const userController = {
     register: (req, res) => {
         res.render("./user/register");
     },
-    newUserRegister: async function (req, res) {
-        const resultValidation = validationResult(req); 
-        const file = req.file;
-        if (resultValidation.errors.length > 0) {
+    newUserRegister: async (req, res) => {
+        try {
+        const resultValidation = validationResult(req);
+		if (resultValidation.errors.length > 0) {
+			
+            
              return res.render('./user/register', {
 				errors: resultValidation.mapped(),
 				oldData: req.body
 			});
         }
-        try{
+        
             let userInDB = await usersModel.findByField('email', req.body.email);
             if (userInDB) {
                 return res.render("./user/register", {
@@ -31,19 +33,22 @@ const userController = {
                 });
             }
             const id = await usersModel.generateId();
-            
+        
             let userToCreate = {
                 ...req.body, 
                 id: id,
                 password: bcryptjs.hashSync(req.body.password, 10),
-                avatar: 'img/' + req.file.filename, 
+                avatar: 'img/' + req.file.filename
             }
             await usersModel.create(userToCreate);
-            res.render('./user/login');
+
+            res.render("./user/login");
         } catch (error) {
-            res.status(404).render('not-found');
+            res.send(error)
         }
+        
     },
+        
     loginProcess: async function (req, res) {
         try {
         let userToLogin = await usersModel.findByField('email', req.body.email);
