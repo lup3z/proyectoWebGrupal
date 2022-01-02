@@ -23,12 +23,13 @@
                     <li><a href="/user/profile" class="far fa-user"> Hi <%= locals.userLogged.nombre%></a></li>
                 </div>
                 <li><a href="/product/productList" class="fas fa-shopping-basket"> En Stock</a></li>
-                <li><a href="/product/createProduct" class="fas fa-shopping-basket"> Crear Producto</a></li>
+                <% if (locals.userLogged.idUserCategory === 1) { %>
+                    <li><a href="/product/createProduct" class="fas fa-shopping-basket"> Crear Producto</a></li>
+                    <% } %>
                 <li><a href="/user/logout" class="fas fa-sign-out-alt"> Logout</a></li>
                 <% } else { %>
                     <li><a href="/user/login" class="fas fa-sign-in-alt"> Ingresá</a></li>
                     <li><a href="/product/productList" class="fas fa-shopping-basket"> En Stock</a></li>
-                    <li><a href="/product/createProduct" class="fas fa-shopping-basket"> Crear Producto</a></li>
                     <li><a href="/user/register" class="fas fa-cart-plus"> Creá tu cuenta</a></li>
                     <% } %>
         </ul>

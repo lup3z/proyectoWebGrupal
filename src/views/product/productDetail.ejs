@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <%- include('../partials/head')%> 
-    <link rel="stylesheet" href="../../css/normalize.css">
-    <link rel="stylesheet" href="../../css/product/productDetail.css">
-    <title>Product Detail</title>
+    <%- include('../partials/head')%>
+        <link rel="stylesheet" href="../../css/normalize.css">
+        <link rel="stylesheet" href="../../css/product/productDetail.css">
+        <title>Product Detail</title>
 </head>
+
 <body>
     <%- include('../partials/header')%>
         <main>
@@ -48,11 +50,24 @@
                         </div>
                         <p class="texto04-desc">Descripción: <%= product.descripcion %>
                         </p>
-                        <form method="GET" action="../editProduct/<%= product.id %>">
-                            <input type="submit" value="Editar" name="Editar" class="btnForm">
-                        </form>
+                        <% if (locals.userLogged===undefined) { %>
+                            <form action="/user/login">
+                                <input type="submit" value="Comprar!" name="Editar" class="btnForm">
+                            </form>
+                            <% } else { %>
+                                <% if (locals.userLogged.idUserCategory==1) { %>
+                                    <form method="GET" action="../editProduct/<%= product.id %>">
+                                        <input type="submit" value="Editar" name="Editar" class="btnForm">
+                                    </form>
+                                    <% } else { %>
+                                        <form action="/">
+                                            <input type="submit" value="Comprar!" name="Editar" class="btnForm">
+                                        </form>
+                                        <% } %>
+                                            <% } %>
                     </div>
                 </div>
         </main>
 </body>
+
 </html>

@@ -38,7 +38,8 @@ const userController = {
                 ...req.body, 
                 id: id,
                 password: bcryptjs.hashSync(req.body.password, 10),
-                avatar: 'img/' + req.file.filename
+                avatar: 'img/' + req.file.filename,
+                idUserCategory: 2
             }
             await usersModel.create(userToCreate);
 
@@ -61,8 +62,8 @@ const userController = {
                 if(req.body.remember_user) {
 					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
 				}
-
                 return res.redirect('./profile');
+                
             } else {
                 res.render("./user/login", {
                     errors: {
